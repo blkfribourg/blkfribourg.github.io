@@ -1,1 +1,0 @@
-# blkfribourg.github.io
