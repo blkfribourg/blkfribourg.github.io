@@ -3,6 +3,7 @@ layout: single
 title: "FAQ"
 permalink: /faq/
 author: BlkFri
+last_modified_at: 2023-10-27
 ---
 
 I can't find WheelDash on the Garmin Store or have an error saying the page doesn't exists.

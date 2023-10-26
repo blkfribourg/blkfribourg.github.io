@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /quickstart/
 excerpt: "How to quickly install and setup WheelDash."
-last_modified_at: 2021-06-07T08:48:05-04:00
+last_modified_at: 2023-10-27
 toc: true
 author: BlkFri
 ---

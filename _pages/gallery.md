@@ -3,6 +3,7 @@ layout: single
 title: "Gallery"
 permalink: /gallery/
 author: BlkFri
+last_modified_at: 2023-10-27
 
 gallery:
   - url: /assets/images/gallery/1.jpg
