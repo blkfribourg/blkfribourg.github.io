@@ -1,0 +1,13 @@
+# Authors
+
+BlkFri:
+  name: "BlkFri"
+  bio: "Tech enthusiast, part scientist, part computer geek who enjoys tinkering with things. Developer of WheelDash"
+  avatar: "/assets/images/bio-wheeldash.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wheeldash.euc@gmail.com"
+    - label: "Ko-fi page"
+      icon: "fas fa-fw fa-link"
+      url: "https://ko-fi.com/wheeldash"
