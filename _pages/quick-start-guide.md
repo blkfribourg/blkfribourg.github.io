@@ -49,4 +49,4 @@ If you use the Garmin app version and want to automatically record your riding s
 
 You can also manually start and stop the recording of your ride by accessing the activity recording view (by swiping up if you own a device with a tactile screen or by mapping a physical button to the action "activity recording view) and pressing the start/stop button.
 
-If you want more detailed informations about WheelDash settings, feel free to consult WheelDash manual !
+If you want more detailed informations about WheelDash settings, feel free to consult WheelDash manual!
