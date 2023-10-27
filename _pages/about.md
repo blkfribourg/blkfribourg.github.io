@@ -31,7 +31,7 @@ WheelDash exists in two forms: a Garmin application and a datafield that can be 
 
 WheelDash currently supports all EUCs model from the following brands :
 
-- Gotway/Begode
+- Gotway/Begode/Extreme Bull
 - Leaperkim
 - KingSong
 

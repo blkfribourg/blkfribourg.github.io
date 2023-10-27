@@ -16,14 +16,14 @@ feature_row:
   - image_path: /assets/images/multiple-brands.png
     alt: "Multiple brand support"
     title: "Multiple brand support"
-    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode, Kingsong and Leaperkim."
+    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong and Leaperkim."
     #url: "/about/#compatible-eucs"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"
   - image_path: /assets/images/no-phone.jpg
     alt: "No phone required!"
     title: "No phone required!"
-    excerpt: "WheelDash is a standalone application, it connects directly to your EUC. You don't have to use your smartphone !"
+    excerpt: "WheelDash is a standalone application, it connects directly to your EUC. You don't have to use your smartphone!"
     #url: "/standalone/"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"

@@ -14,7 +14,7 @@ Please check that your device is compatible with BLE protocol and that your Garm
 I can't connect to my wheel!
 {: .notice}
 
-Please ensure you've selected the right profile and that you properly configured the brand setting in WheelDash settings.
+Please ensure you've selected the right profile and that you properly configured the brand setting in WheelDash settings. If you owns a Kingsong please also try "Kingsong (old)" in Wheel Brand setting, especially if your EUC is pre-2021.
 
 The battery percentage reported by WheelDash is different from other apps I use!
 {: .notice}
