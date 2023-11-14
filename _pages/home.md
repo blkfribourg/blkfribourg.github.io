@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /
+permalink: /wheeldash_home
 hidden: true
 header:
   overlay_color: "#5e616c"
