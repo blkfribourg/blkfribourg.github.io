@@ -35,7 +35,7 @@ WheelDash currently supports all EUCs model from the following brands :
 - Leaperkim
 - KingSong
 
-**Note:** I'm working on inmotion support right now, if you own an Inmotion EUC and a Garmin watch that supports BLE, apply to become a beta tester!
+**Note:** I'm working on inmotion support right now, if you own an Inmotion EUC (V11 to V14) and a Garmin watch that supports BLE, apply to become a beta tester!
 {: .notice--warning}
 
 ## Compatible Garmin Devices
