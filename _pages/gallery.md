@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Gallery"
-permalink: /gallery/
+permalink: /wheeldash_gallery/
 author: BlkFri
 last_modified_at: 2023-10-27
 

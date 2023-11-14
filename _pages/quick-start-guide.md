@@ -1,6 +1,6 @@
 ---
 title: "Quick-Start Guide"
-permalink: /quickstart/
+permalink: /wheeldash_quickstart/
 excerpt: "How to quickly install and setup WheelDash."
 last_modified_at: 2023-10-27
 toc: true

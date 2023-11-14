@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /about_wheeldash/
 title: "About WheelDash"
 excerpt: "WheelDash is a standalone app for Garmin devices."
 last_modified_at: 2023-10-27

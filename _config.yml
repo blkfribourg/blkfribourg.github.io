@@ -20,9 +20,9 @@ title: "WheelDash"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Blkfri"
-description: "WheelDash"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
+description: "WheelDash - The ultimate Garmin app for EUC riders."
+url: "https://blkfribourg.github.io"
+baseurl: "/wheeldash_home"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -73,7 +73,7 @@ google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
 # SEO Related
-google_site_verification:
+google_site_verification: Zj2ZY-SkDDflX9aordjUP1HABPvjQPahZAXoXYkWoCA
 bing_site_verification:
 naver_site_verification:
 yandex_site_verification:
@@ -103,30 +103,17 @@ analytics:
 
 # Site Author
 author:
-  name: "Your Name"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
-  location: "Somewhere"
-  email:
+  BlkFri:
+  name: "BlkFri"
+  bio: "Tech enthusiast, part scientist, part computer geek who enjoys tinkering with things. Developer of WheelDash"
+  avatar: "/assets/images/bio-wheeldash.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+      url: "mailto:wheeldash.euc@gmail.com"
+    - label: "Ko-fi page"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://ko-fi.com/wheeldash"
 
 # Site Footer
 footer:

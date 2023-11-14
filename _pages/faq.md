@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "FAQ"
-permalink: /faq/
+permalink: /wheeldash_faq/
 author: BlkFri
 last_modified_at: 2023-10-27
 ---
