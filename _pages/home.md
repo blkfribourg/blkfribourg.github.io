@@ -17,7 +17,7 @@ feature_row:
     alt: "Multiple brand support"
     title: "Multiple brand support"
     excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong and Leaperkim."
-    #url: "/about/#compatible-eucs"
+    #url: "/about_wheeldash/#compatible-eucs"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"
   - image_path: /assets/images/no-phone.jpg
