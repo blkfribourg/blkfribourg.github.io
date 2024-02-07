@@ -2,7 +2,7 @@
 permalink: /about_wheeldash/
 title: "About WheelDash"
 excerpt: "WheelDash is a standalone app for Garmin devices."
-last_modified_at: 2023-10-27
+last_modified_at: 2024-02-08
 toc: true
 author: BlkFri
 ---
