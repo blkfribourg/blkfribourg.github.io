@@ -16,7 +16,7 @@ feature_row:
   - image_path: /assets/images/multiple-brands.png
     alt: "Multiple brand support"
     title: "Multiple brand support"
-    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong and Leaperkim."
+    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong, Leaperkim, Inmotion and VESCs!"
     #url: "/about_wheeldash/#compatible-eucs"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"

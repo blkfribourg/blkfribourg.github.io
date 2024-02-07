@@ -34,6 +34,8 @@ WheelDash currently supports all EUCs model from the following brands :
 - Gotway/Begode/Extreme Bull
 - Leaperkim
 - KingSong
+- Inmotion (V11 & V12 models only for now)
+- VESC based EUCs or PEV (While the app was originally designed for EUCs, VESC support now allows it to be used with various PEVs. Note: it has only been tested with fw 6.02).
 
 **Note:** I'm working on inmotion support right now, if you own an Inmotion EUC (V11 to V14) and a Garmin watch that supports BLE, apply to become a beta tester!
 {: .notice--warning}
