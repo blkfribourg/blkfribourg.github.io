@@ -33,7 +33,7 @@ VESCDash is designed to be compatible with most VESC controllers running firmwar
 
 VESCDash is compatible with most BLE-enabled devices that support CIQ version 3.1 or later. If your watch isn't listed in Connect IQ or you're unable to find VESCDash, please feel free to contact me with information about your watch model.
 
-**Note:** "Garmin has recently made changes to their Bluetooth stack, which has resulted in increased lag and disconnection issues on several of their smartwatches, particularly the Fenix 7 and Epix series. Unfortunately, there's currently no solution to this problem that I can provide. One potential workaround is to downgrade the watch firmware, but this may have other trade-offs or limitations.
+**Note:** Garmin has recently made changes to their Bluetooth stack, which has resulted in increased lag and disconnection issues on several of their smartwatches, particularly the Fenix 7 and Epix series. Unfortunately, there's currently no solution to this problem that I can provide. One potential workaround is to downgrade the watch firmware, but this may have other trade-offs or limitations.
 {: .notice--warning}
 
 You can check watch models specification here:
