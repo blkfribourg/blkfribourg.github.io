@@ -10,9 +10,9 @@ Disclaimer: I'm not an electronics expert, so my design may have some issues or 
 
 Feel free to contact me if you have any suggestions on how to improve this prototype.
 
-As I often commute to work on my Electric Unicycle (EUC), I encounter various road conditions. While a simple "excuse me/thanks" is usually sufficient to politely warn cyclists on bike paths, alerting drivers on roads can be more challenging, especially when they don't notice me.
+As I often commute to work on my EUC, I encounter various road conditions. While a simple "excuse me/thanks" is usually sufficient to politely warn cyclists on bike paths, alerting drivers on roads can be more challenging, especially when they don't notice me and cut me off.
 
-Many electrical horns with remotes are available, but I didn't want to carry an extra device. So, I created a simple ESP32-based, battery-powered Bluetooth Low Energy (BLE) horn and programmed it to be triggered using WheelDash.
+Many electrical horns with remotes are available, but I didn't want to carry an extra device just to trigger a horn. So, I created a simple ESP32-based, battery-powered Bluetooth Low Energy horn and programmed it to be triggered using WheelDash.
 
 Here's the parts list:
 
