@@ -4,16 +4,18 @@ title: "About WheelDash"
 excerpt: "WheelDash is a standalone app for Garmin devices."
 last_modified_at: 2024-02-08
 toc: true
+author_profile: false
 author: BlkFri
 ---
+
+If you want to support this project, visit my <a href="https://ko-fi.com/wheeldash" target="_blank" rel="noopener noreferrer">ko-fi page</a>!
+{: .notice--info}
 
 ## A few words about WheelDash
 
 This project started as a personal project to meet my needs with my EUC. I wanted a simple and efficient app that would allow me to avoid using both my phone and my watch (if my watch has GPS and supports BLE, why use a third-party app on my smartphone?), have a PWM alarm management, and allow me to record my rides, all for free.
 
 As a longtime Garmin user, I decided to develop a Garmin app for my EUC. Once I had a version that was usable for everyday use, I decided to release the source code for the app as well as publish a release of WheelDash on the Garmin store. The first feedback I received gave me the desire to continue the adventure a little further, so I decided to continue development, supported by the encouragement of a handful of people. While I am the only developer, WheelDash has benefited from the exchanges I have had with the first users. It is a project developed by and for the EUC rider community that we are. This is also why I want WheelDash to be and remain 100% free and open source.
-
-If you want to support this project, visit my <a href="https://ko-fi.com/wheeldash">ko-fi page</a> !
 
 ## Features
 
@@ -27,6 +29,10 @@ WheelDash is a standalone app and not a companion for WheelLog, DarknessBot, or 
 
 WheelDash exists in two forms: a Garmin application and a datafield that can be added to an existing activity. While the application and datafield versions share a fair amount of code, the datafield version is more restricted due to Garmin's restrictions on memory usage and UI refresh rate. The datafield version is however THE solution to be able to use Garmin native navigation and display or record wheel related data.
 
+<center>
+<img src="/assets/images/WD_AppTypeTab.png"/>
+</center>
+
 ## Compatible EUCs
 
 WheelDash currently supports all EUCs model from the following brands :
@@ -34,15 +40,21 @@ WheelDash currently supports all EUCs model from the following brands :
 - Gotway/Begode/Extreme Bull
 - Leaperkim
 - KingSong
-- Inmotion (V11 & V12 models only for now)
-- VESC based EUCs or PEV (While the app was originally designed for EUCs, VESC support now allows it to be used with various PEVs. Note: it has only been tested with fw 6.02).
+- Inmotion (recent models starting from V11)
 
-**Note:** I'm working on inmotion support right now, if you own an Inmotion EUC (V11 to V14) and a Garmin watch that supports BLE, apply to become a beta tester!
+<center>
+<img src="/assets/images/WD_EUC_CompatTab.png"/>
+</center>
+
+**Note:** The KingSong S22 (and potentially the S16 and S19) uses a Bluetooth module incompatible with most Garmin smartwatches. It's only been confirmed to work seamlessly with the Forerunner 255.
 {: .notice--warning}
 
 ## Compatible Garmin Devices
 
-All BLE compatible devices supporting CIQ version > 3.1 are compatible with WheelDash. For now most of the devices with square shaped screen are unsupported.
+WheelDash is compatible with most BLE-enabled devices that support CIQ version 3.1 or later. If your watch isn't listed in Connect IQ or you're unable to find VESCDash, please feel free to contact me with information about your watch model.
+
+**Note:** Garmin has recently made changes to their Bluetooth stack, which has resulted in increased lag and disconnection issues on several of their smartwatches, particularly the Fenix 7 and Epix series. Unfortunately, there's currently no solution to this problem that I can provide. One potential workaround is to downgrade the watch firmware, but this may have other trade-offs or limitations.
+{: .notice--warning}
 
 You can check watch models specification here:
 

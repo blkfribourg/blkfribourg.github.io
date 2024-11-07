@@ -2,6 +2,8 @@
 title: "Weeldash: datafield supports custom logo!"
 layout: single
 author: BlkFri
+header:
+  teaser: "/assets/images/news/WD_DF_logo.jpg"
 ---
 
 Wheeldash: datafield now supports custom logo displayed as a background shape!

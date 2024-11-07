@@ -2,11 +2,15 @@
 main:
   - title: "About WheelDash"
     url: /about_wheeldash/
+  - title: "About VESCDash"
+    url: /about_vescdash/
   - title: "Quick-Start-guide"
     url: /wheeldash_quickstart/
   - title: "Gallery"
     url: /wheeldash_gallery/
   - title: "FAQ"
     url: /wheeldash_faq/
-  - title: "News"
-    url: /wheeldash_news/
+  - title: "Blog"
+    url: /wheeldash_blog/
+  - title: "Contact"
+    url: /contact/

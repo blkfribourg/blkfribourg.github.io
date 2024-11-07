@@ -4,20 +4,24 @@ permalink: /wheeldash_quickstart/
 excerpt: "How to quickly install and setup WheelDash."
 last_modified_at: 2023-10-27
 toc: true
+author_profile: false
 author: BlkFri
 ---
 
+**Note:** This section primarily applies to WheelDash, but much of the guidance can also be used for VESCDash, as the two applications share many similarities. Please note that VESCDash does not currently have a datafield version.
+{: .notice--warning}
+
 ## Installation
 
-WheelDash is available on the Garmin App store. Two "flavors" are available for WheelDash and WheelDash: datafield : a stable release and a development release (labeled "dev"). The development version includes the latest features but is also considered less stable, mainly because I sometimes push untested code (code related to a specific brand of wheel I don't own, features I can't test on my watch, etc.).
+WheelDash or VESCDash are available on the Garmin App store. Two "flavors" are available for WheelDash and WheelDash: datafield : a stable release and a development release (labeled "dev"). The development version includes the latest features but is also considered less stable, mainly because I sometimes push code that hasn't only been tested by a few persons (code related to a specific brand of wheel I don't own, features I can't test on my watch, etc.).
 
 <center>
-<a href="https://apps.garmin.com/fr-FR/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps" class="btn btn--success">Download WheelDash (Garmin App store)</a>
+<a href="https://apps.garmin.com/fr-FR/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps" class="btn btn--success"  target="_blank" rel="noopener noreferrer">Download WheelDash/VESCDash (Garmin App store)</a>
 </center>
 
 ## Settings
 
-WheelDash settings are accessible using Garmin Connect or Garmin Connect IQ Store.
+WheelDash/VESCDash settings are accessible using Garmin Connect or Garmin Connect IQ Store.
 
 ## First connection
 

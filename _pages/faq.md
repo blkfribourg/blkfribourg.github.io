@@ -1,7 +1,7 @@
 ---
-layout: single
 title: "FAQ"
 permalink: /wheeldash_faq/
+author_profile: false
 author: BlkFri
 last_modified_at: 2023-10-27
 ---
@@ -19,7 +19,7 @@ Please ensure you've selected the right profile and that you properly configured
 The battery percentage reported by WheelDash is different from other apps I use!
 {: .notice}
 
-WheelDash consider a battery cell is empty at 3.2 v, some app use different values, usually between 3.0 to 3.2v. You may find WheelDash is a bit pessimistic, but I'd rather like you to have a good suprise than a bad one.
+In most cases, WheelDash consider a battery cell is empty at 3.2v, some app use different values, usually between 3.0 to 3.2v. You may find WheelDash is a bit pessimistic, but I'd rather like you to have a good suprise than a bad one.
 
 Is there a manual for WheelDash?
 {: .notice}

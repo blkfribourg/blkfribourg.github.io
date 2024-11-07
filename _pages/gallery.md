@@ -1,7 +1,7 @@
 ---
-layout: single
 title: "Gallery"
 permalink: /wheeldash_gallery/
+author_profile: false
 author: BlkFri
 last_modified_at: 2023-10-27
 
