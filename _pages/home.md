@@ -8,8 +8,8 @@ header:
   actions:
     - label: "<i class='fas fa-download'></i> Install now on Garmin"
       url: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
-    - label: "<i class='fas fa-download'></i> Install on Amazfit (coming soon)"
-      url: "TBD"
+    - label: "<i class='fas fa-download'></i> Install on Amazfit"
+      url: "https://github.com/blkfribourg/WheelDash_Amazfit_Beta/tags"
     - label: "<i class='fas fa-mug-hot'></i> Support Development"
       url: "https://ko-fi.com/wheeldash"
 excerpt: >
