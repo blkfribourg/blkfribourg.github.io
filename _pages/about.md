@@ -18,7 +18,7 @@ This project started as a personal project to meet my needs with my EUC. I wante
 
 As a longtime Garmin user, I decided to develop a Garmin app for my EUC. Once I had a version that was usable for everyday use, I decided to release the source code for the app as well as publish a release of WheelDash on the Garmin store. The first feedback I received gave me the desire to continue the adventure a little further, so I decided to continue development, supported by the encouragement of a handful of people. While I am the only developer, WheelDash has benefited from the exchanges I have had with the first users. It is a project developed by and for the EUC rider community that we are. This is also why I want WheelDash to be and remain 100% free and open source.
 
-in 2024, Garmin modified it's Bluetooth stack and since then, all Garimin user who have decided to upgrade their watch are observing increased latency in information updates.  Garmin not listening to its app developers, I have decided to create a new version of WheelDash for Amazfit.  In addition to making much cheaper watches, their bluetooth implementation rocks allowing real time updates of critical information such as the reported PWM. I still maintain the Garmin version but most new features now land Amazfit.
+in 2024, Garmin modified it's Bluetooth stack and since then, all Garmin user who have decided to upgrade their watch are observing increased latency in information updates.  Garmin not listening to its app developers, I have decided to create a new version of WheelDash for Amazfit.  In addition to making much cheaper watches, their bluetooth implementation rocks allowing real time updates of critical information such as the reported PWM. I still maintain the Garmin version but most new features now land Amazfit.
 
 ## Features
 
@@ -26,7 +26,7 @@ WheelDash is an app for Amazfit and Garmin devices and offers real-time display 
 
 On Garmin, It seamlessly integrates with the Garmin environment, making it easy to record your rides and store data transmitted by your wheel. All route information and ride data are readily accessible through the Garmin Connect app or portal.
 
-On Amazit, there is no such enviroment so I decided to develop a web server which can be used to securely upload your rides and consult the detailed stats online.
+On Amazfit, there is no environment that allows users to upload custom data. While the environment itself exists, this limitation led me to develop a web server for securely uploading rides and viewing detailed statistics online.
 
 WheelDash is a standalone app and not a companion for WheelLog, DarknessBot, or EUC World, so WheelDash does not require any of these apps to function.  As on option, you can use WheelDash to display information sent by EUC World.
 
