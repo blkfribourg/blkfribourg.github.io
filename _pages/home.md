@@ -6,17 +6,19 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mikolaj-zeman-unsplash2.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
+    - label: "<i class='fas fa-download'></i> Install now on Garmin"
       url: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
+    - label: "<i class='fas fa-download'></i> Install on Amazfit (coming soon)"
+      url: "TBD"
     - label: "<i class='fas fa-mug-hot'></i> Support Development"
       url: "https://ko-fi.com/wheeldash"
 excerpt: >
-  The ultimate Garmin app for EUC riders.
+  The ultimate watch app for EUC riders (Supports Garmin and Amazfit).
 feature_row:
   - image_path: /assets/images/multiple-brands.png
-    alt: "Multiple brand support"
+    alt: "Multiple EUC brand support"
     title: "Multiple brand support"
-    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong, Leaperkim, Inmotion and VESCs!"
+    excerpt: "It supports a wide range of EUCs, including models from Gotway/Begode/Extreme Bull, Kingsong, Leaperkim, Inmotion, Nosfet and VESCs!"
     #url: "/about_wheeldash/#compatible-eucs"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"
@@ -30,7 +32,7 @@ feature_row:
   - image_path: /assets/images/record-feature.png
     alt: "Records your riding sessions"
     title: "Track your rides"
-    excerpt: "WheelDash lets you record data from your EUC on your Garmin device. All your rides are saved on Garmin Connect."
+    excerpt: "WheelDash lets you record data from your EUC on your device. All your rides are saved on Garmin Connect or on a dedicated server for Amazfit."
     #url: "/actRecording/"
     #btn_class: "btn--primary"
     #btn_label: "Learn more"
