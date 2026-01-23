@@ -1,4 +1,3 @@
-
 ---
 permalink: /about_wheeldash/
 title: "About WheelDash"
