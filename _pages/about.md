@@ -1,8 +1,8 @@
 ---
 permalink: /about_wheeldash/
 title: "About WheelDash"
-excerpt: "WheelDash is a standalone app for Garmin devices."
-last_modified_at: 2024-02-08
+excerpt: "WheelDash is a standalone app for Amazfit and Garmin devices."
+last_modified_at: 2026-01-25
 toc: true
 author_profile: false
 author: BlkFri
