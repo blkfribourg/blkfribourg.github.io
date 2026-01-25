@@ -12,14 +12,13 @@ If you want to support this project, visit my <a href="https://ko-fi.com/wheelda
 {: .notice--info}
 
 ## Prerequisites
-### A Compatible Amazfit device
 
-- Active 2 (Round or Square, with or wthout NFC)
-- Balance 2 (Round or Square)
-- Bip 6
-- T-Rex 3
-
-### Zepp app installed on your phone
+* A Compatible Amazfit device
+    - Active 2 (Round or Square, with or wthout NFC)
+    - Balance 2 (Round or Square)
+    - Bip 6
+    - T-Rex 3
+* Zepp app installed on your phone
 
 ## Installation
 
