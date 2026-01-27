@@ -5,6 +5,8 @@ layout: single
 author: BlkFri
 ---
 
+Join the [Wheeldash Telegram Group](https://t.me/+Kg_mHaGMiRQxZTdk), or send me a message:
+
 <!-- modify this form HTML and place wherever you want your form -->
 <form
   action="https://formspree.io/f/meoqojaj"
