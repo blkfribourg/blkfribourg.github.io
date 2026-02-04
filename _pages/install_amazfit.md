@@ -39,7 +39,7 @@ If you want to support this project, visit my <a href="https://ko-fi.com/wheelda
 
 The rest of the configuration should be self explanatory. Adding a new wheel configuration is done from the watch.
 
-If you have a Garmin Varia radar or Engo HUD Glasses, the configuration happens in the Wheeldash Zepp app settings and apply to all the wheel profiles.  If the glasses or the radar are not found when a profile is started, Wheeldash will ask you if you want to skip them for this ride.
+If you have a Garmin Varia radar or Engo HUD Glasses, you first need to add (pair) the device on the watch. The configuration happens in the Wheeldash Zepp app settings and apply to all the wheel profiles.  If the glasses or the radar are not found when a profile is started, Wheeldash will ask you if you want to skip them for this ride.
 
 ## Using the watch app
 
