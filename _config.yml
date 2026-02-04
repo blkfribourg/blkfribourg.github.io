@@ -20,7 +20,7 @@ title: "WheelDash"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Blkfri"
-description: "WheelDash - The ultimate Garmin app for EUC riders."
+description: "WheelDash - The ultimate Amazfit and Garmin app for EUC riders."
 url: "https://blkfribourg.github.io"
 baseurl: #"/wheeldash_home"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
