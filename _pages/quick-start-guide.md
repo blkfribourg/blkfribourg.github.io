@@ -11,6 +11,8 @@ author: BlkFri
 **Note:** This section primarily applies to WheelDash, but much of the guidance can also be used for VESCDash, as the two applications share many similarities. Please note that VESCDash does not currently have a datafield version.
 {: .notice--warning}
 
+[Installation instructions for Amazfit](/install_amazfit/) are also available.
+
 ## Installation
 
 WheelDash or VESCDash are available on the Garmin App store. Two "flavors" are available for WheelDash and WheelDash: datafield : a stable release and a development release (labeled "dev"). The development version includes the latest features but is also considered less stable, mainly because I sometimes push code that hasn't only been tested by a few persons (code related to a specific brand of wheel I don't own, features I can't test on my watch, etc.).
