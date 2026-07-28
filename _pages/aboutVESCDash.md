@@ -1,11 +1,12 @@
 ---
-permalink: /about_vescdash/
-title: "About VESCDash"
-excerpt: "VESCDash is a standalone app for Garmin devices."
+permalink: /vescdash/docs/
+title: "VESCDash documentation"
+excerpt: "Compatibility, setup, and ride recording information for VESCDash on Garmin devices."
 last_modified_at: 2024-10-21
 toc: true
 author_profile: false
 author: BlkFri
+classes: wd-doc vesc-product vesc-doc
 ---
 
 <center>
@@ -15,13 +16,16 @@ author: BlkFri
 If you want to support this project, visit my <a href="https://ko-fi.com/wheeldash" target="_blank" rel="noopener noreferrer">ko-fi page</a>!
 {: .notice--info}
 
-## A few words about VESCDash
+## About VESCDash
 
 Sometimes, a technical failure can lead to unexpected opportunities. When the motherboard on my old Gotway MCM4 stopped working, I decided to replace it with a VESC controller. This unexpected repair sparked the creation of the VESCDash project.
 
-VESCDash is essentially a clone of WheelDash, but specifically designed for VESC controllers. Initially, both apps were combined within WheelDash, but I later decided to split them into two independent applications. This approach better caters to the unique requirements of both VESC and EUC users.
+VESCDash is a standalone Garmin application designed for VESC controllers. It supports riders of VESC-powered one-wheelers, e-foils, electric skateboards, converted EUCs, and other compatible personal electric vehicles. VESCDash and WheelDash initially shared one application, but they are now independent products with different audiences and releases.
 
-While many features are shared between WheelDash and VESCDash, I've been focusing more on WheelDash recently. As a result, the latest features and updates will often appear in WheelDash first.
+**Platform:** VESCDash is currently available only for compatible Garmin watches.
+{: .notice--info}
+
+The projects still share some technical foundations, but features and releases should be considered separately.
 
 If you have any specific needs or ideas for either project, please don't hesitate to reach out!
 

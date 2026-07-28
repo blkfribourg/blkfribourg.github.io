@@ -13,8 +13,10 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
+            {%- assign link_url = link.url -%}
+            {%- if link.url_key -%}{%- assign link_url = site.data.product.urls[link.url_key] -%}{%- endif -%}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              <a href="{{ link_url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>

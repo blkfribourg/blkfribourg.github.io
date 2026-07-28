@@ -4,12 +4,13 @@ permalink: /wheeldash_faq/
 author_profile: false
 author: BlkFri
 last_modified_at: 2023-10-27
+classes: wd-doc
 ---
 
 I can't find WheelDash on the Garmin Store or have an error saying the page doesn't exists.
 {: .notice}
 
-Please check that your device is compatible with BLE protocol and that your Garmin device is supported.
+Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches.
 
 I can't connect to my wheel!
 {: .notice}
@@ -29,5 +30,4 @@ Yes, it's available here: <a href="/assets/pdf/WheelDash_Manual_v0.1.pdf">WheelD
 My watch keeps disconnecting from my EUC while riding!
 {: .notice}
 
-Some users (exclusively Fenix 6 lineup owners) reported disconnection issue while riding. This issue lies on the hardware side and sadly there is nothing I can do about it.
-Some users reported a downgrade of the Bluetooth software of their watch fixed the issue or significantly descreased disconnection event numbers.
+{{ site.data.product.garmin_latency_note }} WheelDash cannot remove latency introduced by the watch platform. If the issue persists, include your watch model and firmware version when [contacting support](/contact/).

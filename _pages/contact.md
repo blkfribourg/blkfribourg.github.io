@@ -3,6 +3,7 @@ title: "Contact"
 permalink: /contact/
 layout: single
 author: BlkFri
+classes: wd-doc
 ---
 
 Join the [Wheeldash Telegram Group](https://t.me/+Kg_mHaGMiRQxZTdk), or send me a message:

@@ -18,14 +18,14 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "WheelDash"
 title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
+subtitle: "EUC RIDING ECOSYSTEM"
 name: "Blkfri"
-description: "WheelDash - The ultimate Amazfit and Garmin app for EUC riders."
+description: "WheelDash is the complete smartwatch companion for electric unicycle riders, with live telemetry, alerts, navigation and ride analysis."
 url: "https://blkfribourg.github.io"
 baseurl: #"/wheeldash_home"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/images/WD.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: "/assets/images/WD_reworked.png" # shared WheelDash product icon
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
@@ -118,24 +118,15 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/blkfribourg"
+    - label: "Ko-fi"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "https://ko-fi.com/wheeldash"
+    - label: "Contact"
+      icon: "fas fa-fw fa-envelope"
+      url: "/contact/"
 
 # Reading Files
 include:

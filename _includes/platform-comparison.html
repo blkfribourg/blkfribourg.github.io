@@ -1,0 +1,22 @@
+{% assign product = site.data.product %}
+<div class="wd-comparison" role="region" aria-label="WheelDash platform feature comparison" tabindex="0">
+  <table>
+    <thead>
+      <tr><th>Capability</th>{% for platform_id in product.platform_order %}<th>{{ product.platforms[platform_id].name }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody>
+      {% for feature in product.features %}
+        {% if include.full or feature.id == "offline_maps" or feature.id == "navigation" or feature.id == "recording" or feature.id == "portal" or feature.id == "dashboards" %}
+        <tr>
+          <th>{{ feature.name }}</th>
+          {% for platform_id in product.platform_order %}
+            {% assign item = product.platforms[platform_id].features[feature.id] %}
+            <td><span class="wd-status wd-status--{{ item.state }}">{{ item.label }}</span>{% if include.full and item.note %}<small>{{ item.note }}</small>{% endif %}</td>
+          {% endfor %}
+        </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+

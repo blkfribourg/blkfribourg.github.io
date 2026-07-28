@@ -1,29 +1,28 @@
 ---
-title: "Quick-Start Guide"
+title: "WheelDash for Garmin"
 permalink: /wheeldash_quickstart/
-excerpt: "How to quickly install and setup WheelDash."
+excerpt: "Install and set up WheelDash on a compatible Garmin watch."
 last_modified_at: 2023-10-27
 toc: true
 author_profile: false
 author: BlkFri
+classes: wd-doc
 ---
-
-**Note:** This section primarily applies to WheelDash, but much of the guidance can also be used for VESCDash, as the two applications share many similarities. Please note that VESCDash does not currently have a datafield version.
-{: .notice--warning}
-
-[Installation instructions for Amazfit](/install_amazfit/) are also available.
 
 ## Installation
 
-WheelDash or VESCDash are available on the Garmin App store. Two "flavors" are available for WheelDash and WheelDash: datafield : a stable release and a development release (labeled "dev"). The development version includes the latest features but is also considered less stable, mainly because I sometimes push code that hasn't only been tested by a few persons (code related to a specific brand of wheel I don't own, features I can't test on my watch, etc.).
+WheelDash is available on the Garmin App Store. Stable and development releases are available for the Garmin App and Garmin Datafield. The development release includes newer changes but may be less stable, particularly for wheel or watch combinations the developer cannot test directly.
 
 <center>
-<a href="https://apps.garmin.com/fr-FR/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps" class="btn btn--success"  target="_blank" rel="noopener noreferrer">Download WheelDash/VESCDash (Garmin App store)</a>
+<a href="{{ site.data.product.urls.garmin_catalog }}" class="btn btn--success" target="_blank" rel="noopener noreferrer">Find WheelDash on Garmin Connect IQ</a>
 </center>
+
+{{ site.data.product.garmin_latency_note }}
+{: .notice--warning}
 
 ## Settings
 
-WheelDash/VESCDash settings are accessible using Garmin Connect or Garmin Connect IQ Store.
+WheelDash settings are accessible using Garmin Connect or the Garmin Connect IQ Store.
 
 ## First connection
 

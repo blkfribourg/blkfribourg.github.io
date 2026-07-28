@@ -1,16 +1,16 @@
 # main links
 main:
-  - title: "About WheelDash"
-    url: /about_wheeldash/
-  - title: "About VESCDash"
-    url: /about_vescdash/
-  - title: "Quick-Start-guide"
-    url: /wheeldash_quickstart/
-  - title: "Gallery"
-    url: /wheeldash_gallery/
-  - title: "FAQ"
-    url: /wheeldash_faq/
-  - title: "Blog"
+  - title: "Features"
+    url: /#features
+  - title: "Platforms"
+    url: /platforms/
+  - title: "Ride Portal"
+    url_key: public_rides
+  - title: "Guides"
+    url: /docs/
+  - title: "Community"
+    url: /#community
+  - title: "Updates"
     url: /wheeldash_blog/
-  - title: "Contact"
-    url: /contact/
+  - title: "About"
+    url: /about_wheeldash/
