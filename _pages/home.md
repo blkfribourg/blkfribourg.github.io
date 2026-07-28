@@ -23,8 +23,6 @@ classes: wheeldash-home
   </div>
   <div class="wd-hero__visual" aria-label="Electric unicycle rider using the WheelDash ecosystem">
     <img src="/assets/images/mikolaj-zeman-unsplash.jpg" alt="Electric unicycle rider on a wooded path">
-    <div class="wd-watch-card"><img src="/assets/images/WD_reworked.png" alt="WheelDash app icon"><div><strong>Garmin + Amazfit</strong><span>Three ways to ride</span></div></div>
-    <span class="wd-hero__signal">LIVE</span>
   </div>
 </section>
 
