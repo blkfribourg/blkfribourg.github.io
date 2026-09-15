@@ -40,6 +40,21 @@ classes: vesc-product vesc-home
   </div>
 </section>
 
+<section class="vesc-interest" aria-labelledby="vesc-amazfit-title">
+  <div>
+    <p class="vesc-kicker">A possible next platform</p>
+    <h2 id="vesc-amazfit-title">Interested in VESCDash for Amazfit?</h2>
+    <p>VESCDash is currently available for Garmin. If you would use an Amazfit version, let me know—your feedback will help me understand the level of interest.</p>
+  </div>
+  <div class="vesc-interest__support">
+    <p>Developing and testing another platform takes considerable time. You can also support my ongoing work through Ko-fi, although contributions do not purchase or guarantee an Amazfit release.</p>
+    <div class="wd-actions">
+      <a class="wd-button vesc-button" href="/contact/">I am interested in Amazfit support</a>
+      <a class="wd-button wd-button--ghost" href="{{ site.data.product.urls.kofi }}">Support ongoing development</a>
+    </div>
+  </div>
+</section>
+
 <section class="vesc-final">
   <p class="vesc-kicker">Start with your setup</p>
   <h2>Check compatibility.<br>Then take it for a ride.</h2>

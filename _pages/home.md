@@ -3,8 +3,8 @@ layout: splash
 permalink: /
 hidden: true
 lang: en
-title: "WheelDash | The smartwatch companion for EUC riders"
-excerpt: "Live EUC telemetry, safety alerts, offline maps, connected accessories and ride analysis for Garmin and Amazfit."
+title: "WheelDash | Standalone EUC smartwatch app"
+excerpt: "In direct EUC mode, WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle for live telemetry, safety alerts and ride recording without a phone relay."
 classes: wheeldash-home
 ---
 
@@ -12,41 +12,83 @@ classes: wheeldash-home
 
 <section class="wd-hero" aria-labelledby="wd-hero-title">
   <div class="wd-hero__copy">
-    <p class="wd-eyebrow"><span></span> Built for electric unicycles</p>
-    <h1 id="wd-hero-title">Your ride.<br><em>At a glance.</em></h1>
-    <p class="wd-hero__lead">WheelDash is the complete smartwatch companion for electric unicycle riders. Keep essential EUC data and warnings visible while your phone stays in your pocket.</p>
+    <p class="wd-eyebrow"><span></span> A standalone EUC app for your watch</p>
+    <h1 id="wd-hero-title">Direct to<br>your <em>wrist.</em></h1>
+    <p class="wd-hero__lead">WheelDash turns your smartwatch into a complete EUC dashboard. In direct EUC mode, your wheel connects straight to the watch, where live data is received, processed and displayed.</p>
     <div class="wd-actions">
       <a class="wd-button wd-button--primary" href="#platforms">Choose your platform <span aria-hidden="true">→</span></a>
       <a class="wd-button wd-button--ghost" href="{{ product.urls.public_rides }}">Explore public rides</a>
     </div>
-    <p class="wd-hero__note">Available for Garmin and Amazfit. Features vary by implementation.</p>
+    <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Fast, reactive telemetry and safety alerts.</strong> No phone relay in direct EUC mode.</p></div>
+    <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
   </div>
-  <div class="wd-hero__visual" aria-label="Electric unicycle rider using the WheelDash ecosystem">
-    <img src="/assets/images/mikolaj-zeman-unsplash.jpg" alt="Electric unicycle rider on a wooded path">
+  <div class="wd-hero__visual wd-connection" aria-label="Connection comparison: phone companion apps send data from the electric unicycle through a phone to the watch. WheelDash sends data directly from the electric unicycle to the watch.">
+    <svg class="wd-connection__symbols" aria-hidden="true">
+      <symbol id="wd-icon-euc" viewBox="0 0 48 48"><path d="M17 19c0-6 3-10 7-10s7 4 7 10v4"/><circle cx="24" cy="29" r="13"/><circle cx="24" cy="29" r="6"/><path d="M9 36h7m16 0h7"/></symbol>
+      <symbol id="wd-icon-phone" viewBox="0 0 48 48"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M20 9h8M22 39h4"/></symbol>
+      <symbol id="wd-icon-watch" viewBox="0 0 48 48"><path d="M19 3h10l2 8H17l2-8Zm0 42h10l2-8H17l2 8Z"/><rect x="9" y="9" width="30" height="30" rx="8"/><rect x="15" y="15" width="18" height="18" rx="3"/></symbol>
+    </svg>
+    <div class="wd-connection__header">
+      <div><span class="wd-connection__step">The key difference</span><h2>How data reaches your wrist</h2></div>
+      <span class="wd-connection__signal"><i></i> Live Bluetooth</span>
+    </div>
+
+    <div class="wd-connection__route wd-connection__route--relay">
+      <div class="wd-connection__route-label">
+        <span>Phone companion apps</span>
+        <strong>Relayed through <span>a phone</span></strong>
+        <small>EUC World · DarknessBot · EUC Planet</small>
+      </div>
+      <div class="wd-connection__flow">
+        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-euc"></use></svg></span><strong>EUC</strong><small>Sends data</small></div>
+        <span class="wd-connection__arrow" aria-hidden="true"><i></i></span>
+        <div class="wd-connection__device wd-connection__device--middle"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-phone"></use></svg></span><strong>Phone</strong><small>Processes</small></div>
+        <span class="wd-connection__arrow" aria-hidden="true"><i></i></span>
+        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-watch"></use></svg></span><strong>Watch</strong><small>Mirrors</small></div>
+      </div>
+    </div>
+
+    <div class="wd-connection__route wd-connection__route--direct">
+      <div class="wd-connection__route-label">
+        <span>WheelDash · Direct EUC mode</span>
+        <strong>Direct to <span>the watch</span></strong>
+        <small>Watch-side EUC processing</small>
+      </div>
+      <div class="wd-connection__flow">
+        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-euc"></use></svg></span><strong>EUC</strong><small>Sends data</small></div>
+        <span class="wd-connection__arrow wd-connection__arrow--direct" aria-hidden="true"><i></i><em>Direct</em></span>
+        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-watch"></use></svg></span><strong>Watch</strong><small>Processes data</small></div>
+      </div>
+    </div>
+
+    <div class="wd-connection__features">
+      <strong>Handled on the watch</strong>
+      <div><span>Live telemetry</span><span>Safety alerts</span><span>Ride recording</span><span>Accessories</span></div>
+    </div>
   </div>
 </section>
 
 <section class="wd-proof" aria-label="WheelDash highlights">
-  <p><strong>Live EUC information</strong><span>Useful data on your wrist</span></p>
-  <p><strong>Phone stays away</strong><span>Direct connection to supported EUCs</span></p>
-  <p><strong>Rider-built</strong><span>Independent development, no advertising</span></p>
+  <p><strong>Direct Bluetooth connection</strong><span>Your EUC talks to your watch</span></p>
+  <p><strong>No phone relay in direct mode</strong><span>Responsive data processed on your wrist</span></p>
+  <p><strong>A complete riding toolkit</strong><span>Telemetry, alerts, recording and platform-specific extras</span></p>
 </section>
 
 <section class="wd-section wd-problem" aria-labelledby="why-title">
   <div class="wd-section__intro wd-section__intro--row">
-    <div><p class="wd-kicker">Why WheelDash exists</p><h2 id="why-title">The information matters.<br>The phone does not belong in your hand.</h2></div>
-    <p>Generic sports-watch apps do not understand EUC telemetry. WheelDash keeps wheel data, safety warnings and ride tools visible without adding another distraction.</p>
+    <div><p class="wd-kicker">Why WheelDash exists</p><h2 id="why-title">Not a phone mirror.<br>A complete app on your wrist.</h2></div>
+    <p>WheelDash handles direct EUC telemetry on the watch itself, then adds configurable safety warnings, ride recording and supported accessories. Mapping, navigation and post-ride tools depend on the platform you choose.</p>
   </div>
 </section>
 
 <section class="wd-section" id="features" aria-labelledby="features-title">
-  <div class="wd-section__intro"><p class="wd-kicker">Core experience</p><h2 id="features-title">Built around the ride.</h2><p>These capabilities are available across the Garmin App, Garmin Datafield and Amazfit implementations.</p></div>
+  <div class="wd-section__intro"><p class="wd-kicker">Core experience</p><h2 id="features-title">Built around the ride.</h2><p>Direct telemetry, configurable alerts and recording form the core experience. Mapping, navigation, customization and post-ride tools differ by implementation.</p></div>
   <div class="wd-feature-grid wd-feature-grid--shared">
     <article class="wd-feature"><span class="wd-feature__icon">⌁</span><h3>Live telemetry</h3><p>See speed, battery, temperature, PWM and other essential EUC information.</p></article>
-    <article class="wd-feature"><span class="wd-feature__icon">⚠</span><h3>Safety alerts</h3><p>Use visual warnings and Bluetooth audio alerts for the conditions you configure.</p></article>
-    <article class="wd-feature"><span class="wd-feature__icon">▧</span><h3>Offline maps</h3><p>Keep map context on the watch. Offline map display is separate from navigation.</p></article>
-    <article class="wd-feature wd-feature--image"><img src="/assets/images/Engo2.png" alt="ENGO smart glasses supported by WheelDash"><div><span class="wd-feature__icon">＋</span><h3>Connected accessories</h3><p>Use supported ENGO glasses and Garmin Varia radar across all three implementations.</p></div></article>
-    <article class="wd-feature wd-feature--wide"><span class="wd-feature__number">05</span><div><h3>Phone-free riding</h3><p>WheelDash connects supported watches directly to your EUC, so key information remains visible while the phone stays in your pocket.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
+    <article class="wd-feature"><span class="wd-feature__icon">⚠</span><h3>Safety alerts</h3><p>Configure visual warnings plus watch sounds or vibration where the device supports them.</p></article>
+    <article class="wd-feature"><span class="wd-feature__icon">▧</span><h3>On-watch navigation</h3><p>On Amazfit, route and map data can be loaded onto the watch before the ride. Navigation availability is platform- and region-specific.</p></article>
+    <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/gallery/engo4.jpg" alt="ENGO glasses showing WheelDash navigation while riding"><div><span class="wd-feature__icon">＋</span><h3>Connected accessories</h3><p>Supported implementations can connect directly to ENGO glasses and Garmin Varia radar.</p></div></article>
+    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><span class="wd-feature__icon">⌁</span><h3>Phone-free riding</h3><p>In direct EUC mode, telemetry, alarms and recording run on the watch. Amazfit uses the phone for setup, route transfer, ride upload and optional EUC World mode.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
   </div>
 </section>
 
@@ -58,9 +100,9 @@ classes: wheeldash-home
     <article class="wd-platform-card{% if platform_id == 'amazfit' %} wd-platform-card--accent{% endif %}">
       <p class="wd-platform-card__label">{{ platform.name }}{% if platform_id == 'amazfit' %}<span>Integrated experience</span>{% endif %}</p>
       <h3>{{ platform.short }}</h3><p>{{ platform.explanation }}</p>
-      {% if platform_id == 'garmin_app' %}<ul><li>Standalone riding display</li><li>Offline maps, no navigation</li><li>Garmin Connect recording</li></ul>{% endif %}
-      {% if platform_id == 'garmin_datafield' %}<ul><li>Runs inside a Garmin activity</li><li>Garmin-native navigation</li><li>Garmin Connect recording</li></ul>{% endif %}
-      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
+      {% if platform_id == 'garmin_app' %}<ul><li>Standalone riding display</li><li>On-watch alerts</li><li>Garmin Connect recording</li></ul>{% endif %}
+      {% if platform_id == 'garmin_datafield' %}<ul><li>Direct EUC connection</li><li>6 or 8 configurable fields</li><li>Garmin recording and navigation</li></ul>{% endif %}
+      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Preloaded navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
       <a class="wd-text-link" href="{{ platform.install_url }}">{{ platform.install_label }} <span aria-hidden="true">→</span></a>
     </article>
   {% endfor %}

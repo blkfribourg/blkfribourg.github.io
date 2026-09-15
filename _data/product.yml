@@ -10,16 +10,21 @@ supported_euc_brands:
   - Nosfet
 
 amazfit_devices:
-  - Active 2, round or square, with or without NFC
+  - Active 2 NFC Round
+  - Active 2 NFC Square
+  - Active 2 Round
+  - Active 2 Square
   - Active 3 Premium
   - Active Max
   - Balance 2
   - Balance 2 XT
   - Bip 6
+  - Bip Max
   - Cheetah 2 Pro
   - Cheetah 2 Ultra
   - T-Rex 3
-  - T-Rex 3 Pro, 44 mm or 48 mm
+  - T-Rex 3 Pro 44 mm
+  - T-Rex 3 Pro 48 mm
   - T-Rex Ultra 2
 
 amazfit_experimental_devices:
@@ -37,8 +42,8 @@ urls:
   garmin_app: "https://apps.garmin.com/apps/363ecacc-1b86-4863-a13c-49453303e900?tid=1"
   garmin_catalog: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
   amazfit_install: "/install_amazfit/"
-  amazfit_release: "https://github.com/blkfribourg/WheelDash_Amazfit_Beta/releases/tag/v0.0.82"
-  amazfit_experimental_release: "https://github.com/blkfribourg/WheelDash_Amazfit_Beta/releases#release-v0.0.82-api3.6"
+  amazfit_release: "https://github.com/blkfribourg/WheelDash_Amazfit_Beta/releases"
+  amazfit_experimental_release: "https://github.com/blkfribourg/WheelDash_Amazfit_Beta/releases"
   portal_login: "https://wd.nijalabs.com/"
   public_rides: "https://wd.nijalabs.com/discover"
   leaderboard: "https://wd.nijalabs.com/leaderboards"
@@ -71,7 +76,7 @@ features:
   - id: safety_alerts
     name: Safety alerts
   - id: audio_alerts
-    name: Bluetooth audio alerts
+    name: Audible and vibration alerts
   - id: engo
     name: ENGO integration
   - id: varia
@@ -85,7 +90,7 @@ features:
   - id: portal
     name: WheelDash Ride Portal
   - id: dashboards
-    name: Custom dashboards
+    name: Dashboard customization
 
 platform_order:
   - garmin_app
@@ -96,53 +101,53 @@ platforms:
   garmin_app:
     name: Garmin App
     short: Standalone watch app
-    explanation: "Open WheelDash directly from the Garmin app list for a focused, standalone riding display."
+    explanation: "Open WheelDash directly from the Garmin app list. The watch connects to the EUC, decodes its data, manages alerts and records the ride."
     install_url: "https://apps.garmin.com/apps/363ecacc-1b86-4863-a13c-49453303e900?tid=1"
     install_label: Install Garmin App
     features:
       telemetry: { state: available, label: Available }
       safety_alerts: { state: available, label: Available }
-      audio_alerts: { state: available, label: Available }
+      audio_alerts: { state: available, label: Watch tones + vibration, note: "Exact alert output depends on watch capabilities." }
       engo: { state: available, label: Available }
       varia: { state: available, label: Available }
-      offline_maps: { state: available, label: Available }
-      navigation: { state: unavailable, label: Not available, note: "The standalone Garmin App can display offline maps but does not provide navigation." }
+      offline_maps: { state: unavailable, label: Not available }
+      navigation: { state: unavailable, label: Not available, note: "The standalone Garmin App focuses on telemetry, alerts and recording; it does not include a map or navigation view." }
       recording: { state: platform, label: Garmin Connect }
       portal: { state: not_applicable, label: Not used for Garmin rides }
       dashboards: { state: unavailable, label: Not available }
   garmin_datafield:
     name: Garmin Datafield
     short: Inside a Garmin activity
-    explanation: "Add WheelDash to a Garmin activity screen to combine EUC telemetry with Garmin activity recording and native navigation."
+    explanation: "Add WheelDash to a Garmin activity screen. The Datafield connects directly to the EUC while the Garmin activity handles recording, maps and navigation."
     install_url: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
     install_label: Find Garmin Datafield
     features:
-      telemetry: { state: available, label: Available }
-      safety_alerts: { state: available, label: Available }
-      audio_alerts: { state: available, label: Available }
-      engo: { state: available, label: Available }
+      telemetry: { state: available, label: Direct BLE, note: "Current wheel choices are Begode/Gotway, Leaperkim/NOSFET and KingSong." }
+      safety_alerts: { state: available, label: Visual warnings }
+      audio_alerts: { state: available, label: Watch tones + vibration, note: "Exact alert output depends on watch capabilities." }
+      engo: { state: available, label: Telemetry + navigation cues, note: "Can send EUC data and compatible Garmin activity navigation cues to ENGO glasses." }
       varia: { state: available, label: Available }
-      offline_maps: { state: available, label: Available }
-      navigation: { state: platform, label: Garmin-native navigation, note: "Uses Garmin's navigation and inherits Garmin platform behaviour and limitations." }
-      recording: { state: platform, label: Garmin Connect }
+      offline_maps: { state: platform, label: Garmin map screens, note: "The Datafield does not draw a map. Use the map screens supplied by a compatible Garmin activity and device." }
+      navigation: { state: platform, label: Garmin activity navigation, note: "Navigation belongs to the host Garmin activity. WheelDash can read compatible turn and destination fields for ENGO glasses." }
+      recording: { state: platform, label: Garmin activity + EUC FIT fields, note: "The host activity records the ride; WheelDash contributes EUC record and session fields to the FIT file." }
       portal: { state: not_applicable, label: Not used for Garmin rides }
-      dashboards: { state: unavailable, label: Not available }
+      dashboards: { state: platform, label: 6 or 8 configurable fields, note: "Choose the displayed metrics within the Datafield's fixed layout." }
   amazfit:
     name: Amazfit
     short: Integrated WheelDash experience
-    explanation: "Use custom dashboards, WheelDash recording and WheelDash navigation in supported regions."
+    explanation: "Use custom dashboards, on-watch recording and WheelDash navigation with route and map data transferred to the watch before the ride."
     install_url: "/install_amazfit/"
     install_label: Install on Amazfit
     features:
       telemetry: { state: available, label: Available }
       safety_alerts: { state: available, label: Available }
-      audio_alerts: { state: available, label: Available }
+      audio_alerts: { state: available, label: Watch sounds + vibration }
       engo: { state: available, label: Available }
       varia: { state: available, label: Available }
-      offline_maps: { state: available, label: Available }
-      navigation: { state: region, label: France and USA only, note: "Uses WheelDash-operated personal infrastructure and is available only in supported regions." }
-      recording: { state: available, label: WheelDash recording }
-      portal: { state: available, label: Available }
-      dashboards: { state: available, label: Available }
+      offline_maps: { state: available, label: Preloaded on the watch, note: "Route and raster map data are transferred through the phone before the ride." }
+      navigation: { state: region, label: France and USA only, note: "Route data is transferred to the watch before the ride. Coverage uses WheelDash-operated personal infrastructure and is limited to supported regions." }
+      recording: { state: available, label: On-watch recording }
+      portal: { state: available, label: Upload through phone }
+      dashboards: { state: available, label: Custom layouts }
 
 garmin_latency_note: "Bluetooth responsiveness on Garmin can vary by watch model, firmware and how frequently the wheel sends data. Wheels with higher Bluetooth traffic may show more noticeable delay on some watches."

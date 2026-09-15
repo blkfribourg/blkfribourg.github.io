@@ -2,7 +2,7 @@
 permalink: /install_amazfit/
 title: "Install WheelDash on an Amazfit watch"
 excerpt: "Install WheelDash, a standalone app for Amazfit (and Garmin) devices."
-last_modified_at: 2026-01-24
+last_modified_at: 2026-08-27
 toc: true
 author_profile: false
 author: nijaba
@@ -14,7 +14,7 @@ If you want to support this project, visit my <a href="https://ko-fi.com/wheelda
 
 ## Prerequisites
 
-* A compatible Amazfit device with a current v0.0.82 package
+* A compatible Amazfit device with a current WheelDash package
 {% for device in site.data.product.amazfit_devices %}
     - {{ device }}
 {% endfor %}
@@ -28,12 +28,12 @@ An untested API 3.6 / ZeppOS 3.5 build is available for these older devices:
 - {{ device }}
 {% endfor %}
 
-This build has not been tested on real hardware, and some features may not work as intended. Use the [experimental API 3.6 release]({{ site.data.product.urls.amazfit_experimental_release }}) if you want to test it and provide feedback.
+This build has not been tested on real hardware, and some features may not work as intended. Check the [WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_experimental_release }}) for an experimental package if you want to test it and provide feedback.
 {: .notice--warning}
 
 ## Installation
 
-1. Open the [current WheelDash v0.0.82 release]({{ site.data.product.urls.amazfit_release }}). Older-device testers should use the experimental release linked above.
+1. Open the [WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_release }}). Older-device testers should choose an experimental package where available.
 2. Scroll to find your watch model
 3. Open the zepp app and go to __Profile > Settings > About__, then repeatedly tap the Zepp app's icon (or version number) about 7-10 times until a confirmation pops up, which unlocks features like scanning QR codes for installing custom apps. 
 4. In the Zepp app, go to __Device > General > Developer Mode > Mini Program__ and click on + and select scan

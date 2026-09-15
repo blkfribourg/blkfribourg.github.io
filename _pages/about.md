@@ -1,17 +1,17 @@
 ---
 permalink: /about_wheeldash/
 title: "About WheelDash"
-excerpt: "WheelDash is the complete smartwatch companion for electric unicycle riders."
-last_modified_at: 2026-07-27
+excerpt: "WheelDash includes standalone smartwatch apps and a Garmin Datafield that connect directly to supported electric unicycles."
+last_modified_at: 2026-08-27
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
 ---
 
-WheelDash is an independently developed project built by an electric unicycle rider. It puts useful EUC information, warnings and ride tools on compatible Garmin and Amazfit watches. The Garmin apps and VESCDash are open source, while the Amazfit app's source code is not currently public.
+WheelDash is an independently developed project built by an electric unicycle rider. It puts useful EUC information, warnings and ride tools on compatible Garmin and Amazfit watches. The Garmin versions and VESCDash are free and open source. The Amazfit version is also free, and its source code will be released once its active development phase is complete.
 
-If you want to support its development, visit the [WheelDash Ko-fi page]({{ site.data.product.urls.kofi }}).
+If you want to support its development, read about [donations and WheelDash's approach to future funding](/donate/).
 {: .notice--info}
 
 ## Why WheelDash exists
@@ -22,17 +22,17 @@ The first Garmin version connected directly to the EUC, displayed live telemetry
 
 ## WheelDash today
 
-WheelDash now covers the complete riding workflow:
+WheelDash now covers the core ride on the watch, with additional capabilities depending on the implementation:
 
 - live EUC telemetry on the wrist;
-- visual and Bluetooth audio safety alerts;
-- offline map display;
+- configurable visual, audible and vibration safety alerts, depending on watch capability;
+- preloaded maps and navigation on supported implementations;
 - ENGO glasses and Garmin Varia integration;
 - ride recording;
 - platform-specific navigation;
 - post-ride analysis and public community features through the WheelDash Ride Portal for Amazfit recordings.
 
-WheelDash connects directly to supported EUCs. It does not require WheelLog, DarknessBot or EUC World, although displaying information supplied by EUC World can be used as an optional setup.
+In direct EUC mode, WheelDash connects the watch straight to a supported wheel and handles telemetry, alarms and recording without using a phone as the live-data middleman. It does not require WheelLog, DarknessBot or EUC World. Amazfit also offers an optional EUC World mode; that mode is explicitly phone-relayed rather than a direct watch-to-wheel connection.
 
 ## Three implementations
 
@@ -48,7 +48,7 @@ WheelDash currently supports EUCs from these manufacturers:
 - {{ brand }}
 {% endfor %}
 
-Recent Inmotion models starting with the V11 are supported. If your EUC model is not recognized, [contact the developer](/contact/) with its brand and model.
+Supported models and telemetry fields vary by implementation, wheel protocol and firmware. The Garmin Datafield currently exposes Begode/Gotway, Leaperkim/NOSFET and KingSong wheel choices. The supplied standalone applications contain InMotion decoders for the V9, V11/V11Y, V12, V13 and V14 families; the Amazfit implementation also identifies the P6. Some InMotion paths are marked experimental or have only limited hardware verification. If your EUC model is not recognized, [contact the developer](/contact/) with its brand, model and firmware.
 
 ## Compatible Garmin watches
 
@@ -59,7 +59,7 @@ Garmin compatibility changes as watches and Connect IQ support evolve. Check the
 
 ## Compatible Amazfit watches
 
-Current WheelDash v0.0.82 packages are available for:
+Current WheelDash packages are available for:
 
 {% for device in site.data.product.amazfit_devices %}
 - {{ device }}
@@ -73,14 +73,14 @@ An API 3.6 / ZeppOS 3.5 build is also available for older watches:
 - {{ device }}
 {% endfor %}
 
-This older-device build has not been tested on real hardware. Some features may not work as intended, so it should be treated as experimental. [View the experimental release]({{ site.data.product.urls.amazfit_experimental_release }}) for installation QR codes and current notes.
+This older-device build has not been tested on real hardware. Some features may not work as intended, so it should be treated as experimental. [View the WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_experimental_release }}) for installation QR codes and current notes.
 {: .notice--warning}
 
 See the [Amazfit installation guide](/install_amazfit/) for current and experimental installation paths.
 
 ## Ride recording and review
 
-Garmin App and Garmin Datafield rides are recorded in the Garmin ecosystem and reviewed through Garmin Connect. Amazfit uses WheelDash recording and can upload rides to the WheelDash Ride Portal for maps, detailed statistics and intentional public sharing.
+The standalone Garmin App manages a Garmin recording session. The Garmin Datafield runs inside a host Garmin activity and contributes EUC record and session fields to its FIT file. Both are reviewed through Garmin Connect. Amazfit records on the watch; afterwards, the phone connection is used to upload a ride to the WheelDash Ride Portal for maps, detailed statistics and intentional public sharing.
 
 Garmin rides are not uploaded to the WheelDash Ride Portal.
 
