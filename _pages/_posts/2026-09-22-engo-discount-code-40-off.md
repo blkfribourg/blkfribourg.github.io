@@ -13,7 +13,7 @@ excerpt: "Use WheelDash discount code DSLWHL_40 to get 40€ or $40 off ENGO sma
 
 The previous WheelDash discount code no longer works.
 
-## ENGO discount code: DSLWHL_40
+## New ENGO discount code: DSLWHL_40
 
 Use the ENGO promo code **DSLWHL_40** to get **40€ or $40 off all currently available ENGO smart-glasses models, depending on your region**.
 {: .notice--info}
