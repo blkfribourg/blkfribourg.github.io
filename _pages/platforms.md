@@ -12,6 +12,7 @@ WheelDash has three implementations. Start with the watch you own, then choose t
 {% for platform_id in site.data.product.platform_order %}
 {% assign platform = site.data.product.platforms[platform_id] %}
   <article class="wd-platform-card{% if platform_id == 'amazfit' %} wd-platform-card--accent{% endif %}">
+    {% if platform_id == 'amazfit' %}<img class="wd-platform-card__watch" src="/assets/images/wheeldash-active2-hero.webp" width="170" height="186" alt="Amazfit Active 2 running WheelDash" loading="lazy">{% endif %}
     <p class="wd-platform-card__label">{{ platform.name }}</p>
     <h2>{{ platform.short }}</h2>
     <p>{{ platform.explanation }}</p>
