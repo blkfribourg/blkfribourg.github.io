@@ -20,6 +20,7 @@ classes: wheeldash-home
       <a class="wd-button wd-button--ghost" href="{{ product.urls.public_rides }}">Explore public rides</a>
     </div>
     <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Fast, reactive telemetry and safety alerts.</strong> No phone relay in direct EUC mode.</p></div>
+    <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Build your own dashboard.</strong> Custom watch layouts on Amazfit. <a href="#dashboards">See examples <span aria-hidden="true">→</span></a></p></div>
     <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
@@ -126,6 +127,34 @@ classes: wheeldash-home
   </div>
 </section>
 
+<section class="wd-section wd-dashboards" id="dashboards" aria-labelledby="dashboards-title">
+  <div class="wd-section__intro"><p class="wd-kicker">Your dashboard</p><h2 id="dashboards-title">Your layout.<br>Your data.</h2><p>On Amazfit, place speed, PWM, battery, temperatures, current, the Varia radar bar and your own text exactly where you want them. Build layouts on the watch or in the <a href="https://wd.nijalabs.com/layout-editor">Ride Portal's layout editor</a>.</p></div>
+  <div class="wd-dashboards__grid">
+    <figure class="wd-dash-face">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/minimal.webp" width="720" height="720" loading="lazy" alt="Minimal round layout: large speed, battery bar and recording indicator"></div>
+      <figcaption><strong>Minimal</strong><span>Speed · battery bar · rec</span></figcaption>
+    </figure>
+    <figure class="wd-dash-face">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/racing.webp" width="720" height="720" loading="lazy" alt="Racing round layout: speed arc gauge around the screen with PWM, battery and temperature"></div>
+      <figcaption><strong>Racing</strong><span>Speed arc · PWM · batt · temp</span></figcaption>
+    </figure>
+    <figure class="wd-dash-face">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/commute.webp" width="720" height="720" loading="lazy" alt="Commute round layout: free-text label, speed, battery and temperature bars, trip, current, Varia radar bar and alarm message"></div>
+      <figcaption><strong>Commute</strong><span>Free text · Varia · alarm</span></figcaption>
+    </figure>
+    <figure class="wd-dash-face wd-dash-face--square">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/stats.webp" width="720" height="829" loading="lazy" alt="Square trip-stats layout: ride time, trip distance, average moving speed, top speed, battery use per km and voltage"></div>
+      <figcaption><strong>Trip stats</strong><span>Square · 6 labelled values</span></figcaption>
+    </figure>
+  </div>
+  <ul class="wd-dashboards__platforms" aria-label="Dashboard customization by platform">
+    <li class="is-green">Amazfit · custom layouts, round and square</li>
+    <li class="is-blue">Garmin Datafield · 6 or 8 configurable fields</li>
+    <li>Garmin App · fixed dashboard</li>
+  </ul>
+  <p class="wd-dashboards__note">Example layouts, drawn with the Ride Portal's watch preview.</p>
+</section>
+
 <section class="wd-section wd-platforms" id="platforms" aria-labelledby="platform-title">
   <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Choose your platform</p><h2 id="platform-title">One ecosystem.<br>Three implementations.</h2></div><p>Garmin riders can choose a standalone app or a datafield inside a Garmin activity. Amazfit provides the most integrated WheelDash workflow.</p></div>
   <div class="wd-platform-cards wd-platform-cards--three">
@@ -143,35 +172,6 @@ classes: wheeldash-home
   </div>
   {% include platform-comparison.html %}
   <div class="wd-comparison-footer"><p>Garmin rides remain in Garmin Connect. Amazfit rides can use the WheelDash Ride Portal.</p><a class="wd-text-link" href="/platforms/">View the detailed comparison <span aria-hidden="true">→</span></a></div>
-</section>
-
-<section class="wd-dashboards" aria-labelledby="dashboards-title">
-  <div class="wd-section__intro">
-    <p class="wd-kicker">06 / Customizable Dashboards</p>
-    <h2 id="dashboards-title">Build the dashboard you actually need.</h2>
-  </div>
-  <div class="wd-dashboards__grid">
-    <article class="wd-dashboard-card is-riding">
-      <span class="wd-dashboard-icon">◈</span>
-      <h3>Riding</h3>
-      <p>Speed, battery, power, distance</p>
-    </article>
-    <article class="wd-dashboard-card is-performance">
-      <span class="wd-dashboard-icon">▲</span>
-      <h3>Performance</h3>
-      <p>Peak power, efficiency, avg speed</p>
-    </article>
-    <article class="wd-dashboard-card is-alerts">
-      <span class="wd-dashboard-icon">⚠</span>
-      <h3>Alerts</h3>
-      <p>Temperature, battery low, PWM max</p>
-    </article>
-    <article class="wd-dashboard-card is-navigation">
-      <span class="wd-dashboard-icon">◆</span>
-      <h3>Navigation</h3>
-      <p>Turn-by-turn, next waypoint, ETA</p>
-    </article>
-  </div>
 </section>
 
 <section class="wd-portal" id="ride-portal" aria-labelledby="portal-title">
