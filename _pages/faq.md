@@ -3,26 +3,26 @@ title: "FAQ"
 permalink: /wheeldash_faq/
 author_profile: false
 author: BlkFri
-last_modified_at: 2023-10-27
-classes: wd-doc
+last_modified_at: 2026-10-08
+classes: wd-doc wd-faq
 ---
 
-## I can't find WheelDash on the Garmin Store or have an error saying the page doesn't exists.
+## I can't find WheelDash on the Garmin store, or the store page says it doesn't exist
 
-Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches.
+WheelDash only appears for watches it supports. Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches. For Amazfit, see the [compatible Amazfit watches](/about_wheeldash/#compatible-amazfit-watches) and the [installation guide](/install_amazfit/).
 
-## I can't connect to my wheel!
+## I can't connect to my wheel
 
-Please ensure you've selected the right profile and that you properly configured the brand setting in WheelDash settings. If you owns a Kingsong please also try "Kingsong (old)" in Wheel Brand setting, especially if your EUC is pre-2021.
+Make sure you selected the right profile and that its wheel brand matches your EUC. Only your wheel should be powered on nearby during the first connection. On Garmin, if you own a KingSong, also try the "Kingsong (old)" brand, especially if your wheel is from before 2021.
 
-## The battery percentage reported by WheelDash is different from other apps I use!
+## WheelDash shows a different battery percentage from other apps
 
-In most cases, WheelDash consider a battery cell is empty at 3.2v, some app use different values, usually between 3.0 to 3.2v. You may find WheelDash is a bit pessimistic, but I'd rather like you to have a good suprise than a bad one.
+Battery percentage is calculated from the pack voltage, and every app uses its own voltage-to-percentage curve, so readings can differ by a few percent. WheelDash leans towards the cautious side: a lower number that turns out to be pessimistic is better than running out of battery unexpectedly. On Amazfit, you can adjust the curve with the Minimum Cell Voltage setting in your wheel profile.
 
-## Is there a manual for WheelDash?
+## Is there a manual?
 
-Yes, it's available here: <a href="/assets/pdf/WheelDash_Manual_v0.1.pdf">WheelDash manual</a>
+The setup guides cover installation and first use: [WheelDash for Garmin](/wheeldash_quickstart/) and [WheelDash for Amazfit](/install_amazfit/). The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
 
-## My watch keeps disconnecting from my EUC while riding!
+## My watch keeps disconnecting from my EUC while riding
 
 {{ site.data.product.garmin_latency_note }} WheelDash cannot remove latency introduced by the watch platform. If the issue persists, include your watch model and firmware version when [contacting support](/contact/).

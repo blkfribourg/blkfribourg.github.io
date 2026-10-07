@@ -390,6 +390,8 @@ p.wd-updates__all { margin: 1.5rem 0 0; }
 .wd-doc .page__content > ol { max-width: 820px; }
 .wd-doc .page__content h2 { position: relative; max-width: 850px; margin-top: 3.6rem; margin-bottom: 1.25rem; padding: 0 0 0 1rem; border: 0; color: var(--wd-text); font-size: clamp(1.65rem,3vw,2.25rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.18; }
 .wd-doc .page__content h2::before { position: absolute; top: .08em; bottom: .08em; left: 0; width: 3px; border-radius: 99px; background: var(--wd-green); content: ""; }
+.wd-doc .page__content > h2:first-child { margin-top: 0; }
+.wd-faq .page__content h2 { margin-top: 2.6rem; font-size: clamp(1.2rem,2vw,1.45rem); letter-spacing: -.02em; }
 .wd-doc .page__content h3 { max-width: 820px; margin-top: 2.5rem; color: var(--wd-text); font-size: 1.18rem; font-weight: 700; letter-spacing: -.015em; }
 .wd-doc .page__content h4 { color: var(--wd-text); }
 .wd-doc .page__content strong { color: #eef1f5; }
