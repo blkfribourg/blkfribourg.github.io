@@ -128,7 +128,63 @@ classes: wheeldash-home
 </section>
 
 <section class="wd-section wd-dashboards" id="dashboards" aria-labelledby="dashboards-title">
-  <div class="wd-section__intro"><p class="wd-kicker">Your dashboard</p><h2 id="dashboards-title">Your layout.<br>Your data.</h2><p>On Amazfit, place speed, PWM, battery, temperatures, current, the Varia radar bar and your own text exactly where you want them. Build layouts on the watch or in the <a href="https://wd.nijalabs.com/layout-editor">Ride Portal's layout editor</a>.</p></div>
+  <div class="wd-section__intro"><p class="wd-kicker">Your dashboard</p><h2 id="dashboards-title">Your layout.<br>Your data.</h2><p>On Amazfit, the dashboard is yours to build. Put any value anywhere on the screen, as a big number, a gauge, a bar or plain text, and split it up with separators. Build layouts in WheelDash's settings in the Zepp app, or in the <a href="https://wd.nijalabs.com/layout-editor">Ride Portal's layout editor</a>.</p></div>
+  <div class="wd-dash-builder">
+    <figure class="wd-dash-anno">
+      <svg viewBox="0 0 504 504" role="img" aria-labelledby="wd-dash-anno-title">
+        <title id="wd-dash-anno-title">One layout taken apart: each numbered outline is a block placed by the rider.</title>
+        <circle cx="252" cy="252" r="250" class="wd-dash-anno__bezel"/>
+        <image href="/assets/images/dashboards/showcase.webp" x="12" y="12" width="480" height="480"/>
+        <rect class="wd-dash-anno__box" x="189" y="45" width="126" height="40" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="189" cy="45" r="13"/><text x="189" y="50">1</text></g>
+        <rect class="wd-dash-anno__box" x="159" y="83" width="186" height="34" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="159" cy="83" r="13"/><text x="159" y="88">2</text></g>
+        <rect class="wd-dash-anno__box" x="47" y="149" width="110" height="110" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="47" cy="149" r="13"/><text x="47" y="154">3</text></g>
+        <rect class="wd-dash-anno__box" x="347" y="149" width="110" height="110" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="457" cy="149" r="13"/><text x="457" y="154">3</text></g>
+        <rect class="wd-dash-anno__box" x="155" y="113" width="194" height="166" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="155" cy="113" r="13"/><text x="155" y="118">4</text></g>
+        <rect class="wd-dash-anno__box" x="99" y="278" width="306" height="14" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="405" cy="278" r="13"/><text x="405" y="283">5</text></g>
+        <rect class="wd-dash-anno__box" x="105" y="291" width="144" height="82" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="105" cy="291" r="13"/><text x="105" y="296">6</text></g>
+        <rect class="wd-dash-anno__box" x="255" y="291" width="144" height="82" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="399" cy="291" r="13"/><text x="399" y="296">6</text></g>
+        <rect class="wd-dash-anno__box" x="139" y="375" width="226" height="24" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="139" cy="375" r="13"/><text x="139" y="380">7</text></g>
+        <rect class="wd-dash-anno__box" x="129" y="403" width="246" height="30" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="129" cy="433" r="13"/><text x="129" y="438">8</text></g>
+        <rect class="wd-dash-anno__box" x="233" y="435" width="38" height="38" rx="6"/>
+        <g class="wd-dash-anno__badge"><circle cx="271" cy="435" r="13"/><text x="271" y="440">9</text></g>
+      </svg>
+    </figure>
+    <div class="wd-dash-builder__copy">
+      <ol class="wd-dash-steps">
+        <li><b>1</b> Add a block</li>
+        <li><b>2</b> Pick the data it shows</li>
+        <li><b>3</b> Drag, resize, recolour</li>
+      </ol>
+      <ol class="wd-dash-legend">
+        <li><strong>Clock</strong></li>
+        <li><strong>Plain text</strong> <span>Your own words, up to 48 characters.</span></li>
+        <li><strong>Circular gauge</strong> <span>Any value as an arc, with your colours, range and angles.</span></li>
+        <li><strong>Value</strong> <span>A plain number, as large as you like.</span></li>
+        <li><strong>Separator</strong> <span>Lines to group what belongs together.</span></li>
+        <li><strong>Labelled value</strong> <span>A value with your own caption above it.</span></li>
+        <li><strong>Progress bar</strong> <span>Horizontal or vertical.</span></li>
+        <li><strong>Varia radar bar</strong> <span>Approaching vehicles from a Garmin Varia.</span></li>
+        <li><strong>Recording indicator</strong></li>
+      </ol>
+      <p class="wd-dash-builder__more">Also available: speed-limit indicator and alarm message. Size, colour, alignment, decimals and units are set per block.</p>
+    </div>
+  </div>
+  <div class="wd-dash-sources">
+    <p>Any block can show</p>
+    <ul><li>Speed</li><li>PWM</li><li>Battery</li><li>Temperature</li><li>Motor temp</li><li>Coil temp</li><li>Tyre pressure</li><li>Voltage</li><li>Current</li><li>Phase current</li><li>Top speed</li><li>Average speed</li><li>Avg moving speed</li><li>Trip distance</li><li>Total distance</li><li>Profile distance</li><li>Riding time</li><li>Battery use</li></ul>
+    <small>Motor and coil temperature and tyre pressure depend on the wheel.</small>
+  </div>
+  <p class="wd-dash-examples-title">Other layouts built from the same blocks</p>
   <div class="wd-dashboards__grid">
     <figure class="wd-dash-face">
       <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/minimal.webp" width="720" height="720" loading="lazy" alt="Round layout: large speed, battery bar and recording indicator"></div>
