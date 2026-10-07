@@ -145,6 +145,35 @@ classes: wheeldash-home
   <div class="wd-comparison-footer"><p>Garmin rides remain in Garmin Connect. Amazfit rides can use the WheelDash Ride Portal.</p><a class="wd-text-link" href="/platforms/">View the detailed comparison <span aria-hidden="true">→</span></a></div>
 </section>
 
+<section class="wd-dashboards" aria-labelledby="dashboards-title">
+  <div class="wd-section__intro">
+    <p class="wd-kicker">06 / Customizable Dashboards</p>
+    <h2 id="dashboards-title">Build the dashboard you actually need.</h2>
+  </div>
+  <div class="wd-dashboards__grid">
+    <article class="wd-dashboard-card is-riding">
+      <span class="wd-dashboard-icon">◈</span>
+      <h3>Riding</h3>
+      <p>Speed, battery, power, distance</p>
+    </article>
+    <article class="wd-dashboard-card is-performance">
+      <span class="wd-dashboard-icon">▲</span>
+      <h3>Performance</h3>
+      <p>Peak power, efficiency, avg speed</p>
+    </article>
+    <article class="wd-dashboard-card is-alerts">
+      <span class="wd-dashboard-icon">⚠</span>
+      <h3>Alerts</h3>
+      <p>Temperature, battery low, PWM max</p>
+    </article>
+    <article class="wd-dashboard-card is-navigation">
+      <span class="wd-dashboard-icon">◆</span>
+      <h3>Navigation</h3>
+      <p>Turn-by-turn, next waypoint, ETA</p>
+    </article>
+  </div>
+</section>
+
 <section class="wd-portal" id="ride-portal" aria-labelledby="portal-title">
   <div class="wd-portal__copy"><p class="wd-kicker">After the ride</p><h2 id="portal-title">Explore the wider ecosystem.</h2><p>Amazfit riders can upload and review WheelDash recordings. Everyone can browse intentionally shared public rides, view the community leaderboard and discover segments where riders have shared activity.</p><div class="wd-actions"><a class="wd-button wd-button--primary" href="{{ product.urls.public_rides }}">Explore public rides</a><a class="wd-button wd-button--ghost" href="{{ product.urls.portal_login }}">Sign in</a></div></div>
   <div class="wd-portal__preview"><img src="/assets/images/record-feature.png" alt="Route imagery representing WheelDash ride maps"><span>WheelDash Ride Portal</span></div>

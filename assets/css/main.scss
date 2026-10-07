@@ -133,6 +133,26 @@ p.wd-trace__legend { display: flex; margin: .7rem 0 0; flex-wrap: wrap; align-it
 .wd-trace__legend .is-green { --c: var(--wd-green); }
 .wd-trace__legend .is-blue { --c: var(--wd-blue); }
 .wd-trace__legend .is-amber { --c: var(--wd-amber); }
+.wd-dashboards { max-width: 1312px; margin: 5rem auto; padding: 0 1.5rem; }
+.wd-dashboards__grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 1.5rem; margin-top: 3rem; }
+.wd-dashboard-card { padding: 1.5rem; border: 1px solid var(--wd-border); border-radius: 12px; background: var(--wd-surface); display: flex; flex-direction: column; gap: 0.75rem; }
+.wd-dashboard-icon { font-size: 1.5rem; line-height: 1; }
+.wd-dashboard-card h3 { margin: 0; color: var(--wd-text); font-size: 1.1rem; font-weight: 700; }
+.wd-dashboard-card p { margin: 0; color: var(--wd-muted); font-size: 0.85rem; }
+.wd-dashboard-card.is-riding { --c: var(--wd-green); }
+.wd-dashboard-card.is-riding .wd-dashboard-icon { color: var(--wd-green); }
+.wd-dashboard-card.is-performance { --c: var(--wd-blue); }
+.wd-dashboard-card.is-performance .wd-dashboard-icon { color: var(--wd-blue); }
+.wd-dashboard-card.is-alerts { --c: var(--wd-red); }
+.wd-dashboard-card.is-alerts .wd-dashboard-icon { color: var(--wd-red); }
+.wd-dashboard-card.is-navigation { --c: var(--wd-amber); }
+.wd-dashboard-card.is-navigation .wd-dashboard-icon { color: var(--wd-amber); }
+@media (max-width: 600px) {
+  .wd-dashboards__grid { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  .wd-dashboard-card { padding: 1rem; }
+  .wd-dashboard-card h3 { font-size: 1rem; }
+  .wd-dashboard-card p { font-size: 0.8rem; }
+}
 @media (max-width: 1180px) {
   .wd-hero { grid-template-columns: 1fr; }
   .wd-hero__visual.wd-hero__watch { width: 74%; max-width: 560px; margin: 1rem 4% 0 auto; }
