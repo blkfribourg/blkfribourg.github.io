@@ -10,14 +10,14 @@ search: false
 
 /* WheelDash product language — shared visually with the Ride Portal. */
 :root {
-  --wd-bg: #080b10;
-  --wd-surface: #10151d;
-  --wd-surface-raised: #171e28;
-  --wd-border: #293241;
+  --wd-bg: #07090d;
+  --wd-surface: #0e131a;
+  --wd-surface-raised: #151b24;
+  --wd-border: #232c39;
   --wd-text: #f5f7fa;
-  --wd-muted: #98a3b3;
+  --wd-muted: #8d99aa;
   --wd-red: #ef4444;
-  --wd-red-dark: #c92e35;
+  --wd-red-dark: #b91c1c;
   --wd-blue: #60a5fa;
   --wd-green: #34d399;
   --wd-radius: 16px;
@@ -29,7 +29,7 @@ html { scroll-behavior: smooth; }
 body { background: var(--wd-bg); color: var(--wd-text); }
 body, button, input, select, textarea { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 a { color: var(--wd-blue); }
-.masthead { border-bottom: 1px solid rgba(255,255,255,.08); background: rgba(8,11,16,.92); backdrop-filter: blur(18px); }
+.masthead { border-bottom: 1px solid rgba(255,255,255,.08); background: rgba(7,9,13,.92); backdrop-filter: blur(18px); }
 .masthead__inner-wrap { max-width: 1280px; padding: .65rem 1.5rem; }
 .greedy-nav { background: transparent; }
 .greedy-nav .visible-links { display: flex; align-items: center; }
@@ -97,6 +97,14 @@ a { color: var(--wd-blue); }
 .wd-hero__availability a span { color: var(--wd-red); }
 .wd-hero__availability a:hover { color: var(--wd-text); }
 .wd-hero__visual { position: relative; overflow: hidden; border: 1px solid var(--wd-border); border-radius: 22px; background: var(--wd-surface); box-shadow: 0 30px 90px rgba(0,0,0,.4); }
+.wd-hero__watch { display: grid; aspect-ratio: 1; place-items: center; background: radial-gradient(circle at 50% 42%,rgba(58,70,90,.6),transparent 62%),radial-gradient(circle at 100% 100%,rgba(239,68,68,.12),transparent 45%),var(--wd-surface); }
+.wd-hero__watch img { display: block; width: 94%; max-width: 560px; height: auto; filter: drop-shadow(0 28px 40px rgba(0,0,0,.55)); }
+.wd-hero__chip { position: absolute; bottom: 1.1rem; display: inline-flex; padding: .45rem .75rem; align-items: center; gap: .45rem; border: 1px solid var(--wd-border); border-radius: 999px; background: rgba(7,9,13,.78); color: #c4ccd8; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; backdrop-filter: blur(8px); }
+.wd-hero__chip--live { left: 1.1rem; }
+.wd-hero__chip--rec { right: 1.1rem; }
+.wd-hero__chip i { width: 6px; height: 6px; border-radius: 50%; background: var(--wd-green); box-shadow: 0 0 0 4px rgba(52,211,153,.12); }
+.wd-direct { padding-top: 0; }
+.wd-direct .wd-connection { border: 1px solid var(--wd-border); border-radius: 22px; box-shadow: 0 30px 90px rgba(0,0,0,.3); }
 .wd-connection { padding: clamp(1.25rem,2.5vw,1.8rem); background: radial-gradient(circle at 100% 100%,rgba(239,68,68,.075),transparent 40%),var(--wd-surface); }
 .wd-connection__symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
 .wd-connection__header { display: flex; margin-bottom: 1.2rem; align-items: center; justify-content: space-between; gap: 1rem; }

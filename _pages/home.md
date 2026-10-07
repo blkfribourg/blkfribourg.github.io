@@ -22,7 +22,21 @@ classes: wheeldash-home
     <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Fast, reactive telemetry and safety alerts.</strong> No phone relay in direct EUC mode.</p></div>
     <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
   </div>
-  <div class="wd-hero__visual wd-connection" aria-label="Connection comparison: phone companion apps send data from the electric unicycle through a phone to the watch. WheelDash sends data directly from the electric unicycle to the watch.">
+  <div class="wd-hero__visual wd-hero__watch">
+    <img src="/assets/images/wheeldash-active2-hero.webp" width="750" height="819" alt="Amazfit Active 2 smartwatch showing the WheelDash riding dashboard with speed, battery and temperature">
+    <span class="wd-hero__chip wd-hero__chip--live"><i></i> Live · BLE</span>
+    <span class="wd-hero__chip wd-hero__chip--rec">Rec · Ride logged</span>
+  </div>
+</section>
+
+<section class="wd-proof" aria-label="WheelDash highlights">
+  <p><strong>Direct Bluetooth connection</strong><span>Your EUC talks to your watch</span></p>
+  <p><strong>No phone relay in direct mode</strong><span>Responsive data processed on your wrist</span></p>
+  <p><strong>A complete riding toolkit</strong><span>Telemetry, alerts, recording and platform-specific extras</span></p>
+</section>
+
+<section class="wd-section wd-direct" aria-label="How data reaches your wrist">
+  <div class="wd-connection" aria-label="Connection comparison: phone companion apps send data from the electric unicycle through a phone to the watch. WheelDash sends data directly from the electric unicycle to the watch.">
     <svg class="wd-connection__symbols" aria-hidden="true">
       <symbol id="wd-icon-euc" viewBox="0 0 48 48"><path d="M17 19c0-6 3-10 7-10s7 4 7 10v4"/><circle cx="24" cy="29" r="13"/><circle cx="24" cy="29" r="6"/><path d="M9 36h7m16 0h7"/></symbol>
       <symbol id="wd-icon-phone" viewBox="0 0 48 48"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M20 9h8M22 39h4"/></symbol>
@@ -66,12 +80,6 @@ classes: wheeldash-home
       <div><span>Live telemetry</span><span>Safety alerts</span><span>Ride recording</span><span>Accessories</span></div>
     </div>
   </div>
-</section>
-
-<section class="wd-proof" aria-label="WheelDash highlights">
-  <p><strong>Direct Bluetooth connection</strong><span>Your EUC talks to your watch</span></p>
-  <p><strong>No phone relay in direct mode</strong><span>Responsive data processed on your wrist</span></p>
-  <p><strong>A complete riding toolkit</strong><span>Telemetry, alerts, recording and platform-specific extras</span></p>
 </section>
 
 <section class="wd-section wd-problem" aria-labelledby="why-title">
