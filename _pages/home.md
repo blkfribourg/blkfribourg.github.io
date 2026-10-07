@@ -56,74 +56,33 @@ classes: wheeldash-home
   <p class="wd-trace__legend"><span>Real ride · 14,847 samples</span><i class="is-green">Speed</i><i class="is-blue">Battery</i><i class="is-amber">Temp</i></p>
 </section>
 
-<section class="wd-proof" aria-label="WheelDash highlights">
-  <p><strong>Direct Bluetooth connection</strong><span>Your EUC talks to your watch</span></p>
-  <p><strong>No phone relay in direct mode</strong><span>Responsive data processed on your wrist</span></p>
-  <p><strong>A complete riding toolkit</strong><span>Telemetry, alerts, recording and platform-specific extras</span></p>
-</section>
-
-<section class="wd-section wd-direct" aria-label="How data reaches your wrist">
-  <div class="wd-connection" aria-label="Connection comparison: phone companion apps send data from the electric unicycle through a phone to the watch. WheelDash sends data directly from the electric unicycle to the watch.">
-    <svg class="wd-connection__symbols" aria-hidden="true">
-      <symbol id="wd-icon-euc" viewBox="0 0 48 48"><path d="M17 19c0-6 3-10 7-10s7 4 7 10v4"/><circle cx="24" cy="29" r="13"/><circle cx="24" cy="29" r="6"/><path d="M9 36h7m16 0h7"/></symbol>
-      <symbol id="wd-icon-phone" viewBox="0 0 48 48"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M20 9h8M22 39h4"/></symbol>
-      <symbol id="wd-icon-watch" viewBox="0 0 48 48"><path d="M19 3h10l2 8H17l2-8Zm0 42h10l2-8H17l2 8Z"/><rect x="9" y="9" width="30" height="30" rx="8"/><rect x="15" y="15" width="18" height="18" rx="3"/></symbol>
-    </svg>
-    <div class="wd-connection__header">
-      <div><span class="wd-connection__step">The key difference</span><h2>How data reaches your wrist</h2></div>
-      <span class="wd-connection__signal"><i></i> Live Bluetooth</span>
-    </div>
-
-    <div class="wd-connection__route wd-connection__route--relay">
-      <div class="wd-connection__route-label">
-        <span>Phone companion apps</span>
-        <strong>Relayed through <span>a phone</span></strong>
-        <small>EUC World · DarknessBot · EUC Planet</small>
-      </div>
-      <div class="wd-connection__flow">
-        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-euc"></use></svg></span><strong>EUC</strong><small>Sends data</small></div>
-        <span class="wd-connection__arrow" aria-hidden="true"><i></i></span>
-        <div class="wd-connection__device wd-connection__device--middle"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-phone"></use></svg></span><strong>Phone</strong><small>Processes</small></div>
-        <span class="wd-connection__arrow" aria-hidden="true"><i></i></span>
-        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-watch"></use></svg></span><strong>Watch</strong><small>Mirrors</small></div>
-      </div>
-    </div>
-
-    <div class="wd-connection__route wd-connection__route--direct">
-      <div class="wd-connection__route-label">
-        <span>WheelDash · Direct EUC mode</span>
-        <strong>Direct to <span>the watch</span></strong>
-        <small>Watch-side EUC processing</small>
-      </div>
-      <div class="wd-connection__flow">
-        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-euc"></use></svg></span><strong>EUC</strong><small>Sends data</small></div>
-        <span class="wd-connection__arrow wd-connection__arrow--direct" aria-hidden="true"><i></i><em>Direct</em></span>
-        <div class="wd-connection__device"><span class="wd-connection__icon"><svg aria-hidden="true"><use href="#wd-icon-watch"></use></svg></span><strong>Watch</strong><small>Processes data</small></div>
-      </div>
-    </div>
-
-    <div class="wd-connection__features">
-      <strong>Handled on the watch</strong>
-      <div><span>Live telemetry</span><span>Safety alerts</span><span>Ride recording</span><span>Accessories</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="wd-section wd-problem" aria-labelledby="why-title">
+<section class="wd-section wd-direct" aria-labelledby="direct-title">
   <div class="wd-section__intro wd-section__intro--row">
-    <div><p class="wd-kicker">Why WheelDash exists</p><h2 id="why-title">Not a phone mirror.<br>A complete app on your wrist.</h2></div>
+    <div><p class="wd-kicker">The key difference</p><h2 id="direct-title">Every hop adds delay.<br>We removed the hop.</h2></div>
     <p>WheelDash handles direct EUC telemetry on the watch itself, then adds configurable safety warnings, ride recording and supported accessories. Mapping, navigation and post-ride tools depend on the platform you choose.</p>
+  </div>
+  <div class="wd-hops">
+    <div class="wd-hop">
+      <p class="wd-hop__label">Phone companion apps</p>
+      <ol class="wd-hop__flow" aria-label="EUC to phone to watch"><li>EUC</li><li>Phone</li><li>Watch</li></ol>
+      <p class="wd-hop__note">2 hops · relayed through a phone · EUC World, DarknessBot, EUC Planet</p>
+    </div>
+    <div class="wd-hop wd-hop--direct">
+      <p class="wd-hop__label">WheelDash · Direct EUC mode</p>
+      <ol class="wd-hop__flow" aria-label="EUC to watch"><li>EUC</li><li>Watch</li></ol>
+      <p class="wd-hop__note">1 hop · processed on the watch · telemetry, alerts and recording without a phone</p>
+    </div>
   </div>
 </section>
 
 <section class="wd-section" id="features" aria-labelledby="features-title">
   <div class="wd-section__intro"><p class="wd-kicker">Core experience</p><h2 id="features-title">Built around the ride.</h2><p>Direct telemetry, configurable alerts and recording form the core experience. Mapping, navigation, customization and post-ride tools differ by implementation.</p></div>
   <div class="wd-feature-grid wd-feature-grid--shared">
-    <article class="wd-feature"><span class="wd-feature__icon">⌁</span><h3>Live telemetry</h3><p>See speed, battery, temperature, PWM and other essential EUC information.</p></article>
-    <article class="wd-feature"><span class="wd-feature__icon">⚠</span><h3>Safety alerts</h3><p>Configure visual warnings plus watch sounds or vibration where the device supports them.</p></article>
-    <article class="wd-feature"><span class="wd-feature__icon">▧</span><h3>On-watch navigation</h3><p>On Amazfit, route and map data can be loaded onto the watch before the ride. Navigation availability is platform- and region-specific.</p></article>
-    <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/gallery/engo4.jpg" alt="ENGO glasses showing WheelDash navigation while riding"><div><span class="wd-feature__icon">＋</span><h3>Connected accessories</h3><p>Supported implementations can connect directly to ENGO glasses and Garmin Varia radar.</p></div></article>
-    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><span class="wd-feature__icon">⌁</span><h3>Phone-free riding</h3><p>In direct EUC mode, telemetry, alarms and recording run on the watch. Amazfit uses the phone for setup, route transfer, ride upload and optional EUC World mode.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
+    <article class="wd-feature"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><h3>Live telemetry</h3><p>See speed, battery, temperature, PWM and other essential EUC information.</p></article>
+    <article class="wd-feature"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><h3>Safety alerts</h3><p>Configure visual warnings plus watch sounds or vibration where the device supports them.</p></article>
+    <article class="wd-feature"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>On-watch navigation</h3><p>On Amazfit, route and map data can be loaded onto the watch before the ride. Navigation availability is platform- and region-specific.</p></article>
+    <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/gallery/engo4.jpg" alt="ENGO glasses showing WheelDash navigation while riding"><div><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="14" r="3.5"/><circle cx="17.5" cy="14" r="3.5"/><path d="M10 14h4M3 14V9l2-3M21 14V9l-2-3"/></svg><h3>Connected accessories</h3><p>Supported implementations can connect directly to ENGO glasses and Garmin Varia radar.</p></div></article>
+    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Phone-free riding</h3><p>In direct EUC mode, telemetry, alarms and recording run on the watch. Amazfit uses the phone for setup, route transfer, ride upload and optional EUC World mode.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
   </div>
 </section>
 
@@ -230,17 +189,19 @@ classes: wheeldash-home
   <div class="wd-comparison-footer"><p>Garmin rides remain in Garmin Connect. Amazfit rides can use the WheelDash Ride Portal.</p><a class="wd-text-link" href="/platforms/">View the detailed comparison <span aria-hidden="true">→</span></a></div>
 </section>
 
-<section class="wd-portal" id="ride-portal" aria-labelledby="portal-title">
-  <div class="wd-portal__copy"><p class="wd-kicker">After the ride</p><h2 id="portal-title">Explore the wider ecosystem.</h2><p>Amazfit riders can upload and review WheelDash recordings. Everyone can browse intentionally shared public rides, view the community leaderboard and discover segments where riders have shared activity.</p><div class="wd-actions"><a class="wd-button wd-button--primary" href="{{ product.urls.public_rides }}">Explore public rides</a><a class="wd-button wd-button--ghost" href="{{ product.urls.portal_login }}">Sign in</a></div></div>
-  <div class="wd-portal__preview"><img src="/assets/images/record-feature.png" alt="Route imagery representing WheelDash ride maps"><span>WheelDash Ride Portal</span></div>
-</section>
-
-<section class="wd-section wd-community-tools" aria-labelledby="community-tools-title">
-  <div class="wd-section__intro"><p class="wd-kicker">Public community tools</p><h2 id="community-tools-title">See what riders share.</h2></div>
-  <div class="wd-resource-grid wd-resource-grid--three">
-    <a href="{{ product.urls.public_rides }}"><span>Discovery</span><strong>Public ride maps and statistics</strong><em>→</em></a>
-    <a href="{{ product.urls.leaderboard }}"><span>Community</span><strong>Leaderboard</strong><em>→</em></a>
-    <a href="{{ product.urls.segments }}"><span>Growing feature</span><strong>Segments shared by the community</strong><em>→</em></a>
+<section class="wd-section wd-portal-wrap" id="ride-portal" aria-labelledby="portal-title">
+  <div class="wd-portal">
+    <div class="wd-portal__copy">
+      <p class="wd-kicker">Ride Portal</p>
+      <h2 id="portal-title">Every ride, every segment, one place.</h2>
+      <p>Amazfit riders can upload and review WheelDash recordings. Everyone can browse intentionally shared public rides, view the community leaderboard and discover segments where riders have shared activity.</p>
+      <div class="wd-actions"><a class="wd-button wd-button--primary" href="{{ product.urls.public_rides }}">Explore public rides <span aria-hidden="true">↗</span></a><a class="wd-button wd-button--ghost" href="{{ product.urls.portal_login }}">Sign in</a></div>
+    </div>
+    <ul class="wd-portal__links">
+      <li><a href="{{ product.urls.public_rides }}"><span>Discovery</span><strong>Public ride maps and statistics</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.leaderboard }}"><span>Community</span><strong>Leaderboard</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.segments }}"><span>Growing feature</span><strong>Segments shared by the community</strong><em aria-hidden="true">↗</em></a></li>
+    </ul>
   </div>
   <p class="wd-fineprint">Segment activity depends on suitable public rides covering the same places. Some areas may have little or no activity yet.</p>
 </section>
