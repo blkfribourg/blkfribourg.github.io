@@ -180,9 +180,9 @@ classes: wheeldash-home
     </div>
   </div>
   <div class="wd-dash-sources">
-    <p>Any block can show</p>
-    <ul><li>Speed</li><li>PWM</li><li>Battery</li><li>Temperature</li><li>Motor temp</li><li>Coil temp</li><li>Tyre pressure</li><li>Voltage</li><li>Current</li><li>Phase current</li><li>Top speed</li><li>Average speed</li><li>Avg moving speed</li><li>Trip distance</li><li>Total distance</li><li>Profile distance</li><li>Riding time</li><li>Battery use</li></ul>
-    <small>Motor and coil temperature and tyre pressure depend on the wheel.</small>
+    <p>Values, gauges and bars can show</p>
+    <ul><li>Speed</li><li>PWM</li><li>Battery %</li><li>Temperature</li><li>Motor temperature</li><li>Coil temperature</li><li>Driver board temperature</li><li>Tyre pressure</li><li>Voltage</li><li>Current</li><li>Phase current</li><li>Top speed</li><li>Average speed</li><li>Average moving speed</li><li>Distance</li><li>Total distance</li><li>Profile distance</li><li>Riding time</li><li>Battery/distance</li><li>Active preset</li></ul>
+    <small>Motor, coil and driver board temperature and tyre pressure depend on the wheel.</small>
   </div>
   <p class="wd-dash-examples-title">Other layouts built from the same blocks</p>
   <div class="wd-dashboards__grid">
