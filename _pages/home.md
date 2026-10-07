@@ -131,20 +131,20 @@ classes: wheeldash-home
   <div class="wd-section__intro"><p class="wd-kicker">Your dashboard</p><h2 id="dashboards-title">Your layout.<br>Your data.</h2><p>On Amazfit, place speed, PWM, battery, temperatures, current, the Varia radar bar and your own text exactly where you want them. Build layouts on the watch or in the <a href="https://wd.nijalabs.com/layout-editor">Ride Portal's layout editor</a>.</p></div>
   <div class="wd-dashboards__grid">
     <figure class="wd-dash-face">
-      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/minimal.webp" width="720" height="720" loading="lazy" alt="Minimal round layout: large speed, battery bar and recording indicator"></div>
-      <figcaption><strong>Minimal</strong><span>Speed · battery bar · rec</span></figcaption>
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/minimal.webp" width="720" height="720" loading="lazy" alt="Round layout: large speed, battery bar and recording indicator"></div>
+      <figcaption><span>Speed · battery bar · rec</span></figcaption>
     </figure>
     <figure class="wd-dash-face">
-      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/racing.webp" width="720" height="720" loading="lazy" alt="Racing round layout: speed arc gauge around the screen with PWM, battery and temperature"></div>
-      <figcaption><strong>Racing</strong><span>Speed arc · PWM · batt · temp</span></figcaption>
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/racing.webp" width="720" height="720" loading="lazy" alt="Round layout: speed arc gauge around the screen with PWM, battery and temperature"></div>
+      <figcaption><span>Speed arc · PWM · batt · temp</span></figcaption>
     </figure>
     <figure class="wd-dash-face">
-      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/commute.webp" width="720" height="720" loading="lazy" alt="Commute round layout: free-text label, speed, battery and temperature bars, trip, current, Varia radar bar and alarm message"></div>
-      <figcaption><strong>Commute</strong><span>Free text · Varia · alarm</span></figcaption>
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/commute.webp" width="720" height="720" loading="lazy" alt="Round layout: free-text label, speed, battery and temperature bars, trip, current, Varia radar bar and alarm message"></div>
+      <figcaption><span>Free text · Varia · alarm</span></figcaption>
     </figure>
     <figure class="wd-dash-face wd-dash-face--square">
-      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/stats.webp" width="720" height="829" loading="lazy" alt="Square trip-stats layout: ride time, trip distance, average moving speed, top speed, battery use per km and voltage"></div>
-      <figcaption><strong>Trip stats</strong><span>Square · 6 labelled values</span></figcaption>
+      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/stats.webp" width="720" height="829" loading="lazy" alt="Square layout: ride time, trip distance, average moving speed, top speed, battery use per km and voltage"></div>
+      <figcaption><span>Square · 6 labelled values</span></figcaption>
     </figure>
   </div>
   <ul class="wd-dashboards__platforms" aria-label="Dashboard customization by platform">

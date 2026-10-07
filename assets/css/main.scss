@@ -141,7 +141,6 @@ p.wd-trace__legend { display: flex; margin: .7rem 0 0; flex-wrap: wrap; align-it
 .wd-dash-face__bezel img { display: block; width: 100%; height: auto; border-radius: 50%; }
 .wd-dash-face--square .wd-dash-face__bezel img { border-radius: 26px; }
 .wd-dash-face figcaption { display: grid; gap: .35rem; font-family: Inter, system-ui, sans-serif; text-align: center; }
-.wd-dash-face strong { color: var(--wd-text); font-size: 1rem; }
 .wd-dash-face span { letter-spacing: .06em; }
 .wd-dash-face span, .wd-dashboards__platforms, .wd-dashboards p.wd-dashboards__note { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
 .wd-dashboards__platforms { display: flex; margin: 2rem 0 0; padding: 0; flex-wrap: wrap; gap: .6rem 1.8rem; list-style: none; }
