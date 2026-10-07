@@ -15,7 +15,7 @@ WheelDash works differently on Garmin and Amazfit. Start with your watch platfor
     <p class="wd-doc-choice__label">{{ platform.name }}</p>
     <h2>{{ platform.short }}</h2>
     <p>{{ platform.explanation }}</p>
-    <a class="wd-button wd-button--primary" href="{% if platform_id == 'amazfit' %}/install_amazfit/{% else %}/wheeldash_quickstart/{% endif %}">Open setup guide <span aria-hidden="true">→</span></a>
+    <a class="wd-button {% if platform_id == 'amazfit' %}wd-button--primary{% else %}wd-button--ghost{% endif %}" href="{% if platform_id == 'amazfit' %}/install_amazfit/{% else %}/wheeldash_quickstart/{% endif %}">Open setup guide <span aria-hidden="true">→</span></a>
   </article>
 {% endfor %}
 </div>

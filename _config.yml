@@ -133,6 +133,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - I18N.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -258,6 +259,7 @@ defaults:
       comments: # true
       share: true
       #related: true
+      classes: wd-doc wd-update
   # _pages
   - scope:
       path: "_pages"
@@ -265,3 +267,4 @@ defaults:
     values:
       layout: single
       author_profile: false
+      classes: wd-doc
