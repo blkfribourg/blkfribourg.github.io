@@ -369,9 +369,10 @@ p.wd-updates__all { margin: 1.5rem 0 0; }
 .vesc-interest__support .wd-actions { margin-top: 1.5rem; }
 .vesc-final { padding: clamp(5rem,9vw,8rem) 1.5rem; border-top: 1px solid var(--wd-border); text-align: center; }
 .vesc-final .wd-actions { margin-top: 2rem; justify-content: center; }
-.vesc-doc .page__inner-wrap > header::before { content: "VESCDash"; }
-.vesc-doc .page__content h2::before { background: var(--vesc-blue); }
-.vesc-doc .page__content li::marker { color: var(--vesc-blue); }
+.wd-doc.vesc-doc .page__inner-wrap > header::before { content: "VESCDash documentation"; }
+.wd-doc.vesc-doc .page__content h2::before { background: var(--vesc-blue); }
+.wd-doc.vesc-doc .page__content li::marker { color: var(--vesc-blue); }
+.wd-doc .page__content img.vesc-doc__logo { width: 320px; max-width: 100%; padding: 1.2rem 1.6rem; border: 0; background: #f4f2ee; box-shadow: none; }
 .vesc-doc .btn { border-color: var(--vesc-blue); background: var(--vesc-blue); }
 .vesc-doc .btn:hover { border-color: var(--vesc-blue-deep); background: var(--vesc-blue-deep); }
 
@@ -460,6 +461,7 @@ p.wd-updates__all { margin: 1.5rem 0 0; }
 .wd-blog .taxonomy__index { margin-bottom: 0; }
 .wd-doc .page__inner-wrap > header .page__meta { margin-top: 1rem; }
 .wd-platform-card { position: relative; }
+.wd-doc .page__content .wd-platform-card__watch ~ .wd-platform-card__label, .wd-doc .page__content .wd-platform-card .wd-platform-card__watch ~ h2 { padding-right: 72px; }
 .wd-doc .page__content img.wd-platform-card__watch { position: absolute; top: .5rem; right: 1rem; width: 66px; max-width: none; height: auto; margin: 0; border: 0; border-radius: 0; background: none; box-shadow: none; filter: drop-shadow(0 12px 14px rgba(0,0,0,.5)); }
 @media (max-width: 900px) { .wd-blog .entries-list { grid-template-columns: 1fr; } }
 .wd-platform-detail .wd-platform-cards { margin: 2.5rem 0 4rem; }
