@@ -214,7 +214,10 @@ p.wd-hop__note { margin: 0; color: var(--wd-muted); font-size: .8rem; line-heigh
 .wd-feature--image > img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; }
 .wd-feature--image > div { padding: 1.6rem; align-self: center; }
 .wd-feature--image-reverse { grid-template-columns: .95fr 1.05fr; }
-.wd-feature--accessories > img { object-position: center 58%; }
+.wd-feature--accessories > img { object-position: center 28%; }
+.wd-feature--visual { padding-top: 0; overflow: hidden; }
+.wd-feature__visual { display: block; width: calc(100% + 3.6rem); max-width: none; height: auto; margin: -.4rem -1.8rem .6rem; aspect-ratio: 4/3; object-fit: contain; background: radial-gradient(closest-side at 50% 50%, rgba(70,86,112,.32), transparent 80%); }
+.wd-feature--visual .wd-feature__icon { margin-bottom: 1rem; }
 .wd-feature__number { color: #596475; font-size: .68rem; font-weight: 800; }
 .wd-feature__icon { display: block; width: 32px; height: 32px; margin-bottom: 2.4rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .wd-feature__icon.is-green { color: var(--wd-green); } .wd-feature__icon.is-red { color: var(--wd-red); } .wd-feature__icon.is-blue { color: var(--wd-blue); }
