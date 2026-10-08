@@ -27,11 +27,11 @@ classes: wheeldash-home
     <img src="/assets/images/wheeldash-hero-watches.webp" width="1390" height="1280" alt="Amazfit Active 2 and Garmin Fenix 7 Pro running WheelDash: a custom layout on the Amazfit and the fixed dashboard on the Garmin">
     <ul class="wd-callouts" aria-label="Dashboard on each platform">
       <li class="wd-callout wd-callout--text is-green is-left" style="--y:58.6%;--tl:-21%;--tw:24%">
-        <span class="wd-callout__lead" style="--l:3%;--w:8.6%" aria-hidden="true"></span>
+        <span class="wd-callout__lead" style="--l:3%;--w:6.8%" aria-hidden="true"></span>
         <div class="wd-callout__tag"><span>Amazfit</span><strong>Custom layouts</strong></div>
       </li>
       <li class="wd-callout wd-callout--text is-white" style="--y:35.2%;--tl:80%;--tw:24%">
-        <span class="wd-callout__lead" style="--l:75.6%;--w:4.4%" aria-hidden="true"></span>
+        <span class="wd-callout__lead" style="--l:76.1%;--w:3.9%" aria-hidden="true"></span>
         <div class="wd-callout__tag"><span>Garmin</span><strong>Fixed dashboard</strong></div>
       </li>
     </ul>
