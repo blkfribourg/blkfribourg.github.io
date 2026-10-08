@@ -101,7 +101,7 @@ p.wd-hero__lead { max-width: 620px; margin: 2rem 0; color: #bcc4cf; font-size: c
 .wd-hero__availability a span { color: var(--wd-red); }
 .wd-hero__availability a:hover { color: var(--wd-text); }
 .wd-hero__visual { position: relative; overflow: hidden; border: 1px solid var(--wd-border); border-radius: 22px; background: var(--wd-surface); box-shadow: 0 30px 90px rgba(0,0,0,.4); }
-.wd-hero__visual.wd-hero__watch { position: relative; width: 100%; max-width: 620px; margin-left: auto; overflow: visible; border: 0; border-radius: 0; background: none; box-shadow: none; aspect-ratio: 938/1024; container-type: inline-size; }
+.wd-hero__visual.wd-hero__watch { position: relative; width: 100%; max-width: 620px; margin-left: auto; overflow: visible; border: 0; border-radius: 0; background: none; box-shadow: none; aspect-ratio: 1390/1280; container-type: inline-size; }
 .wd-hero__watch::before { position: absolute; z-index: 0; inset: -14% -22% -8%; background: radial-gradient(closest-side,rgba(70,86,112,.42),transparent 72%); content: ""; pointer-events: none; }
 .wd-hero__watch::after { position: absolute; z-index: 0; top: 43%; left: 30%; width: 127%; aspect-ratio: 1; background: radial-gradient(closest-side,transparent 79%,rgba(141,153,170,.14) 79.5%,transparent 80.2%,transparent 99%,rgba(141,153,170,.12) 99.6%,transparent 100%); content: ""; pointer-events: none; transform: translate(-50%,-50%); }
 .wd-hero__watch img { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
@@ -118,6 +118,7 @@ p.wd-hero__lead { max-width: 620px; margin: 2rem 0; color: #bcc4cf; font-size: c
 .wd-callout__tag strong { color: var(--c); font-size: max(.9rem,3.5cqw); font-weight: 650; line-height: 1; }
 .wd-callout__tag small { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .5em; font-weight: 500; text-transform: uppercase; }
 .wd-callout.is-white { --c: var(--wd-text); }
+.wd-callout--text .wd-callout__tag strong { font-size: max(.74rem,2.3cqw); font-weight: 650; line-height: 1.2; white-space: nowrap; }
 .wd-callout.is-green { --c: var(--wd-green); }
 .wd-callout.is-blue { --c: var(--wd-blue); }
 .wd-callout.is-amber { --c: var(--wd-amber); }
@@ -189,7 +190,7 @@ ol.wd-dash-legend { display: grid; margin: 0; padding: 0; grid-template-columns:
 }
 @media (max-width: 600px) {
   .wd-hero__visual.wd-hero__watch { width: 100%; margin: 0 0 5.5rem; }
-  .wd-callouts { top: 100%; bottom: auto; display: grid; height: auto; margin-top: .8rem; grid-template-columns: repeat(4,1fr); gap: .4rem; }
+  .wd-callouts { top: 100%; bottom: auto; display: grid; height: auto; margin-top: .8rem; grid-template-columns: repeat(2,1fr); gap: .4rem; }
   .wd-callout { position: static; width: auto; height: auto; }
   .wd-callout__lead { display: none; }
   .wd-callout__tag { position: static; width: auto; padding: .5rem .55rem; border-radius: 8px; transform: none; }

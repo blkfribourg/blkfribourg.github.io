@@ -24,23 +24,15 @@ classes: wheeldash-home
     <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
-    <img src="/assets/images/wheeldash-active2-hero.webp" width="938" height="1024" alt="Amazfit Active 2 smartwatch showing the WheelDash riding dashboard with speed, battery, temperature and motor load">
-    <ul class="wd-callouts" aria-label="Data shown on the watch">
-      <li class="wd-callout is-white" style="--y:20.9%;--tl:73.7%;--tw:22.2%">
-        <span class="wd-callout__lead" style="--l:45.1%;--w:28.6%" aria-hidden="true"></span>
-        <div class="wd-callout__tag"><span>PWM</span><strong>41 <small>%</small></strong></div>
+    <img src="/assets/images/wheeldash-hero-watches.webp" width="1390" height="1280" alt="Amazfit Active 2 and Garmin Fenix 7 Pro running WheelDash: a custom layout on the Amazfit and the fixed dashboard on the Garmin">
+    <ul class="wd-callouts" aria-label="Dashboard on each platform">
+      <li class="wd-callout wd-callout--text is-green is-left" style="--y:58.6%;--tl:-21%;--tw:24%">
+        <span class="wd-callout__lead" style="--l:3%;--w:8.6%" aria-hidden="true"></span>
+        <div class="wd-callout__tag"><span>Amazfit</span><strong>Custom layouts</strong></div>
       </li>
-      <li class="wd-callout is-amber" style="--y:58.3%;--tl:73.7%;--tw:22.2%">
-        <span class="wd-callout__lead" style="--l:40.3%;--w:33.4%" aria-hidden="true"></span>
-        <div class="wd-callout__tag"><span>Temp</span><strong>48 <small>°C</small></strong></div>
-      </li>
-      <li class="wd-callout is-green is-left" style="--y:38.7%;--tl:-19.0%;--tw:20.6%">
-        <span class="wd-callout__lead" style="--l:1.6%;--w:23.4%" aria-hidden="true"></span>
-        <div class="wd-callout__tag"><span>Speed</span><strong>29 <small>km/h</small></strong></div>
-      </li>
-      <li class="wd-callout is-blue is-left" style="--y:51.0%;--tl:-19.0%;--tw:20.6%">
-        <span class="wd-callout__lead" style="--l:1.6%;--w:10.4%" aria-hidden="true"></span>
-        <div class="wd-callout__tag"><span>Battery</span><strong>85 <small>%</small></strong></div>
+      <li class="wd-callout wd-callout--text is-white" style="--y:35.2%;--tl:80%;--tw:24%">
+        <span class="wd-callout__lead" style="--l:75.6%;--w:4.4%" aria-hidden="true"></span>
+        <div class="wd-callout__tag"><span>Garmin</span><strong>Fixed dashboard</strong></div>
       </li>
     </ul>
   </div>
