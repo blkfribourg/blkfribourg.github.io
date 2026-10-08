@@ -13,9 +13,7 @@ classes: wd-doc
 
 WheelDash is available on the Garmin App Store. Stable and development releases are available for the Garmin App and Garmin Datafield. The development release includes newer changes but may be less stable, particularly for wheel or watch combinations the developer cannot test directly.
 
-<center>
-<a href="{{ site.data.product.urls.garmin_catalog }}" class="btn btn--success" target="_blank" rel="noopener noreferrer">Find WheelDash on Garmin Connect IQ</a>
-</center>
+<p><a href="{{ site.data.product.urls.garmin_catalog }}" class="btn btn--success" target="_blank" rel="noopener noreferrer">Find WheelDash on Garmin Connect IQ</a></p>
 
 {{ site.data.product.garmin_latency_note }}
 {: .notice--warning}
