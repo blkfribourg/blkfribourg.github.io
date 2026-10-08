@@ -1,8 +1,8 @@
 # Image credits
 
-- `engo-racing-road.webp`: background photo "Autumn road up the hills" by Jesse Bowser
-  (https://unsplash.com/photos/c0I4ahyGIkA), via Wikimedia Commons
-  (https://commons.wikimedia.org/wiki/File:Autumn_road_up_the_hills_(Unsplash).jpg), CC0 1.0.
+- `engo-racing-road.webp`: background photo "Infinite road" by Sébastien Marchand
+  (https://unsplash.com/photos/EeEx8zpOESA), via Wikimedia Commons
+  (https://commons.wikimedia.org/wiki/File:Infinite_road_(Unsplash).jpg), CC0 1.0.
   The ENGO racing page overlay is rendered from the WheelDash Amazfit app's racer1a template.
 - `watch-*.webp`: our own photo of an Amazfit Active 2; screens rebuilt from the WheelDash
   Amazfit app (Large layout, Default layout with a PWM alarm, NavigationView). The
