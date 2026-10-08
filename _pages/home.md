@@ -20,7 +20,6 @@ classes: wheeldash-home
       <a class="wd-button wd-button--ghost" href="{{ product.urls.public_rides }}">Explore public rides</a>
     </div>
     <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Fast, reactive telemetry and safety alerts.</strong> No phone relay in direct EUC mode.</p></div>
-    <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p><strong>Build your own dashboard.</strong> Custom watch layouts on Amazfit. <a href="#dashboards">See examples <span aria-hidden="true">→</span></a></p></div>
     <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
