@@ -100,7 +100,7 @@ p.wd-hero__lead { max-width: 620px; margin: 2rem 0; color: #bcc4cf; font-size: c
 .wd-hero__promise p { margin: 0; font-size: .65rem; line-height: 1.55; }
 .wd-hero__promise strong { color: #b9c2ce; }
 .wd-hero .wd-hero__availability { max-width: 540px; margin: .45rem 0 0 calc(18px + .55rem); color: #818c9c; font-size: .61rem; line-height: 1.55; }
-.wd-hero__availability a { margin-left: .25rem; color: #aeb7c4; font-weight: 750; text-decoration: none; white-space: nowrap; }
+.wd-hero__availability a { margin-left: 0; color: #aeb7c4; font-weight: 750; text-decoration: none; white-space: nowrap; }
 .wd-hero__availability a span { color: var(--wd-red); }
 .wd-hero__availability a:hover { color: var(--wd-text); }
 .wd-hero__visual { position: relative; overflow: hidden; border: 1px solid var(--wd-border); border-radius: 22px; background: var(--wd-surface); box-shadow: 0 30px 90px rgba(0,0,0,.4); }
@@ -157,19 +157,21 @@ ol.wd-dash-legend { display: grid; margin: 0; padding: 0; grid-template-columns:
 .wd-dash-face span { letter-spacing: .06em; }
 .wd-dash-face span, .wd-dashboards p.wd-dashboards__note { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
 .wd-dashboards p.wd-dashboards__note { margin: .9rem 0 0; opacity: .75; }
-.wd-dash-garmin { display: grid; margin-top: 2rem; grid-template-columns: minmax(0,1fr) minmax(0,3fr); gap: 1.25rem 2.5rem; align-items: center; }
-.wd-dash-garmin__copy { max-width: 560px; }
+.wd-dash-garmin { display: grid; margin-top: 2.5rem; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.25rem; align-items: center; }
+.wd-dash-garmin__copy { grid-column: span 3; padding-left: 1.25rem; }
+.wd-dash-garmin__copy > * { max-width: 560px; }
 .wd-dashboards p.wd-dash-garmin__label { margin: 0 0 .7rem; color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
 .wd-dash-garmin h3 { margin: 0 0 .7rem; color: var(--wd-text); font-size: 1.2rem; letter-spacing: -.01em; }
 .wd-dashboards .wd-dash-garmin__copy p:not(.wd-dash-garmin__label) { margin: 0 0 .6rem; color: var(--wd-muted); font-size: .82rem; line-height: 1.7; }
 .wd-dashboards .wd-dash-garmin__copy p:last-child { color: var(--wd-text); }
 .wd-hero__promise a { color: #aeb7c4; font-weight: 750; text-decoration: none; white-space: nowrap; }
 .wd-hero__promise a span { color: var(--wd-red); }
-@media (max-width: 1100px) { .wd-dashboards__grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 1100px) { .wd-dashboards__grid, .wd-dash-garmin { grid-template-columns: repeat(2,minmax(0,1fr)); } .wd-dash-garmin__copy { grid-column: auto; } }
 @media (max-width: 600px) {
   .wd-dashboards__grid { gap: .75rem; }
   .wd-dash-face { padding: 1rem .8rem; }
   .wd-dash-garmin { grid-template-columns: 1fr; }
+  .wd-dash-garmin__copy { grid-column: auto; padding-left: 0; }
 }
 @media (max-width: 1180px) {
   .wd-hero { grid-template-columns: 1fr; }
@@ -177,7 +179,9 @@ ol.wd-dash-legend { display: grid; margin: 0; padding: 0; grid-template-columns:
 }
 @media (max-width: 600px) {
   .wd-hero__visual.wd-hero__watch { width: 100%; margin: 0 0 2.5rem; }
-  .wd-trace { padding: 0 1rem; }
+  .wd-trace { padding: 0 1rem; overflow: hidden; }
+  .wd-trace svg { width: 260%; }
+  .wd-trace__legend > span { flex-basis: 100%; }
 }
 .wd-direct { padding-top: clamp(3rem,6vw,5rem); }
 .wd-hops { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
