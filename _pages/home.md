@@ -31,7 +31,7 @@ classes: wheeldash-home
         <div class="wd-callout__tag"><span>Amazfit</span><strong>Custom layouts</strong></div>
       </li>
       <li class="wd-callout wd-callout--text is-white" style="--y:35.2%;--tl:80%;--tw:24%">
-        <span class="wd-callout__lead" style="--l:76.1%;--w:3.9%" aria-hidden="true"></span>
+        <span class="wd-callout__lead" style="--l:75.9%;--w:4.1%" aria-hidden="true"></span>
         <div class="wd-callout__tag"><span>Garmin</span><strong>Fixed dashboard</strong></div>
       </li>
     </ul>
