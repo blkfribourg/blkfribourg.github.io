@@ -3,6 +3,7 @@
 - `engo-racing-road.webp`: background photo "Infinite road" by Sébastien Marchand
   (https://unsplash.com/photos/EeEx8zpOESA), via Wikimedia Commons
   (https://commons.wikimedia.org/wiki/File:Infinite_road_(Unsplash).jpg), CC0 1.0.
+  Re-projected to a right-lane viewpoint (ground plane and trees shifted by depth).
   The ENGO racing page overlay is rendered from the WheelDash Amazfit app's racer1a template.
 - `watch-*.webp`: our own photo of an Amazfit Active 2; screens rebuilt from the WheelDash
   Amazfit app (Large layout, Default layout with a PWM alarm, NavigationView). The
