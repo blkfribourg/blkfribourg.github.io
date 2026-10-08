@@ -91,6 +91,8 @@ features:
     name: WheelDash Ride Portal
   - id: dashboards
     name: Dashboard customization
+  - id: presets
+    name: Wheel presets
 
 platform_order:
   - garmin_app
@@ -115,6 +117,7 @@ platforms:
       recording: { state: platform, label: Garmin Connect }
       portal: { state: not_applicable, label: Not used for Garmin rides }
       dashboards: { state: platform, label: Set layout + 4/6/8 fields, note: "Choose the centre value and the top arc on the main screen. The datafield-like view shows 4, 6 or 8 fields you pick." }
+      presets: { state: unavailable, label: Not available }
   garmin_datafield:
     name: Garmin Datafield
     short: Inside a Garmin activity
@@ -132,6 +135,7 @@ platforms:
       recording: { state: platform, label: Garmin activity + EUC FIT fields, note: "The host activity records the ride; WheelDash contributes EUC record and session fields to the FIT file." }
       portal: { state: not_applicable, label: Not used for Garmin rides }
       dashboards: { state: platform, label: 6 or 8 configurable fields, note: "Choose the displayed metrics within the Datafield's fixed layout." }
+      presets: { state: unavailable, label: Not available }
   amazfit:
     name: Amazfit
     short: Integrated WheelDash experience
@@ -149,5 +153,6 @@ platforms:
       recording: { state: available, label: On-watch recording }
       portal: { state: available, label: Upload through phone }
       dashboards: { state: available, label: Custom layouts }
+      presets: { state: available, label: Up to 4 per wheel, note: "Switch wheel settings such as tiltback speed or pedal mode with a watch button. Available settings depend on the wheel." }
 
 garmin_latency_note: "Bluetooth responsiveness on Garmin can vary by watch model, firmware and how frequently the wheel sends data. Wheels with higher Bluetooth traffic may show more noticeable delay on some watches."

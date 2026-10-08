@@ -15,7 +15,7 @@ WheelDash connects directly to ENGO smart glasses, which show your ride data in 
 
 ### Add the accessories
 
-Accessories are added on the watch, like wheels.
+On Amazfit, the glasses and the radar are registered in WheelDash itself, not in the watch's own settings, the same way you add a wheel.
 
 1. Switch the glasses or the radar on and keep them close to the watch.
 2. In WheelDash's main menu, choose **Accessories**.
@@ -52,7 +52,7 @@ In the Garmin App, you can also map watch buttons to the glasses' next view and 
 
 ### Garmin Varia radar
 
-1. Pair the radar with your watch as a sensor.
+1. Pair the radar with your watch in Garmin's own sensor settings. WheelDash uses the radar paired with the watch.
 2. Turn on **Varia radar (or supported ANT+ radar)**.
 3. Set the far and close **alarm distance thresholds**.
 

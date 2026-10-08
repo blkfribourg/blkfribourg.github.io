@@ -50,9 +50,22 @@ Select a profile and WheelDash connects to the wheel. During the ride, you can s
 
 - **Dashboard:** choose Default, Racing, Large or your own custom layout. See [dashboards](/guides/amazfit-dashboards/).
 - **Alarms:** set them in the **Alerts** section, with their own sound and vibration patterns. Check them before riding.
-- **Buttons:** map watch buttons to actions such as start/stop recording, toggle the speed limit, cycle the light, switch pages or apply a wheel preset. Mapping a button requires WheelDash to be running on the watch.
+- **Buttons:** map watch buttons to actions such as start/stop recording, toggle the speed limit, cycle the light, switch pages or apply a [wheel preset](#wheel-presets). Mapping a button requires WheelDash to be running on the watch.
 
 You can leave your phone at home while riding.
+
+## Wheel presets
+
+New in WheelDash for Amazfit 0.0.97.
+{: .notice--info}
+
+A preset is a named set of wheel settings, such as tiltback speed, speed limiter, pedal mode or pedal hardness, that you switch from the watch instead of the manufacturer's app. Presets work with Begode, Leaperkim, KingSong and newer InMotion wheels; the settings available depend on the wheel.
+
+1. Connect the wheel once with its profile, so WheelDash knows which settings it has and their ranges.
+2. In the Zepp app, open the profile's settings and go to **Presets**. Build up to 4 presets: add the settings each one should change and set their values, or start from the wheel's current settings.
+3. Map a watch button to **Presets: pick and apply**, or to **Apply preset 1** to **4**.
+
+A preset only applies when the wheel is stopped. The watch tells you when the wheel has confirmed it, or which settings it could not apply.
 
 ## Record
 

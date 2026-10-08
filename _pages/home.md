@@ -169,7 +169,7 @@ classes: wheeldash-home
       <h3>{{ platform.short }}</h3><p>{{ platform.explanation }}</p>
       {% if platform_id == 'garmin_app' %}<ul><li>Standalone riding display</li><li>On-watch alerts</li><li>Garmin Connect recording</li></ul>{% endif %}
       {% if platform_id == 'garmin_datafield' %}<ul><li>Direct EUC connection</li><li>6 or 8 configurable fields</li><li>Garmin recording and navigation</li></ul>{% endif %}
-      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Preloaded navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
+      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Wheel presets</li><li>Preloaded navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
       <a class="wd-text-link" href="{{ platform.install_url }}">{{ platform.install_label }} <span aria-hidden="true">→</span></a>
     </article>
   {% endfor %}
