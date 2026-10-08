@@ -18,7 +18,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "WheelDash"
 title_separator: "-"
-subtitle: "EUC RIDING ECOSYSTEM"
+subtitle: # shown under the logo when set
 name: "Blkfri"
 description: "WheelDash is the complete smartwatch companion for electric unicycle riders, with live telemetry, alerts, navigation and ride analysis."
 url: "https://blkfribourg.github.io"
