@@ -6,7 +6,7 @@ author: BlkFri
 classes: wd-doc
 ---
 
-Join the [Wheeldash Telegram Group](https://t.me/+Kg_mHaGMiRQxZTdk), or send me a message:
+Join the [WheelDash Telegram group]({{ site.data.product.urls.telegram }}), or send me a message. To request Amazfit navigation access, include the email of your WheelDash account.
 
 <!-- modify this form HTML and place wherever you want your form -->
 <form

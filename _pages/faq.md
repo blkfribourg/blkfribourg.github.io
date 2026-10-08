@@ -9,7 +9,7 @@ classes: wd-doc wd-faq
 
 ## I can't find WheelDash on the Garmin store, or the store page says it doesn't exist
 
-WheelDash only appears for watches it supports. Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches. For Amazfit, see the [compatible Amazfit watches](/about_wheeldash/#compatible-amazfit-watches) and the [installation guide](/install_amazfit/).
+WheelDash only appears for watches it supports. Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches. For Amazfit, see the [compatible Amazfit watches](/platforms/#amazfit-watches) and the [installation guide](/install_amazfit/).
 
 ## I can't connect to my wheel
 
@@ -21,7 +21,11 @@ Battery percentage is calculated from the pack voltage, and every app uses its o
 
 ## Is there a manual?
 
-The setup guides cover installation and first use: [WheelDash for Garmin](/wheeldash_quickstart/) and [WheelDash for Amazfit](/install_amazfit/). The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
+The [guides](/docs/) cover installation, first use, dashboards, navigation, accessories and the Ride Portal. The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
+
+## Amazfit navigation says it is not enabled for my account
+
+Navigation runs on WheelDash's own servers and is enabled on request for each account. It is available in {{ site.data.product.navigation_regions | array_to_sentence_string }}. [Contact us](/contact/) with the email of your WheelDash account to ask for access.
 
 ## My watch keeps disconnecting from my EUC while riding
 

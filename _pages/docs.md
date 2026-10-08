@@ -1,29 +1,35 @@
 ---
-title: "Documentation"
+title: "Guides"
 permalink: /docs/
-excerpt: "Choose your WheelDash platform and find the right installation and setup guide."
+excerpt: "Setup and how-to guides for WheelDash on Garmin and Amazfit watches."
 author_profile: false
 classes: wd-doc wd-doc-hub
 ---
 
-WheelDash works differently on Garmin and Amazfit. Start with your watch platform to get the correct installation steps, configuration instructions, and platform-specific notes.
+Pick the guides for your watch. Not sure which version to use? [Compare the platforms](/platforms/) first.
 
-<div class="wd-doc-choices wd-doc-choices--three">
-{% for platform_id in site.data.product.platform_order %}
-{% assign platform = site.data.product.platforms[platform_id] %}
-  <article class="wd-doc-choice{% if platform_id == 'amazfit' %} wd-doc-choice--accent{% endif %}">
-    <p class="wd-doc-choice__label">{{ platform.name }}</p>
-    <h2>{{ platform.short }}</h2>
-    <p>{{ platform.explanation }}</p>
-    <a class="wd-button {% if platform_id == 'amazfit' %}wd-button--primary{% else %}wd-button--ghost{% endif %}" href="{% if platform_id == 'amazfit' %}/install_amazfit/{% else %}/wheeldash_quickstart/{% endif %}">Open setup guide <span aria-hidden="true">→</span></a>
-  </article>
-{% endfor %}
-</div>
-
-## Shared resources
+## Garmin
 
 <div class="wd-doc-links">
-  <a href="/about_wheeldash/#compatible-eucs"><span>Compatibility</span><strong>Supported EUCs and watches</strong><em>→</em></a>
+  <a href="/wheeldash_quickstart/"><span>Garmin App</span><strong>Install and set up the Garmin App</strong><em>→</em></a>
+  <a href="/guides/garmin-datafield/"><span>Garmin Datafield</span><strong>Add WheelDash to a Garmin activity</strong><em>→</em></a>
+  <a href="/wheeldash_gallery/"><span>Screenshots</span><strong>Garmin gallery</strong><em>→</em></a>
+</div>
+
+## Amazfit
+
+<div class="wd-doc-links">
+  <a href="/install_amazfit/"><span>Start here</span><strong>Install, connect your wheel and ride</strong><em>→</em></a>
+  <a href="/guides/amazfit-dashboards/"><span>Dashboards</span><strong>Choose or build your dashboard</strong><em>→</em></a>
+  <a href="/guides/amazfit-navigation/"><span>Navigation</span><strong>Send a route to the watch and follow it</strong><em>→</em></a>
+  <a href="/guides/ride-portal/"><span>Ride Portal</span><strong>Upload, review and share rides</strong><em>→</em></a>
+</div>
+
+## Garmin and Amazfit
+
+<div class="wd-doc-links">
+  <a href="/guides/accessories/"><span>Accessories</span><strong>ENGO glasses and Garmin Varia radar</strong><em>→</em></a>
+  <a href="/platforms/#compatibility"><span>Compatibility</span><strong>Supported EUCs and watches</strong><em>→</em></a>
   <a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a>
   <a href="/contact/"><span>Support</span><strong>Community and contact</strong><em>→</em></a>
 </div>

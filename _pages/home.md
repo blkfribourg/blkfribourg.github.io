@@ -152,8 +152,8 @@ classes: wheeldash-home
     </figure>
     <div class="wd-dash-garmin__copy">
       <p class="wd-dash-garmin__label">On Garmin</p>
-      <h3>One fixed dashboard.</h3>
-      <p>The Garmin App shows the same dashboard on every watch: speed in the centre, PWM on the top arc by default, battery and temperature on the side arcs. The Garmin Datafield shows 6 or 8 fields you choose.</p>
+      <h3>A set layout, with choices.</h3>
+      <p>The Garmin App's main screen keeps its layout: you choose the centre value and whether the top arc shows speed or PWM. A second, datafield-like view shows 4, 6 or 8 fields you pick. The Garmin Datafield shows 6 or 8.</p>
       <p>Fully custom layouts like the ones above are Amazfit only.</p>
     </div>
   </div>
@@ -197,7 +197,7 @@ classes: wheeldash-home
 
 <section class="wd-section wd-values" aria-labelledby="values-title">
   <div class="wd-section__intro"><p class="wd-kicker">Built by riders. For riders.</p><h2 id="values-title">Independent by design.</h2></div>
-  <div class="wd-values__grid"><article><span>01</span><h3>Independently developed</h3><p>No advertising. The Garmin projects are open source; the Amazfit app is currently proprietary.</p></article><article><span>02</span><h3>Private by default</h3><p>Amazfit rides remain private unless the rider intentionally shares them.</p></article><article><span>03</span><h3>Transparent limits</h3><p>Platform differences and regional availability are explained before installation.</p></article></div>
+  <div class="wd-values__grid"><article><span>01</span><h3>Independently developed</h3><p>No advertising. The Garmin projects are open source; the Amazfit app's source will follow once its active development settles.</p></article><article><span>02</span><h3>Private by default</h3><p>Amazfit rides remain private unless the rider intentionally shares them.</p></article><article><span>03</span><h3>Transparent limits</h3><p>Platform differences and regional availability are explained before installation.</p></article></div>
 </section>
 
 <section class="wd-section wd-updates" aria-labelledby="updates-title">
@@ -216,8 +216,8 @@ classes: wheeldash-home
 </section>
 
 <section class="wd-section wd-resources" id="community" aria-labelledby="resources-title">
-  <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Guides and community</p><h2 id="resources-title">Start with the right path.</h2></div><p>Choose a platform, check compatibility, get help or join the rider community.</p></div>
-  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Choose your platform</strong><em>→</em></a><a href="{{ product.urls.garmin_app }}"><span>Compatibility</span><strong>Current Garmin watch list</strong><em>↗</em></a><a href="/about_wheeldash/#compatible-amazfit-watches"><span>Compatibility</span><strong>Amazfit devices</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/wheeldash_blog/"><span>Development</span><strong>News and updates</strong><em>→</em></a></div>
+  <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Guides and community</p><h2 id="resources-title">Start with the right path.</h2></div><p>Check compatibility, follow a setup guide, get help or join the rider community.</p></div>
+  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Setup and how-to guides</strong><em>→</em></a><a href="{{ product.urls.garmin_app }}"><span>Compatibility</span><strong>Current Garmin watch list</strong><em>↗</em></a><a href="/platforms/#compatibility"><span>Compatibility</span><strong>Amazfit watches and EUCs</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/wheeldash_blog/"><span>Development</span><strong>News and updates</strong><em>→</em></a></div>
 </section>
 
 <section class="wd-final-cta" aria-labelledby="cta-title"><p class="wd-kicker">Ready to install?</p><h2 id="cta-title">Choose how you ride.</h2><div class="wd-final-platforms">{% for platform_id in product.platform_order %}{% assign platform = product.platforms[platform_id] %}<a class="wd-button{% if platform_id == 'amazfit' %} wd-button--light{% else %} wd-button--outline{% endif %}" href="{{ platform.install_url }}">{{ platform.name }}</a>{% endfor %}</div></section>

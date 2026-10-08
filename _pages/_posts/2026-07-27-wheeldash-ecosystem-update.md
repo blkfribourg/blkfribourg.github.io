@@ -15,19 +15,19 @@ WheelDash is no longer only a watch display. It is a riding ecosystem with three
 
 ## Three ways to use WheelDash
 
-WheelDash now has three distinct implementations. They share live EUC telemetry, safety alerts, Bluetooth audio alerts, offline maps, ENGO support and Garmin Varia integration, but their workflows are different.
+WheelDash now has three distinct implementations. They share live EUC telemetry, safety alerts, ENGO support and Garmin Varia integration, but their workflows are different, especially for maps and navigation.
 
 ### Garmin App
 
-The Garmin App is a standalone WheelDash experience. It provides a focused EUC dashboard, offline maps, alerts, accessories and Garmin activity recording. It does not provide navigation.
+The Garmin App is a standalone WheelDash experience. It provides a focused EUC dashboard, alerts, accessories and Garmin activity recording. It does not provide maps or navigation.
 
 ### Garmin Datafield
 
-The Garmin Datafield runs inside a Garmin activity. It combines WheelDash telemetry and alerts with Garmin activity recording and Garmin-native navigation where the watch supports it.
+The Garmin Datafield runs inside a Garmin activity. It combines WheelDash telemetry and alerts with Garmin activity recording and the watch's own Garmin maps and navigation where the watch supports them. Like all Garmin datafields, it refreshes once per second.
 
 ### Amazfit
 
-Amazfit provides the most integrated WheelDash experience. It adds custom dashboards, WheelDash recording, navigation in supported regions, and uploads to the WheelDash Ride Portal.
+Amazfit provides the most integrated WheelDash experience. It adds custom dashboards, WheelDash recording, WheelDash's own on-watch maps and navigation in supported regions, and uploads to the WheelDash Ride Portal.
 
 The [platform comparison](/platforms/) explains the practical differences without hiding the limitations of each option.
 

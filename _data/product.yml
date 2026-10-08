@@ -114,7 +114,7 @@ platforms:
       navigation: { state: unavailable, label: Not available, note: "The standalone Garmin App focuses on telemetry, alerts and recording; it does not include a map or navigation view." }
       recording: { state: platform, label: Garmin Connect }
       portal: { state: not_applicable, label: Not used for Garmin rides }
-      dashboards: { state: unavailable, label: Not available }
+      dashboards: { state: platform, label: Set layout + 4/6/8 fields, note: "Choose the centre value and the top arc on the main screen. The datafield-like view shows 4, 6 or 8 fields you pick." }
   garmin_datafield:
     name: Garmin Datafield
     short: Inside a Garmin activity
@@ -122,13 +122,13 @@ platforms:
     install_url: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
     install_label: Find Garmin Datafield
     features:
-      telemetry: { state: available, label: Direct BLE, note: "Current wheel choices are Begode/Gotway, Leaperkim/NOSFET and KingSong." }
+      telemetry: { state: available, label: Direct BLE, note: "Current wheel choices are Begode/Gotway, Leaperkim/NOSFET and KingSong. Like all Garmin datafields, it refreshes once per second." }
       safety_alerts: { state: available, label: Visual warnings }
       audio_alerts: { state: available, label: Watch tones + vibration, note: "Exact alert output depends on watch capabilities." }
       engo: { state: available, label: Telemetry + navigation cues, note: "Can send EUC data and compatible Garmin activity navigation cues to ENGO glasses." }
       varia: { state: available, label: Available }
-      offline_maps: { state: platform, label: Garmin map screens, note: "The Datafield does not draw a map. Use the map screens supplied by a compatible Garmin activity and device." }
-      navigation: { state: platform, label: Garmin activity navigation, note: "Navigation belongs to the host Garmin activity. WheelDash can read compatible turn and destination fields for ENGO glasses." }
+      offline_maps: { state: platform, label: Garmin's own maps, note: "On watches with Garmin maps, the host activity's map screens sit beside the WheelDash screen." }
+      navigation: { state: platform, label: Garmin's own navigation, note: "Navigation is Garmin's native navigation in the host activity. WheelDash can forward compatible turn and destination fields to ENGO glasses." }
       recording: { state: platform, label: Garmin activity + EUC FIT fields, note: "The host activity records the ride; WheelDash contributes EUC record and session fields to the FIT file." }
       portal: { state: not_applicable, label: Not used for Garmin rides }
       dashboards: { state: platform, label: 6 or 8 configurable fields, note: "Choose the displayed metrics within the Datafield's fixed layout." }
@@ -145,7 +145,7 @@ platforms:
       engo: { state: available, label: Available }
       varia: { state: available, label: Available }
       offline_maps: { state: available, label: Preloaded on the watch, note: "Route and raster map data are transferred through the phone before the ride." }
-      navigation: { state: region, label: France and USA only, note: "Route data is transferred to the watch before the ride. Coverage uses WheelDash-operated personal infrastructure and is limited to supported regions." }
+      navigation: { state: region, label: France and USA only, note: "WheelDash's own navigation, running in the app on the watch. Route data is transferred before the ride. Coverage uses WheelDash-operated personal infrastructure and is limited to supported regions." }
       recording: { state: available, label: On-watch recording }
       portal: { state: available, label: Upload through phone }
       dashboards: { state: available, label: Custom layouts }
