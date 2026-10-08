@@ -583,3 +583,7 @@ p.wd-updates__all { margin: 1.5rem 0 0; }
   html { scroll-behavior: auto; }
   .wd-button { transition: none; }
 }
+
+/* Theme JS appends a hidden permalink icon to headings; keep it out of the line so it never wraps onto its own line. */
+.page__content .header-link { display: inline-block; width: 0; white-space: nowrap; }
+@media (hover: none), (max-width: 600px) { .page__content .header-link { display: none; } }
