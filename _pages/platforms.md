@@ -52,8 +52,11 @@ WheelDash currently supports EUCs from these manufacturers:
 
 Supported models and telemetry fields vary by implementation, wheel protocol and firmware:
 
-- The Garmin Datafield offers Begode/Gotway, Leaperkim/NOSFET and KingSong.
-- The Garmin App and Amazfit also contain InMotion decoders for the V9, V11/V11Y, V12, V13 and V14 families; Amazfit also identifies the P6. Some InMotion paths are experimental or have had only limited testing on real wheels.
+- The Garmin Datafield offers Begode/Gotway/Extreme Bull, Leaperkim/NOSFET and KingSong.
+- The Garmin App and Amazfit also support InMotion's V9, V11/V11Y, V12, V13 and V14 families.
+- Amazfit only: InMotion's P6, V6, X1 and E20, and the older V5, V8 and V10 families.
+
+Some InMotion models are experimental or have had only limited testing on real wheels.
 
 If your EUC is not recognized, [contact the developer](/contact/) with its brand, model and firmware.
 

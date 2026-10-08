@@ -59,7 +59,7 @@ You can leave your phone at home while riding.
 New in WheelDash for Amazfit 0.0.97.
 {: .notice--info}
 
-A preset is a named set of wheel settings, such as tiltback speed, speed limiter, pedal mode or pedal hardness, that you switch from the watch instead of the manufacturer's app. Presets work with Begode, Leaperkim, KingSong and newer InMotion wheels; the settings available depend on the wheel.
+A preset is a named set of wheel settings, such as tiltback speed, speed limiter, pedal mode or pedal hardness, that you switch from the watch instead of the manufacturer's app. Presets work with Begode and Extreme Bull, Leaperkim and NOSFET, KingSong, and the InMotion V9, V11Y, V12, V13, V14 and P6; the settings available depend on the wheel.
 
 1. Connect the wheel once with its profile, so WheelDash knows which settings it has and their ranges.
 2. In the Zepp app, open the profile's settings and go to **Presets**. Build up to 4 presets: add the settings each one should change and set their values, or start from the wheel's current settings.

@@ -4,10 +4,9 @@ navigation_regions:
 
 supported_euc_brands:
   - Begode / Gotway / Extreme Bull
-  - Leaperkim
+  - Leaperkim / NOSFET
   - KingSong
-  - Inmotion
-  - Nosfet
+  - InMotion
 
 amazfit_devices:
   - Active 2 NFC Round
