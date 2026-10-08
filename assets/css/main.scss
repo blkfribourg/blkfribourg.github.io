@@ -20,6 +20,9 @@ search: false
   --wd-red-dark: #b91c1c;
   --wd-blue: #60a5fa;
   --wd-green: #34d399;
+  --wd-chart-speed: #3b82f6;
+  --wd-chart-battery: #10b981;
+  --wd-chart-temp: #f87171;
   --wd-amber: #fbbf24;
   --wd-radius: 16px;
   --vesc-blue: #079ed5;
@@ -101,43 +104,25 @@ p.wd-hero__lead { max-width: 620px; margin: 2rem 0; color: #bcc4cf; font-size: c
 .wd-hero__availability a span { color: var(--wd-red); }
 .wd-hero__availability a:hover { color: var(--wd-text); }
 .wd-hero__visual { position: relative; overflow: hidden; border: 1px solid var(--wd-border); border-radius: 22px; background: var(--wd-surface); box-shadow: 0 30px 90px rgba(0,0,0,.4); }
-.wd-hero__visual.wd-hero__watch { position: relative; width: 100%; max-width: 620px; margin-left: auto; overflow: visible; border: 0; border-radius: 0; background: none; box-shadow: none; aspect-ratio: 1390/1280; container-type: inline-size; }
+.wd-hero__visual.wd-hero__watch { position: relative; width: 100%; max-width: 620px; margin-left: auto; overflow: visible; border: 0; border-radius: 0; background: none; box-shadow: none; aspect-ratio: 1078/1280; container-type: inline-size; }
 .wd-hero__watch::before { position: absolute; z-index: 0; inset: -14% -22% -8%; background: radial-gradient(closest-side,rgba(70,86,112,.42),transparent 72%); content: ""; pointer-events: none; }
 .wd-hero__watch::after { position: absolute; z-index: 0; top: 43%; left: 30%; width: 127%; aspect-ratio: 1; background: radial-gradient(closest-side,transparent 79%,rgba(141,153,170,.14) 79.5%,transparent 80.2%,transparent 99%,rgba(141,153,170,.12) 99.6%,transparent 100%); content: ""; pointer-events: none; transform: translate(-50%,-50%); }
 .wd-hero__watch img { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
-.wd-callouts { position: absolute; z-index: 3; inset: 0; margin: 0; padding: 0; list-style: none; }
-.wd-callout { position: absolute; top: var(--y); left: 0; width: 100%; height: 0; margin: 0; padding: 0; animation: wd-tag-in .7s both; }
-.wd-callout:nth-child(2) { animation-delay: .12s; }
-.wd-callout:nth-child(3) { animation-delay: .24s; }
-.wd-callout:nth-child(4) { animation-delay: .36s; }
-.wd-callout__lead { position: absolute; top: 0; left: var(--l); width: var(--w); height: 1px; background: rgba(141,153,170,.5); }
-.wd-callout__lead::before { position: absolute; top: -3.5px; left: -4px; width: 8px; height: 8px; border: 1.5px solid var(--wd-bg); border-radius: 50%; background: var(--c); box-sizing: border-box; content: ""; }
-.wd-callout.is-left .wd-callout__lead::before { right: -4px; left: auto; }
-.wd-callout__tag { position: absolute; top: 0; left: var(--tl); display: flex; width: var(--tw); min-width: 0; padding: 1.5cqw 1.9cqw; flex-direction: column; gap: .5cqw; border: 1px solid var(--wd-border); border-radius: 1.3cqw; background: rgba(14,19,26,.88); backdrop-filter: blur(6px); transform: translateY(-50%); }
-.wd-callout__tag span { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: max(.5rem,1.6cqw); letter-spacing: .14em; text-transform: uppercase; }
-.wd-callout__tag strong { color: var(--c); font-size: max(.9rem,3.5cqw); font-weight: 650; line-height: 1; }
-.wd-callout__tag small { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .5em; font-weight: 500; text-transform: uppercase; }
-.wd-callout.is-white { --c: var(--wd-text); }
-.wd-callout--text .wd-callout__tag strong { font-size: max(.74rem,2.3cqw); font-weight: 650; line-height: 1.2; white-space: nowrap; }
-.wd-callout.is-green { --c: var(--wd-green); }
-.wd-callout.is-blue { --c: var(--wd-blue); }
-.wd-callout.is-amber { --c: var(--wd-amber); }
+p.wd-hero__model { position: absolute; z-index: 2; bottom: -.4rem; left: var(--x); margin: 0; color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; transform: translateX(-50%); }
 @media (min-width: 1025px) { .wd-hero { padding-left: clamp(1.5rem, calc((100vw - 1280px) / 2 + 1.5rem), calc(40px + 1.5rem)); } }
-@keyframes wd-tag-in { from { opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .wd-callout { animation: none; } }
 .wd-trace { max-width: 1280px; margin: -1rem auto 2.5rem; padding: 0 1.5rem; }
 .wd-trace svg { display: block; width: 100%; height: 90px; overflow: visible; }
-.wd-trace__grid { fill: none; stroke: rgba(141,153,170,.12); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.wd-trace__line { fill: none; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.wd-trace__line--speed { stroke: var(--wd-green); stroke-width: 1.75; }
-.wd-trace__line--battery { stroke: var(--wd-blue); stroke-opacity: .6; stroke-width: 1.25; }
-.wd-trace__line--temp { stroke: var(--wd-amber); stroke-opacity: .6; stroke-width: 1.25; }
+.wd-trace__area { fill: url(#wd-trace-fill); stroke: none; }
+.wd-trace__line { fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.wd-trace__line--speed { stroke: var(--wd-chart-speed); }
+.wd-trace__line--battery { stroke: var(--wd-chart-battery); stroke-opacity: .85; }
+.wd-trace__line--temp { stroke: var(--wd-chart-temp); stroke-opacity: .85; }
 p.wd-trace__legend { display: flex; margin: .7rem 0 0; flex-wrap: wrap; align-items: center; gap: .4rem 1.1rem; color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
 .wd-trace__legend i { display: inline-flex; align-items: center; gap: .4rem; font-style: normal; }
-.wd-trace__legend i::before { width: 14px; height: 2px; background: var(--c); content: ""; }
-.wd-trace__legend .is-green { --c: var(--wd-green); }
-.wd-trace__legend .is-blue { --c: var(--wd-blue); }
-.wd-trace__legend .is-amber { --c: var(--wd-amber); }
+.wd-trace__legend i::before { width: 14px; height: 2px; border-radius: 1px; background: var(--c); content: ""; }
+.wd-trace__legend .is-speed { --c: var(--wd-chart-speed); }
+.wd-trace__legend .is-battery { --c: var(--wd-chart-battery); }
+.wd-trace__legend .is-temp { --c: var(--wd-chart-temp); }
 .wd-dashboards { border-top: 1px solid var(--wd-border); }
 .wd-dash-builder { display: grid; margin-bottom: 2.5rem; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: clamp(2rem,5vw,4.5rem); }
 .wd-dash-anno { width: 100%; max-width: 520px; margin: 0; justify-self: center; }
@@ -166,36 +151,32 @@ ol.wd-dash-legend { display: grid; margin: 0; padding: 0; grid-template-columns:
 .wd-dash-face { display: flex; margin: 0; padding: 1.6rem 1.4rem 1.4rem; flex-direction: column; align-items: center; justify-content: space-between; gap: 1.2rem; border: 1px solid var(--wd-border); border-radius: var(--wd-radius); background: var(--wd-surface); }
 .wd-dash-face__bezel { box-sizing: border-box; width: 100%; max-width: 250px; aspect-ratio: 1; padding: 7px; border: 2px solid #2a3342; border-radius: 50%; background: #1a2029; box-shadow: 0 8px 22px rgba(0,0,0,.35); }
 .wd-dash-face--square .wd-dash-face__bezel { max-width: 230px; aspect-ratio: auto; border-radius: 34px; }
-.wd-dash-face__bezel img { display: block; width: 100%; height: auto; border-radius: 50%; }
+.wd-dash-face__bezel img { display: block; width: 100%; height: auto; margin: 0; border-radius: 50%; }
 .wd-dash-face--square .wd-dash-face__bezel img { border-radius: 26px; }
 .wd-dash-face figcaption { display: grid; gap: .35rem; font-family: Inter, system-ui, sans-serif; text-align: center; }
 .wd-dash-face span { letter-spacing: .06em; }
-.wd-dash-face span, .wd-dashboards__platforms, .wd-dashboards p.wd-dashboards__note { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
-.wd-dashboards__platforms { display: flex; margin: 2rem 0 0; padding: 0; flex-wrap: wrap; gap: .6rem 1.8rem; list-style: none; }
-.wd-dashboards__platforms li { display: inline-flex; margin: 0; align-items: center; gap: .5rem; }
-.wd-dashboards__platforms li::before { width: 7px; height: 7px; border-radius: 50%; background: var(--c,var(--wd-muted)); content: ""; }
-.wd-dashboards__platforms .is-green { --c: var(--wd-green); }
-.wd-dashboards__platforms .is-blue { --c: var(--wd-blue); }
+.wd-dash-face span, .wd-dashboards p.wd-dashboards__note { color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
 .wd-dashboards p.wd-dashboards__note { margin: .9rem 0 0; opacity: .75; }
+.wd-dash-garmin { display: grid; margin-top: 2rem; grid-template-columns: minmax(0,1fr) minmax(0,3fr); gap: 1.25rem 2.5rem; align-items: center; }
+.wd-dash-garmin__copy { max-width: 560px; }
+.wd-dashboards p.wd-dash-garmin__label { margin: 0 0 .7rem; color: var(--wd-muted); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
+.wd-dash-garmin h3 { margin: 0 0 .7rem; color: var(--wd-text); font-size: 1.2rem; letter-spacing: -.01em; }
+.wd-dashboards .wd-dash-garmin__copy p:not(.wd-dash-garmin__label) { margin: 0 0 .6rem; color: var(--wd-muted); font-size: .82rem; line-height: 1.7; }
+.wd-dashboards .wd-dash-garmin__copy p:last-child { color: var(--wd-text); }
 .wd-hero__promise a { color: #aeb7c4; font-weight: 750; text-decoration: none; white-space: nowrap; }
 .wd-hero__promise a span { color: var(--wd-red); }
 @media (max-width: 1100px) { .wd-dashboards__grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 600px) {
   .wd-dashboards__grid { gap: .75rem; }
   .wd-dash-face { padding: 1rem .8rem; }
+  .wd-dash-garmin { grid-template-columns: 1fr; }
 }
 @media (max-width: 1180px) {
   .wd-hero { grid-template-columns: 1fr; }
   .wd-hero__visual.wd-hero__watch { width: 74%; max-width: 560px; margin: 1rem 4% 0 auto; }
 }
 @media (max-width: 600px) {
-  .wd-hero__visual.wd-hero__watch { width: 100%; margin: 0 0 5.5rem; }
-  .wd-callouts { top: 100%; bottom: auto; display: grid; height: auto; margin-top: .8rem; grid-template-columns: repeat(2,1fr); gap: .4rem; }
-  .wd-callout { position: static; width: auto; height: auto; }
-  .wd-callout__lead { display: none; }
-  .wd-callout__tag { position: static; width: auto; padding: .5rem .55rem; border-radius: 8px; transform: none; }
-  .wd-callout__tag span { font-size: .5rem; letter-spacing: .08em; }
-  .wd-callout__tag strong { font-size: 1rem; }
+  .wd-hero__visual.wd-hero__watch { width: 100%; margin: 0 0 2.5rem; }
   .wd-trace { padding: 0 1rem; }
 }
 .wd-direct { padding-top: clamp(3rem,6vw,5rem); }
