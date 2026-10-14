@@ -22,7 +22,7 @@ All of them keep the same zones: the clock or the alarm banner on top, the figur
 
 ## Build your own
 
-A custom dashboard is made of blocks you place and size freely: clock, plain text, circular gauges, values, labelled values, progress bars, separators, the Varia radar bar, the recording indicator, the speed-limit indicator and the alarm message. Values, gauges and bars can show any wheel or ride value, from speed and PWM to tyre pressure when the wheel reports it.
+A custom dashboard is made of blocks you place and size freely: clock, plain text, circular gauges, values, labelled values, progress bars, separators, the Varia radar bar, the recording indicator, the speed-limit indicator and the alarm message. Values, gauges and bars can show speed, PWM, battery percentage, temperature, motor temperature, coil temperature, driver board temperature, tyre pressure, voltage, current, phase current, top speed, average speed, average moving speed, distance, total distance, profile distance, riding time, battery/distance and active preset. Motor, coil and driver board temperature and tyre pressure depend on the wheel.
 
 You can build it in two places:
 

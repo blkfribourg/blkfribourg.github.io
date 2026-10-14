@@ -71,7 +71,7 @@ classes: wheeldash-home
   <div class="wd-feature-grid wd-feature-grid--shared">
     <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-live-telemetry.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing the WheelDash Large dashboard: PWM, speed, battery and temperature"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><h3>Live wheel data</h3><p>Speed, PWM, battery, voltage, current and temperatures, plus motor temperature or tyre pressure on wheels that report them.</p></article>
     <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-safety-alert.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing a WheelDash PWM alarm: red banner and red PWM arc"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><h3>Alarms you can feel</h3><p>PWM, speed and temperature alarms with sound and vibration. On Amazfit, build your own: combine readings, set when they clear, design the vibration. <a href="/guides/amazfit-alarms/">Alarms</a></p></article>
-    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-navigation.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing WheelDash navigation: route on the map and a left turn in 80 m"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>Navigation on the watch</h3><p>Amazfit, in {{ product.navigation_regions | array_to_sentence_string }}. Load a route and its map before you leave, then follow it turn by turn with the watch's own GPS. <a href="/guides/amazfit-navigation/">Navigation</a></p></article>
+    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-navigation.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing WheelDash navigation: route on the map and a left turn in 80 m"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>Navigation on the watch</h3><p>Amazfit, in {{ product.navigation_regions | array_to_sentence_string }}, enabled on request. Load a route and its map before you leave, then follow it turn by turn with the watch's own GPS. <a href="/guides/amazfit-navigation/">Navigation</a></p></article>
     <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/features/engo-racing-road.webp" width="1200" height="1200" loading="lazy" alt="Through ENGO glasses: the WheelDash racing page with speed, top speed, motor temperature, PWM and phase current over a tree-lined road"><div><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="14" r="3.5"/><circle cx="17.5" cy="14" r="3.5"/><path d="M10 14h4M3 14V9l2-3M21 14V9l-2-3"/></svg><h3>ENGO and Varia, included</h3><p>Ride data in your field of view on ENGO glasses, and cars behind you from a Garmin Varia radar. Both connect to the watch, on every version, at no cost. <a href="/guides/accessories/">Accessories</a></p></div></article>
     <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Leave the phone</h3><p>Riding needs only the watch. On Amazfit, the phone is for settings, loading routes and uploading rides, before and after.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
     <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l5 4V6L7 10H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg><h3>Control the wheel</h3><p>Sound the horn, cycle the lights or switch a speed limiter on and off, from a watch button (Garmin App and Amazfit). The Garmin App adds a wheel settings menu on the watch.</p></article>
@@ -129,13 +129,8 @@ classes: wheeldash-home
         <li><strong>Varia radar bar</strong> <span>Approaching vehicles from a Garmin Varia.</span></li>
         <li><strong>Recording indicator</strong></li>
       </ol>
-      <p class="wd-dash-builder__more">Also available: speed-limit indicator and alarm message. Size, colour, alignment, decimals and units are set per block.</p>
+      <p class="wd-dash-builder__more">Also available: speed-limit indicator and alarm message. Size, colour, alignment, decimals and units are set per block. <a href="/guides/amazfit-dashboards/">Every block and value</a></p>
     </div>
-  </div>
-  <div class="wd-dash-sources">
-    <p>Values, gauges and bars can show</p>
-    <ul><li>Speed</li><li>PWM</li><li>Battery %</li><li>Temperature</li><li>Motor temperature</li><li>Coil temperature</li><li>Driver board temperature</li><li>Tyre pressure</li><li>Voltage</li><li>Current</li><li>Phase current</li><li>Top speed</li><li>Average speed</li><li>Average moving speed</li><li>Distance</li><li>Total distance</li><li>Profile distance</li><li>Riding time</li><li>Battery/distance</li><li>Active preset</li></ul>
-    <small>Motor, coil and driver board temperature and tyre pressure depend on the wheel.</small>
   </div>
   <p class="wd-dash-examples-title">Other layouts built from the same blocks</p>
   <div class="wd-dashboards__grid">
@@ -159,13 +154,21 @@ classes: wheeldash-home
   <p class="wd-dashboards__note">Example layouts, drawn with the Ride Portal's watch preview.</p>
   <div class="wd-dash-garmin">
     <figure class="wd-dash-face">
-      <div class="wd-dash-face__bezel"><img src="/assets/images/dashboards/garmin-app.webp" width="720" height="720" loading="lazy" alt="Garmin App dashboard: speed in the centre, PWM on the top arc, battery and temperature on the side arcs"></div>
-      <figcaption><span>Garmin App</span></figcaption>
+      <div class="wd-dash-face__bezel"><img src="/assets/images/garmin/garmin-app-main.webp" width="720" height="720" loading="lazy" alt="Garmin App main screen: speed in the centre, PWM on the top arc, battery and temperature on the side arcs, trip distance below"></div>
+      <figcaption><span>Garmin App&nbsp;· main</span></figcaption>
+    </figure>
+    <figure class="wd-dash-face">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/garmin/garmin-app-fields.webp" width="720" height="720" loading="lazy" alt="Garmin App datafield-like view with six fields: speed, PWM, battery, temperature, trip distance and voltage"></div>
+      <figcaption><span>Garmin App&nbsp;· 6 fields</span></figcaption>
+    </figure>
+    <figure class="wd-dash-face">
+      <div class="wd-dash-face__bezel"><img src="/assets/images/garmin/garmin-datafield.webp" width="720" height="720" loading="lazy" alt="Garmin Datafield with eight fields: PWM, speed, battery, temperature, voltage, top temperature, top speed and time"></div>
+      <figcaption><span>Datafield&nbsp;· 8 fields</span></figcaption>
     </figure>
     <div class="wd-dash-garmin__copy">
       <p class="wd-dash-garmin__label">On Garmin</p>
       <h3>A set layout, with choices.</h3>
-      <p>The Garmin App's main screen keeps its layout: you choose the centre value and whether the top arc shows speed or PWM. A second, datafield-like view shows 4, 6 or 8 fields you pick. The Garmin Datafield shows 6 or 8.</p>
+      <p>The Garmin App's main screen keeps its layout: you choose the centre value, whether the top arc shows speed or PWM, and the statistics below. Its second view shows 4, 6 or 8 fields you pick. The Garmin Datafield shows 6 or 8, inside any Garmin activity.</p>
       <p>Fully custom layouts like the ones above are Amazfit only.</p>
     </div>
   </div>
@@ -181,13 +184,13 @@ classes: wheeldash-home
       <h3>{{ platform.short }}</h3><p>{{ platform.explanation }}</p>
       {% if platform_id == 'garmin_app' %}<ul><li>Full-screen dashboard</li><li>Horn, lights and limiter on buttons</li><li>Garmin Connect recording</li></ul>{% endif %}
       {% if platform_id == 'garmin_datafield' %}<ul><li>Direct EUC connection</li><li>6 or 8 configurable fields</li><li>Garmin recording and navigation</li></ul>{% endif %}
-      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Wheel presets</li><li>Preloaded navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
+      {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Wheel presets</li><li>Navigation in {{ product.navigation_regions | array_to_sentence_string }}, on request</li><li>WheelDash Ride Portal</li><li>Installs from a QR code in the Zepp app</li></ul>{% endif %}
       <a class="wd-text-link" href="{{ platform.install_url }}">{{ platform.install_label }} <span aria-hidden="true">→</span></a>
     </article>
   {% endfor %}
   </div>
   {% include platform-comparison.html %}
-  <div class="wd-comparison-footer"><p>Garmin rides remain in Garmin Connect. Amazfit rides can use the WheelDash Ride Portal.</p><a class="wd-text-link" href="/platforms/">View the detailed comparison <span aria-hidden="true">→</span></a></div>
+  <div class="wd-comparison-footer"><p>Garmin rides stay in Garmin Connect. Amazfit rides can go to the WheelDash Ride Portal. Battery use depends on the watch.</p><a class="wd-text-link" href="/platforms/">View the detailed comparison <span aria-hidden="true">→</span></a></div>
 </section>
 
 <section class="wd-section wd-portal-wrap" id="ride-portal" aria-labelledby="portal-title">

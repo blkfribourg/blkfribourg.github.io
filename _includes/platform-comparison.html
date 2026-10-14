@@ -6,7 +6,7 @@
     </thead>
     <tbody>
       {% for feature in product.features %}
-        {% if include.full or feature.id == "offline_maps" or feature.id == "navigation" or feature.id == "recording" or feature.id == "portal" or feature.id == "dashboards" or feature.id == "presets" %}
+        {% if include.full or feature.id == "wheels" or feature.id == "navigation" or feature.id == "recording" or feature.id == "portal" or feature.id == "dashboards" or feature.id == "presets" or feature.id == "account" or feature.id == "battery" %}
         <tr>
           <th>{{ feature.name }}</th>
           {% for platform_id in product.platform_order %}

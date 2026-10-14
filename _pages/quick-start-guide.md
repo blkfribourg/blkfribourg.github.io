@@ -44,6 +44,8 @@ WheelDash now recognises your wheel. To skip the profile choice at each start, s
 
 ## The screens
 
+<p class="wd-doc-screens"><img src="/assets/images/garmin/garmin-app-main.webp" width="260" height="260" loading="lazy" alt="Garmin App main screen: speed, PWM arc, battery and temperature arcs, trip distance"><img src="/assets/images/garmin/garmin-app-fields.webp" width="260" height="260" loading="lazy" alt="Garmin App datafield-like view with six fields"></p>
+
 The main screen keeps its layout. You choose, per profile:
 
 - the **main number** in the centre: speed, PWM, battery percentage or GPS speed;

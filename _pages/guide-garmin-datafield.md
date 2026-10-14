@@ -40,6 +40,8 @@ During the first connection, WheelDash records the Bluetooth identity of your EU
 
 ## Fields and appearance
 
+<p class="wd-doc-screens"><img src="/assets/images/garmin/garmin-datafield.webp" width="260" height="260" loading="lazy" alt="Garmin Datafield with eight fields: PWM, speed, battery, temperature, voltage, top temperature, top speed and time"></p>
+
 Choose 6 or 8 fields from the list: speed, voltage, PWM, battery, temperature, current, distances, averages and maximums, and more. You can also set the font, the text and line colours, and show the north and wind direction.
 
 ## Maps, navigation and recording

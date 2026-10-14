@@ -9,6 +9,8 @@ author: nijaba
 classes: wd-doc
 ---
 
+WheelDash for Amazfit is a stable release, in six languages: English, French, German, Spanish, Russian and Simplified Chinese. It installs from a QR code rather than the Zepp store, which takes a couple of minutes the first time.
+
 ## What you need
 
 - A compatible Amazfit watch. Check the [list of supported watches](/platforms/#amazfit-watches), including the experimental build for older models.

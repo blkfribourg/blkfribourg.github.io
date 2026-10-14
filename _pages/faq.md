@@ -17,6 +17,23 @@ Yes, with no ads and no subscription. Everything that runs on the watch, includi
 
 The Ride Portal and Amazfit navigation are free too, but they run on servers that cost money every month. Today [donations](/donate/) cover them. If they stop being enough, these two services may ask for a contribution, set to cover their costs and nothing more.
 
+## How much watch battery does WheelDash use?
+
+It depends on the watch, and on what is connected to it.
+
+- **Garmin:** many watches record more than 10 hours of riding. The Garmin Datafield is the lightest version.
+- **Amazfit:** on a Bip 6, a 1 h 40 ride with ENGO glasses and a Varia radar connected used 20 % of the watch battery, about 12 % per hour.
+
+On Amazfit, you can save battery by leaving **Always On Mode** off, turning off **Heading-Up Map** and turning on **GPS Battery Saver** for navigation, and setting an **Auto-Exit Timeout** so WheelDash closes when no wheel is connected.
+
+## Do I need an account?
+
+Not to ride. The Garmin versions need no account at all. On Amazfit, a free WheelDash account is needed only to upload rides to the [Ride Portal](/guides/ride-portal/), to use [navigation](/guides/amazfit-navigation/) and to back up your settings.
+
+## Which languages does WheelDash support?
+
+The Amazfit app, on the watch and in its settings, is available in English, French, German, Spanish, Russian and Simplified Chinese. The Garmin versions are in English.
+
 ## Does WheelDash work with an iPhone?
 
 Yes. WheelDash works the same with an iPhone or an Android phone: settings, route transfer and ride upload go through Garmin Connect or the Zepp app, both available on iOS and Android.

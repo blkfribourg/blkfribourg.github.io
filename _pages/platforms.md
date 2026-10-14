@@ -11,7 +11,7 @@ WheelDash has three implementations. Start with the watch you own, then choose t
 
 **Which one?**
 
-- **Amazfit watch:** the Amazfit app. It has the most features: custom dashboards, wheel presets, navigation and the Ride Portal.
+- **Amazfit watch:** the Amazfit app. It has the most features: custom dashboards, wheel presets, navigation and the Ride Portal. It installs from a QR code in the Zepp app, in about two minutes: see [install](/install_amazfit/).
 - **Garmin watch, WheelDash on the full screen:** the Garmin App. Faster updates, wheel controls, and rides saved to Garmin Connect.
 - **Garmin watch, inside a Garmin activity:** the Garmin Datafield. You keep Garmin's maps and navigation; WheelDash adds the wheel data, refreshed once per second.
 
@@ -70,7 +70,17 @@ If your EUC is not recognized, [contact the developer](/contact/) with its brand
 
 ### Garmin watches
 
-Garmin compatibility changes as watches and Connect IQ support evolve. Check the [WheelDash Connect IQ page]({{ site.data.product.urls.garmin_app }}) for the current device list.
+The Garmin App installs on {% assign n = 0 %}{% for g in site.data.garmin_devices.garmin_app %}{% assign n = n | plus: g.models.size %}{% endfor %}{{ n }} watches and bike computers, and the Garmin Datafield on {% assign n = 0 %}{% for g in site.data.garmin_devices.garmin_datafield %}{% assign n = n | plus: g.models.size %}{% endfor %}{{ n }}. Connect IQ only offers WheelDash for the watches it supports.
+
+{% assign garmin_versions = "garmin_app,garmin_datafield" | split: "," %}{% for v in garmin_versions %}
+<details class="wd-devices">
+  <summary>{{ site.data.product.platforms[v].name }}: supported watches</summary>
+  <dl>{% for g in site.data.garmin_devices[v] %}<dt>{{ g.family }}</dt><dd>{{ g.models | join: " · " }}</dd>{% endfor %}</dl>
+</details>
+{% endfor %}
+
+From the Connect IQ store listings, {{ site.data.garmin_devices.source | remove: "Connect IQ store listings, " }}.
+{: .wd-fineprint}
 
 {{ site.data.product.garmin_latency_note }}
 {: .notice--warning}
