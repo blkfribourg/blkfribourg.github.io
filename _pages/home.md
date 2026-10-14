@@ -3,8 +3,8 @@ layout: splash
 permalink: /
 hidden: true
 lang: en
-title: "WheelDash | Standalone EUC smartwatch app"
-excerpt: "In direct EUC mode, WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle for live telemetry, safety alerts and ride recording without a phone relay."
+title: "WheelDash | The EUC app that runs on your watch"
+excerpt: "WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle: live data, alarms, wheel controls, ENGO, Varia and ride recording on the watch, with no phone needed while riding. Free, with no ads."
 classes: wheeldash-home
 ---
 
@@ -12,15 +12,18 @@ classes: wheeldash-home
 
 <section class="wd-hero" aria-labelledby="wd-hero-title">
   <div class="wd-hero__copy">
-    <p class="wd-eyebrow"><span></span> A standalone EUC app for your watch</p>
+    <p class="wd-eyebrow"><span></span> The EUC app that runs on your watch</p>
     <h1 id="wd-hero-title">Direct to<br>your <em>wrist.</em></h1>
-    <p class="wd-hero__lead">WheelDash turns your smartwatch into a complete EUC dashboard. In direct EUC mode, your wheel connects straight to the watch, where live data is received, processed and displayed.</p>
+    <p class="wd-hero__lead">WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle. Live data, alarms, wheel controls and ride recording all run on the watch, so your phone can stay in your pocket, or at home.</p>
     <div class="wd-actions">
       <a class="wd-button wd-button--primary" href="#platforms">Choose your platform <span aria-hidden="true">→</span></a>
-      <a class="wd-button wd-button--ghost" href="{{ product.urls.public_rides }}">Explore public rides</a>
+      <a class="wd-button wd-button--ghost" href="/why-wheeldash/">Why WheelDash</a>
     </div>
-    <div class="wd-hero__promise"><span aria-hidden="true">✓</span><p>Fast, reactive telemetry and safety alerts. No phone relay in direct EUC mode.</p></div>
-    <p class="wd-hero__availability">For supported Garmin and Amazfit watches. Amazfit's optional EUC World mode is phone-relayed. Features vary by implementation. <a href="#platforms">Compare platforms <span aria-hidden="true">→</span></a></p>
+    <ul class="wd-hero__facts" aria-label="At a glance">
+      <li><strong>Free</strong> No ads, no subscription</li>
+      <li><strong>Garmin · Amazfit</strong> with iPhone or Android · <a href="/platforms/#compatibility">Watches</a></li>
+      <li><strong>Begode · Leaperkim · KingSong · InMotion</strong> and their sister brands</li>
+    </ul>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
     <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" alt="Amazfit Active 2 and Garmin fēnix 7 Pro running WheelDash">
@@ -41,30 +44,39 @@ classes: wheeldash-home
 <section class="wd-section wd-direct" aria-labelledby="direct-title">
   <div class="wd-section__intro wd-section__intro--row">
     <div><p class="wd-kicker">The key difference</p><h2 id="direct-title">Every hop adds delay.<br>We removed the hop.</h2></div>
-    <p>WheelDash handles direct EUC telemetry on the watch itself, then adds configurable safety warnings, ride recording and supported accessories. Mapping, navigation and post-ride tools depend on the platform you choose.</p>
+    <p>Most EUC apps run on your phone and send their data on to the watch. WheelDash runs on the watch itself: no phone app the system can put to sleep, no second Bluetooth link to drop, no phone battery to watch.</p>
   </div>
   <div class="wd-hops">
     <div class="wd-hop">
-      <p class="wd-hop__label">Phone companion apps</p>
+      <p class="wd-hop__label">Phone apps with a watch companion</p>
       <ol class="wd-hop__flow" aria-label="EUC to phone to watch"><li>EUC</li><li>Phone</li><li>Watch</li></ol>
-      <p class="wd-hop__note">2 hops · relayed through a phone · EUC World, DarknessBot, EUC Planet</p>
+      <p class="wd-hop__note">2 hops · the watch is a second screen · if the phone app sleeps, drops or runs flat, the watch goes blank</p>
     </div>
     <div class="wd-hop wd-hop--direct">
-      <p class="wd-hop__label">WheelDash · Direct EUC mode</p>
+      <p class="wd-hop__label">WheelDash</p>
       <ol class="wd-hop__flow" aria-label="EUC to watch"><li>EUC</li><li>Watch</li></ol>
-      <p class="wd-hop__note">1 hop · processed on the watch · telemetry, alerts and recording without a phone</p>
+      <p class="wd-hop__note">1 hop · the watch does it all · data, alarms, wheel controls and recording without a phone</p>
     </div>
   </div>
+  <ul class="wd-direct__points">
+    <li><strong>Leave the phone at home</strong>Or in a bag, switched off. Nothing on it needs to keep running while you ride.</li>
+    <li><strong>Any phone</strong>WheelDash works the same with an iPhone or an Android phone, used only before and after the ride.</li>
+    <li><strong>Glasses and radar included</strong>ENGO glasses and a Garmin Varia radar connect to the watch, with nothing to unlock or subscribe to.</li>
+  </ul>
+  <p class="wd-direct__more"><a class="wd-text-link" href="/why-wheeldash/">Why WheelDash <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="wd-section" id="features" aria-labelledby="features-title">
-  <div class="wd-section__intro"><p class="wd-kicker">Core experience</p><h2 id="features-title">Built around the ride.</h2><p>Direct telemetry, configurable alerts and recording form the core experience. Mapping, navigation, customization and post-ride tools differ by implementation.</p></div>
+  <div class="wd-section__intro"><p class="wd-kicker">What you get</p><h2 id="features-title">Built around the ride.</h2><p>Everything here runs on the watch, with no ads and no subscription. Some features are Amazfit only; they are marked, and the <a href="#platforms">platform comparison</a> has the details.</p></div>
   <div class="wd-feature-grid wd-feature-grid--shared">
-    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-live-telemetry.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing the WheelDash Large dashboard: PWM, speed, battery and temperature"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><h3>Live telemetry</h3><p>See speed, battery, temperature, PWM and other essential EUC information.</p></article>
-    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-safety-alert.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing a WheelDash PWM alarm: red banner and red PWM arc"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><h3>Safety alerts</h3><p>Configure visual warnings plus watch sounds or vibration where the device supports them.</p></article>
-    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-navigation.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing WheelDash navigation: route on the map and a left turn in 80 m"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>On-watch navigation</h3><p>On Amazfit, route and map data can be loaded onto the watch before the ride. Navigation availability is platform- and region-specific.</p></article>
-    <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/features/engo-racing-road.webp" width="1200" height="1200" loading="lazy" alt="Through ENGO glasses: the WheelDash racing page with speed, top speed, motor temperature, PWM and phase current over a tree-lined road"><div><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="14" r="3.5"/><circle cx="17.5" cy="14" r="3.5"/><path d="M10 14h4M3 14V9l2-3M21 14V9l-2-3"/></svg><h3>Connected accessories</h3><p>Supported implementations can connect directly to ENGO glasses and Garmin Varia radar.</p></div></article>
-    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Phone-free riding</h3><p>In direct EUC mode, telemetry, alarms and recording run on the watch. Amazfit uses the phone for setup, route transfer, ride upload and optional EUC World mode.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
+    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-live-telemetry.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing the WheelDash Large dashboard: PWM, speed, battery and temperature"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><h3>Live wheel data</h3><p>Speed, PWM, battery, voltage, current and temperatures, plus motor temperature or tyre pressure on wheels that report them.</p></article>
+    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-safety-alert.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing a WheelDash PWM alarm: red banner and red PWM arc"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><h3>Alarms you can feel</h3><p>PWM, speed and temperature alarms with sound and vibration. On Amazfit, build your own: combine readings, set when they clear, design the vibration. <a href="/guides/amazfit-alarms/">Alarms</a></p></article>
+    <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-navigation.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing WheelDash navigation: route on the map and a left turn in 80 m"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>Navigation on the watch</h3><p>Amazfit, in {{ product.navigation_regions | array_to_sentence_string }}. Load a route and its map before you leave, then follow it turn by turn with the watch's own GPS. <a href="/guides/amazfit-navigation/">Navigation</a></p></article>
+    <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/features/engo-racing-road.webp" width="1200" height="1200" loading="lazy" alt="Through ENGO glasses: the WheelDash racing page with speed, top speed, motor temperature, PWM and phase current over a tree-lined road"><div><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="14" r="3.5"/><circle cx="17.5" cy="14" r="3.5"/><path d="M10 14h4M3 14V9l2-3M21 14V9l-2-3"/></svg><h3>ENGO and Varia, included</h3><p>Ride data in your field of view on ENGO glasses, and cars behind you from a Garmin Varia radar. Both connect to the watch, on every version, at no cost. <a href="/guides/accessories/">Accessories</a></p></div></article>
+    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Leave the phone</h3><p>Riding needs only the watch. On Amazfit, the phone is for settings, loading routes and uploading rides, before and after.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
+    <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l5 4V6L7 10H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg><h3>Control the wheel</h3><p>Sound the horn, cycle the lights or switch a speed limiter on and off, from a watch button (Garmin App and Amazfit). The Garmin App adds a wheel settings menu on the watch.</p></article>
+    <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M4 12h6M4 18h10"/><circle cx="17" cy="6" r="2"/><circle cx="13" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg><h3>Wheel presets</h3><p>Amazfit. Save up to four sets of wheel settings, such as tiltback speed and pedal mode, and switch with one button. <a href="/install_amazfit/#wheel-presets">Presets</a></p></article>
+    <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="16" r="4"/><circle cx="17" cy="16" r="4"/><path d="M7 12V5M17 12V5"/></svg><h3>One profile per wheel</h3><p>Each wheel keeps its own alarms and settings. Start straight into your usual one, and on Amazfit, locked wheels unlock with their PIN.</p></article>
   </div>
 </section>
 
@@ -167,7 +179,7 @@ classes: wheeldash-home
     <article class="wd-platform-card{% if platform_id == 'amazfit' %} wd-platform-card--accent{% endif %}">
       <p class="wd-platform-card__label">{{ platform.name }}{% if platform_id == 'amazfit' %}<span>Integrated experience</span>{% endif %}</p>
       <h3>{{ platform.short }}</h3><p>{{ platform.explanation }}</p>
-      {% if platform_id == 'garmin_app' %}<ul><li>Standalone riding display</li><li>On-watch alerts</li><li>Garmin Connect recording</li></ul>{% endif %}
+      {% if platform_id == 'garmin_app' %}<ul><li>Full-screen dashboard</li><li>Horn, lights and limiter on buttons</li><li>Garmin Connect recording</li></ul>{% endif %}
       {% if platform_id == 'garmin_datafield' %}<ul><li>Direct EUC connection</li><li>6 or 8 configurable fields</li><li>Garmin recording and navigation</li></ul>{% endif %}
       {% if platform_id == 'amazfit' %}<ul><li>Custom dashboards</li><li>Wheel presets</li><li>Preloaded navigation in {{ product.navigation_regions | array_to_sentence_string }}</li><li>WheelDash Ride Portal</li></ul>{% endif %}
       <a class="wd-text-link" href="{{ platform.install_url }}">{{ platform.install_label }} <span aria-hidden="true">→</span></a>
@@ -183,13 +195,14 @@ classes: wheeldash-home
     <div class="wd-portal__copy">
       <p class="wd-kicker">Ride Portal</p>
       <h2 id="portal-title">Every ride, every segment, one place.</h2>
-      <p>Amazfit riders can upload and review WheelDash recordings. Everyone can browse intentionally shared public rides, view the community leaderboard and discover segments where riders have shared activity.</p>
-      <div class="wd-actions"><a class="wd-button wd-button--primary" href="{{ product.urls.public_rides }}">Explore public rides <span aria-hidden="true">↗</span></a><a class="wd-button wd-button--ghost" href="{{ product.urls.portal_login }}">Sign in</a></div>
+      <p>Upload your Amazfit rides to see each one on a map with its speed, battery, temperature and PWM, or put two side by side. Rides are encrypted on your phone before upload and stay private unless you share them; privacy zones hide your home from shared maps. Anyone can browse what riders share, no account needed.</p>
+      <div class="wd-actions"><a class="wd-button wd-button--primary" href="{{ product.urls.public_rides }}">Explore public rides <span aria-hidden="true">↗</span></a><a class="wd-button wd-button--ghost" href="/guides/ride-portal/">How it works</a></div>
     </div>
     <ul class="wd-portal__links">
-      <li><a href="{{ product.urls.public_rides }}"><span>Discovery</span><strong>Public ride maps and statistics</strong><em aria-hidden="true">↗</em></a></li>
-      <li><a href="{{ product.urls.leaderboard }}"><span>Community</span><strong>Leaderboard</strong><em aria-hidden="true">↗</em></a></li>
-      <li><a href="{{ product.urls.segments }}"><span>Growing feature</span><strong>Segments shared by the community</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.public_rides }}"><span>Discover</span><strong>Public rides, riders and wheels</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.segments }}"><span>Segments</span><strong>Wheels compared on the same roads</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.leaderboard }}"><span>Leaderboards</span><strong>Speed, distance and riding streaks</strong><em aria-hidden="true">↗</em></a></li>
+      <li><a href="{{ product.urls.portal }}/layouts"><span>Layout gallery</span><strong>Dashboards shared by other riders</strong><em aria-hidden="true">↗</em></a></li>
     </ul>
   </div>
   <div class="wd-live" data-wd-showcase="{{ product.urls.showcase_api }}" data-wd-portal="{{ product.urls.portal }}" hidden>
@@ -209,7 +222,7 @@ classes: wheeldash-home
 
 <section class="wd-section wd-values" aria-labelledby="values-title">
   <div class="wd-section__intro"><p class="wd-kicker">Built by riders. For riders.</p><h2 id="values-title">Independent by design.</h2></div>
-  <div class="wd-values__grid"><article><span>01</span><h3>Independently developed</h3><p>No advertising. The Garmin projects are open source; the Amazfit app's source will follow once its active development settles.</p></article><article><span>02</span><h3>Private by default</h3><p>Amazfit rides remain private unless the rider intentionally shares them.</p></article><article><span>03</span><h3>Transparent limits</h3><p>Platform differences and regional availability are explained before installation.</p></article></div>
+  <div class="wd-values__grid"><article><span>01</span><h3>Free, not for profit</h3><p>The watch apps are free and will stay free, with no ads. The Ride Portal and navigation run on servers that cost money every month: free today, they may one day ask for a contribution to cover those costs, never more. <a href="/donate/">Donations</a></p></article><article><span>02</span><h3>Private by default</h3><p>Amazfit rides are encrypted on your phone with a key derived from your password, and stay private unless you share them.</p></article><article><span>03</span><h3>Open and upfront</h3><p>The Garmin versions are open source; the Amazfit source will follow once its development settles. Platform limits are stated before you install.</p></article></div>
 </section>
 
 <section class="wd-section wd-updates" aria-labelledby="updates-title">
@@ -229,7 +242,7 @@ classes: wheeldash-home
 
 <section class="wd-section wd-resources" id="community" aria-labelledby="resources-title">
   <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Guides and community</p><h2 id="resources-title">Start with the right path.</h2></div><p>Check compatibility, follow a setup guide, get help or join the rider community.</p></div>
-  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Setup and how-to guides</strong><em>→</em></a><a href="{{ product.urls.garmin_app }}"><span>Compatibility</span><strong>Current Garmin watch list</strong><em>↗</em></a><a href="/platforms/#compatibility"><span>Compatibility</span><strong>Amazfit watches and EUCs</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/wheeldash_blog/"><span>Development</span><strong>News and updates</strong><em>→</em></a></div>
+  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Setup and how-to guides</strong><em>→</em></a><a href="{{ product.urls.garmin_app }}"><span>Compatibility</span><strong>Current Garmin watch list</strong><em>↗</em></a><a href="/platforms/#compatibility"><span>Compatibility</span><strong>Amazfit watches and EUCs</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/why-wheeldash/"><span>Choosing an app</span><strong>Why WheelDash</strong><em>→</em></a></div>
 </section>
 
 <section class="wd-final-cta" aria-labelledby="cta-title"><p class="wd-kicker">Ready to install?</p><h2 id="cta-title">Choose how you ride.</h2><div class="wd-final-platforms">{% for platform_id in product.platform_order %}{% assign platform = product.platforms[platform_id] %}<a class="wd-button{% if platform_id == 'amazfit' %} wd-button--light{% else %} wd-button--outline{% endif %}" href="{{ platform.install_url }}">{{ platform.name }}</a>{% endfor %}</div></section>

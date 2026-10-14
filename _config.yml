@@ -20,7 +20,7 @@ title: "WheelDash"
 title_separator: "-"
 subtitle: # shown under the logo when set
 name: "Blkfri"
-description: "WheelDash is the complete smartwatch companion for electric unicycle riders, with live telemetry, alerts, navigation and ride analysis."
+description: "WheelDash is the free EUC app that runs on your Garmin or Amazfit watch: live wheel data, alarms, wheel controls, ENGO, Varia, navigation and ride recording, with no phone needed while riding."
 url: "https://blkfribourg.github.io"
 baseurl: #"/wheeldash_home"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

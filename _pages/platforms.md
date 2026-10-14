@@ -9,6 +9,14 @@ classes: wd-doc wd-platform-detail
 
 WheelDash has three implementations. Start with the watch you own, then choose the experience that matches how you record, navigate and review rides. Features are not identical across platforms.
 
+**Which one?**
+
+- **Amazfit watch:** the Amazfit app. It has the most features: custom dashboards, wheel presets, navigation and the Ride Portal.
+- **Garmin watch, WheelDash on the full screen:** the Garmin App. Faster updates, wheel controls, and rides saved to Garmin Connect.
+- **Garmin watch, inside a Garmin activity:** the Garmin Datafield. You keep Garmin's maps and navigation; WheelDash adds the wheel data, refreshed once per second.
+
+Both Garmin versions are free, so you can install both and try them, one ride at a time.
+
 <div class="wd-platform-cards wd-platform-cards--three">
 {% for platform_id in site.data.product.platform_order %}
 {% assign platform = site.data.product.platforms[platform_id] %}

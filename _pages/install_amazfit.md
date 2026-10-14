@@ -41,6 +41,8 @@ Wheels are added on the watch.
 
 Each wheel gets its own profile, with its own alarms and settings. To connect faster, set a **Startup Profile** in the settings: WheelDash then opens it after a short countdown.
 
+If your wheel is locked with a PIN, enter it as the profile's **Wheel PIN** in the Zepp app: WheelDash unlocks the wheel when it connects. The PIN is never included in cloud backups.
+
 Amazfit also offers an optional EUC World mode, which receives the wheel data through EUC World on your phone instead of connecting the watch to the wheel.
 {: .notice--info}
 
@@ -49,7 +51,7 @@ Amazfit also offers an optional EUC World mode, which receives the wheel data th
 Select a profile and WheelDash connects to the wheel. During the ride, you can switch between the dashboard, the statistics screen and the navigation screen.
 
 - **Dashboard:** choose Default, Racing, Large or your own custom layout. See [dashboards](/guides/amazfit-dashboards/).
-- **Alarms:** set them in the **Alerts** section, with their own sound and vibration patterns. Check them before riding.
+- **Alarms:** set them in the **Alerts** section, with their own sound and vibration patterns, and test them before riding. See [alarms](/guides/amazfit-alarms/).
 - **Buttons:** map watch buttons to actions such as start/stop recording, toggle the speed limit, cycle the light, switch pages or apply a [wheel preset](#wheel-presets). Mapping a button requires WheelDash to be running on the watch.
 
 You can leave your phone at home while riding.
@@ -75,6 +77,7 @@ To review a ride with maps and statistics, upload it to the Ride Portal. See [up
 
 ## Going further
 
+- [Set quick alarms or build your own](/guides/amazfit-alarms/).
 - [Choose or build your dashboard](/guides/amazfit-dashboards/).
 - [Send a route to the watch and follow it](/guides/amazfit-navigation/).
 - [Connect ENGO glasses or a Garmin Varia radar](/guides/accessories/).

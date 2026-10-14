@@ -6,7 +6,7 @@ author_profile: false
 classes: wd-doc wd-doc-hub
 ---
 
-Pick the guides for your watch. Not sure which version to use? [Compare the platforms](/platforms/) first.
+Pick the guides for your watch. New to WheelDash? See [why WheelDash](/why-wheeldash/), then [which version suits your watch](/platforms/).
 
 ## Garmin
 
@@ -20,9 +20,11 @@ Pick the guides for your watch. Not sure which version to use? [Compare the plat
 
 <div class="wd-doc-links">
   <a href="/install_amazfit/"><span>Start here</span><strong>Install, connect your wheel and ride</strong><em>→</em></a>
+  <a href="/guides/amazfit-alarms/"><span>Alarms</span><strong>Set quick alarms or build your own</strong><em>→</em></a>
   <a href="/guides/amazfit-dashboards/"><span>Dashboards</span><strong>Choose or build your dashboard</strong><em>→</em></a>
   <a href="/guides/amazfit-navigation/"><span>Navigation</span><strong>Send a route to the watch and follow it</strong><em>→</em></a>
   <a href="/guides/ride-portal/"><span>Ride Portal</span><strong>Upload, review and share rides</strong><em>→</em></a>
+  <a href="/install_amazfit/#wheel-presets"><span>Wheel presets</span><strong>Switch wheel settings from the watch</strong><em>→</em></a>
 </div>
 
 ## Garmin and Amazfit

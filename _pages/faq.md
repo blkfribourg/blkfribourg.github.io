@@ -7,13 +7,43 @@ last_modified_at: 2026-10-08
 classes: wd-doc wd-faq
 ---
 
+## Do I need my phone while riding?
+
+No. The watch connects to the wheel itself, and runs the dashboard, the alarms and the recording. On Amazfit, the phone is used before and after the ride: for settings, to load a navigation route and to upload rides. The optional EUC World mode on Amazfit is the exception: it takes the wheel data from the EUC World app on your phone.
+
+## Is WheelDash free?
+
+Yes, with no ads and no subscription. Everything that runs on the watch, including ENGO glasses and the Garmin Varia radar, is free and will stay free.
+
+The Ride Portal and Amazfit navigation are free too, but they run on servers that cost money every month. Today [donations](/donate/) cover them. If they stop being enough, these two services may ask for a contribution, set to cover their costs and nothing more.
+
+## Does WheelDash work with an iPhone?
+
+Yes. WheelDash works the same with an iPhone or an Android phone: settings, route transfer and ride upload go through Garmin Connect or the Zepp app, both available on iOS and Android.
+
+## Do I need EUC World, WheelLog or another phone app?
+
+No. WheelDash is not a companion to a phone app: the watch connects to the wheel itself. See [why WheelDash](/why-wheeldash/). On Amazfit, EUC World mode is an option for wheels WheelDash does not support directly.
+
+## Does WheelDash work on Apple Watch or Wear OS?
+
+No. WheelDash runs on Garmin and Amazfit watches. See the [supported watches](/platforms/#compatibility).
+
+## Can I use WheelDash and a phone app at the same time?
+
+Usually not. Most wheels accept only one Bluetooth connection at a time, so close the phone app before starting WheelDash. On Amazfit, EUC World mode lets WheelDash show data from EUC World instead.
+
+## Garmin App or Garmin Datafield?
+
+The **Garmin App** is a full-screen WheelDash app with faster updates, wheel controls and its own recording. The **Garmin Datafield** sits inside a Garmin activity, so you keep Garmin's maps and navigation, but it refreshes once per second. See the [platform comparison](/platforms/).
+
 ## I can't find WheelDash on the Garmin store, or the store page says it doesn't exist
 
 WheelDash only appears for watches it supports. Check the [Connect IQ Store]({{ site.data.product.urls.garmin_app }}) for the current list of compatible Garmin watches. For Amazfit, see the [compatible Amazfit watches](/platforms/#amazfit-watches) and the [installation guide](/install_amazfit/).
 
 ## I can't connect to my wheel
 
-Make sure you selected the right profile and that its wheel brand matches your EUC. Only your wheel should be powered on nearby during the first connection. On Garmin, if you own a KingSong, also try the "Kingsong (old)" brand, especially if your wheel is from before 2021.
+Make sure you selected the right profile and that its wheel brand matches your EUC. Only your wheel should be powered on nearby during the first connection, and no phone app should be connected to it. On Garmin, if you own a KingSong, also try the "Kingsong (old)" brand, especially if your wheel is from before 2021.
 
 ## WheelDash shows a different battery percentage from other apps
 

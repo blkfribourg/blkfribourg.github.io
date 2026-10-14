@@ -6,6 +6,8 @@ main:
     highlight: true
   - title: "Features"
     url: /#features
+  - title: "Why WheelDash"
+    url: /why-wheeldash/
   - title: "Platforms"
     url: /platforms/
   - title: "Ride Portal"

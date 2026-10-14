@@ -26,13 +26,15 @@ Keep the phone near the watch until the upload is complete.
 
 ## Review your rides
 
-Sign in to the Ride Portal with the same email and password. **Rides** lists your recordings: open one to see it on the map with its speed, battery, temperature and other data, or select several to compare them.
+Sign in to the Ride Portal with the same email and password. **Rides** lists your recordings: open one to see it on the map with its speed, battery, temperature and other data, or select two to compare them side by side.
 
 ## Private and public rides
 
-Your rides are private by default: only you can see them. Private rides are stored encrypted, so the portal asks for your password to open them.
+Your rides are private by default: only you can see them. They are encrypted on your phone before upload, with a key derived from your password, so the portal asks for your password to open them.
 
 To share a ride, open it and choose **Make Public**, with an optional description. Public rides appear in Discover, can count towards the leaderboards and help build community segments. You can make a ride private again at any time. Your account settings also let you choose the default visibility.
+
+**Privacy zones** hide places such as your home or work from the maps of your public rides. Create them from a ride's map; they are applied before anything is published.
 
 ## Community
 
