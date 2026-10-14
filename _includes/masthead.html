@@ -15,8 +15,10 @@
           {%- for link in site.data.navigation.main -%}
             {%- assign link_url = link.url -%}
             {%- if link.url_key -%}{%- assign link_url = site.data.product.urls[link.url_key] -%}{%- endif -%}
-            <li class="masthead__menu-item{% if link.highlight %} masthead__menu-item--support{% endif %}">
-              <a href="{{ link_url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            {%- assign link_external = false -%}
+            {%- if link_url contains '://' -%}{%- assign link_external = true -%}{%- endif -%}
+            <li class="masthead__menu-item{% if link.highlight %} masthead__menu-item--support{% endif %}{% if link_external %} masthead__menu-item--external{% endif %}">
+              <a href="{{ link_url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}{% unless link.highlight %}{% if link_url == page.url %} aria-current="page"{% endif %}{% endunless %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>

@@ -47,6 +47,9 @@ urls:
   public_rides: "https://wd.nijalabs.com/discover"
   leaderboard: "https://wd.nijalabs.com/leaderboards"
   segments: "https://wd.nijalabs.com/segments"
+  portal: "https://wd.nijalabs.com"
+  # Public rides and totals for the home page's live Ride Portal block (no credentials).
+  showcase_api: "https://wd.nijalabs.com/api/public/showcase"
   telegram: "https://t.me/+Kg_mHaGMiRQxZTdk"
   kofi: "https://ko-fi.com/wheeldash"
 

@@ -192,6 +192,18 @@ classes: wheeldash-home
       <li><a href="{{ product.urls.segments }}"><span>Growing feature</span><strong>Segments shared by the community</strong><em aria-hidden="true">↗</em></a></li>
     </ul>
   </div>
+  <div class="wd-live" data-wd-showcase="{{ product.urls.showcase_api }}" data-wd-portal="{{ product.urls.portal }}" hidden>
+    <div class="wd-live__head">
+      <p class="wd-live__label"><span aria-hidden="true"></span>Live from the Ride Portal</p>
+      <dl class="wd-live__totals">
+        <div><dt>Public rides</dt><dd data-wd-total="rides"></dd></div>
+        <div><dt>Riders</dt><dd data-wd-total="riders"></dd></div>
+        <div><dt>Public km</dt><dd data-wd-total="km"></dd></div>
+      </dl>
+    </div>
+    <ul class="wd-live__rides" data-wd-rides hidden></ul>
+  </div>
+  <script src="{{ '/assets/js/wd-showcase.js' | relative_url }}" defer></script>
   <p class="wd-fineprint">Segment activity depends on suitable public rides covering the same places. Some areas may have little or no activity yet.</p>
 </section>
 
