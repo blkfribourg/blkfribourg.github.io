@@ -1,0 +1,18 @@
+{%- comment -%}
+  A screenshot for a guide step that appears only once its file exists, so a guide can name
+  its pictures before they are taken. Usage:
+    {% include step-shot.html file="/assets/images/install/zepp-developer-mode.webp" alt="…" %}
+  Expected Amazfit install pictures (phone screenshots, any width, PNG/JPG/WebP with the same name):
+    zepp-developer-mode   Zepp > Profile > Settings > About, after tapping the logo
+    zepp-mini-program     Zepp > Device > General > Developer Mode > Mini Program, with the + button
+    zepp-scan             the QR scanner open on a WheelDash release
+    watch-add-wheel       the watch listing wheels during "Add your first wheel"
+{%- endcomment -%}
+{%- assign shot_base = include.file | split: "." | first -%}
+{%- for f in site.static_files -%}
+  {%- assign f_base = f.path | split: "." | first -%}
+  {%- if f_base == shot_base -%}
+<p class="wd-doc-shot"><img src="{{ f.path | relative_url }}" loading="lazy" alt="{{ include.alt | escape }}"></p>
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}

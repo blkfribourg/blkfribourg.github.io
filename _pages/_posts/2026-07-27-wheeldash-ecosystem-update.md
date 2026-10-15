@@ -6,7 +6,7 @@ author: BlkFri
 classes: wd-doc wd-update
 excerpt: "A look at the Garmin, Amazfit and Ride Portal work that has kept WheelDash development busy."
 header:
-  teaser: "/assets/images/mikolaj-zeman-unsplash3.jpg"
+  teaser: "/assets/images/mikolaj-zeman-unsplash3.webp"
 ---
 
 I have been quiet here because most of my available WheelDash time has gone into building and riding. The project has changed considerably since the website last reflected it, so this is a good moment to show what WheelDash has become.
@@ -54,7 +54,7 @@ The Amazfit application has received a large amount of work behind the scenes an
 The phone can remain in a pocket while riding, then handle route preparation, configuration and ride upload afterward.
 
 <center>
-<img src="/assets/images/Engo2.png" alt="ENGO smart glasses supported by WheelDash">
+<img src="/assets/images/Engo2.webp" alt="ENGO smart glasses supported by WheelDash">
 </center>
 
 ## The Ride Portal is becoming a community space
@@ -71,7 +71,7 @@ Visitors can:
 Segments become more useful as riders share suitable public activity over the same roads and paths. Some areas will naturally have more coverage than others while the community grows.
 
 <center>
-<img src="/assets/images/record-feature.png" alt="Map imagery representing WheelDash Ride Portal analysis">
+<img src="/assets/images/record-feature.webp" alt="Map imagery representing WheelDash Ride Portal analysis">
 </center>
 
 Private Amazfit rides remain private unless the rider intentionally publishes them. Garmin recordings continue to live in Garmin Connect and are not uploaded to the WheelDash Ride Portal.

@@ -1,12 +1,13 @@
 ---
 title: "WheelDash for Amazfit: alarms"
 permalink: /guides/amazfit-alarms/
-excerpt: "Set WheelDash's quick alarms on Amazfit, or build your own from several readings, with their own sound and vibration."
+excerpt: "Set PWM, speed and temperature alarms for your electric unicycle on an Amazfit watch, or build your own from several readings, with their own sound and vibration."
 last_modified_at: 2026-10-14
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "EUC alarms on Amazfit: PWM, speed, temperature – WheelDash"
 ---
 
 Alarms warn you without you having to look at the watch. An alarm can play a sound, vibrate the watch, show a banner on the dashboard, and show a banner on [ENGO glasses](/guides/accessories/). They run on the watch, so they keep working without the phone.

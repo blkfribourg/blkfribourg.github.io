@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+excerpt: "Contact the WheelDash developer or join the Telegram group: questions about the EUC app for Garmin and Amazfit, wheel support requests and navigation access."
 permalink: /contact/
 layout: single
 author: BlkFri

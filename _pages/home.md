@@ -4,8 +4,9 @@ permalink: /
 hidden: true
 lang: en
 title: "WheelDash | The EUC app that runs on your watch"
-excerpt: "WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle: live data, alarms, wheel controls, ENGO, Varia and ride recording on the watch, with no phone needed while riding. Free, with no ads."
+excerpt: "Free EUC app for Garmin and Amazfit smartwatches. Connects to your electric unicycle for live data, alarms, ENGO and Varia, with no phone needed while riding."
 classes: wheeldash-home
+seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
 ---
 
 {% assign product = site.data.product %}
@@ -14,7 +15,7 @@ classes: wheeldash-home
   <div class="wd-hero__copy">
     <p class="wd-eyebrow"><span></span> The EUC app that runs on your watch</p>
     <h1 id="wd-hero-title">Direct to<br>your <em>wrist.</em></h1>
-    <p class="wd-hero__lead">WheelDash connects your Garmin or Amazfit watch straight to your electric unicycle. Live data, alarms, wheel controls and ride recording all run on the watch, so your phone can stay in your pocket, or at home.</p>
+    <p class="wd-hero__lead">WheelDash connects your Garmin or Amazfit smartwatch straight to your electric unicycle. Live data, alarms, wheel controls and ride recording all run on the watch, so your phone can stay in your pocket, or at home.</p>
     <div class="wd-actions">
       <a class="wd-button wd-button--primary" href="#platforms">Choose your platform <span aria-hidden="true">→</span></a>
       <a class="wd-button wd-button--ghost" href="/why-wheeldash/">Why WheelDash</a>
@@ -26,7 +27,7 @@ classes: wheeldash-home
     </ul>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
-    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" alt="Amazfit Active 2 and Garmin fēnix 7 Pro running WheelDash">
+    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" fetchpriority="high" alt="The WheelDash EUC app on an Amazfit Active 2 and a Garmin fēnix 7 Pro: speed, battery and temperature">
     <p class="wd-hero__model" style="--x:24.6%">Amazfit Active 2</p>
     <p class="wd-hero__model" style="--x:71.4%">Garmin fēnix 7 Pro</p>
   </div>
@@ -73,7 +74,7 @@ classes: wheeldash-home
     <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-safety-alert.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing a WheelDash PWM alarm: red banner and red PWM arc"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><h3>Alarms you can feel</h3><p>PWM, speed and temperature alarms with sound and vibration. On Amazfit, build your own: combine readings, set when they clear, design the vibration. <a href="/guides/amazfit-alarms/">Alarms</a></p></article>
     <article class="wd-feature wd-feature--visual"><img class="wd-feature__visual" src="/assets/images/features/watch-navigation.webp" width="800" height="600" loading="lazy" alt="Amazfit Active 2 showing WheelDash navigation: route on the map and a left turn in 80 m"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><h3>Navigation on the watch</h3><p>Amazfit, in {{ product.navigation_regions | array_to_sentence_string }}, enabled on request. Load a route and its map before you leave, then follow it turn by turn with the watch's own GPS. <a href="/guides/amazfit-navigation/">Navigation</a></p></article>
     <article class="wd-feature wd-feature--image wd-feature--accessories"><img src="/assets/images/features/engo-racing-road.webp" width="1200" height="1200" loading="lazy" alt="Through ENGO glasses: the WheelDash racing page with speed, top speed, motor temperature, PWM and phase current over a tree-lined road"><div><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="14" r="3.5"/><circle cx="17.5" cy="14" r="3.5"/><path d="M10 14h4M3 14V9l2-3M21 14V9l-2-3"/></svg><h3>ENGO and Varia, included</h3><p>Ride data in your field of view on ENGO glasses, and cars behind you from a Garmin Varia radar. Both connect to the watch, on every version, at no cost. <a href="/guides/accessories/">Accessories</a></p></div></article>
-    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Leave the phone</h3><p>Riding needs only the watch. On Amazfit, the phone is for settings, loading routes and uploading rides, before and after.</p></div><img src="/assets/images/no-phone.jpg" alt="A rider putting a phone into a pocket"></article>
+    <article class="wd-feature wd-feature--image wd-feature--image-reverse"><div><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M3 3l18 18"/></svg><h3>Leave the phone</h3><p>Riding needs only the watch. On Amazfit, the phone is for settings, loading routes and uploading rides, before and after.</p></div><img src="/assets/images/no-phone.webp" width="1138" height="809" loading="lazy" alt="A rider putting a phone into a pocket before riding"></article>
     <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l5 4V6L7 10H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg><h3>Control the wheel</h3><p>Sound the horn, cycle the lights or switch a speed limiter on and off, from a watch button (Garmin App and Amazfit). The Garmin App adds a wheel settings menu on the watch.</p></article>
     <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-green" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M4 12h6M4 18h10"/><circle cx="17" cy="6" r="2"/><circle cx="13" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg><h3>Wheel presets</h3><p>Amazfit. Save up to four sets of wheel settings, such as tiltback speed and pedal mode, and switch with one button. <a href="/install_amazfit/#wheel-presets">Presets</a></p></article>
     <article class="wd-feature wd-feature--text"><svg class="wd-feature__icon is-blue" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="16" r="4"/><circle cx="17" cy="16" r="4"/><path d="M7 12V5M17 12V5"/></svg><h3>One profile per wheel</h3><p>Each wheel keeps its own alarms and settings. Start straight into your usual one, and on Amazfit, locked wheels unlock with their PIN.</p></article>

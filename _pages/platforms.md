@@ -1,10 +1,11 @@
 ---
 title: "Compare WheelDash platforms"
 permalink: /platforms/
-excerpt: "Compare the Garmin App, Garmin Datafield and Amazfit versions of WheelDash, and check which watches and EUCs they support."
+excerpt: "Compare the WheelDash Garmin App, Garmin Datafield and Amazfit app, with the supported watches and electric unicycles: Begode, Leaperkim, KingSong, InMotion."
 toc: true
 author_profile: false
 classes: wd-doc wd-platform-detail
+seo_title: "WheelDash for Garmin and Amazfit: versions, watches and EUCs"
 ---
 
 WheelDash has three implementations. Start with the watch you own, then choose the experience that matches how you record, navigate and review rides. Features are not identical across platforms.

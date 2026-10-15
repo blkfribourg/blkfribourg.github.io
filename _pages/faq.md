@@ -5,6 +5,8 @@ author_profile: false
 author: BlkFri
 last_modified_at: 2026-10-08
 classes: wd-doc wd-faq
+seo_title: "WheelDash FAQ: EUC smartwatch app questions"
+excerpt: "Answers about WheelDash, the EUC app for Garmin and Amazfit: phone while riding, price, battery use, iPhone, supported watches and wheels, connection issues."
 ---
 
 ## Do I need my phone while riding?
@@ -68,7 +70,7 @@ Battery percentage is calculated from the pack voltage, and every app uses its o
 
 ## Is there a manual?
 
-The [guides](/docs/) cover installation, first use, dashboards, navigation, accessories and the Ride Portal. The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
+The [guides](/docs/) cover installation, first use, dashboards, navigation, accessories and the Ride Portal. On Amazfit, the [settings reference](/guides/amazfit-settings/) explains every setting. The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
 
 ## Amazfit navigation says it is not enabled for my account
 

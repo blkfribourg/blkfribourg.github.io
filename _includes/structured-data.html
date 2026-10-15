@@ -1,0 +1,93 @@
+{%- comment -%}
+  Schema.org data for search engines: the site, the project behind it and, on the home page, the app itself.
+  Guides are described as technical articles and updates as blog posts.
+{%- endcomment -%}
+{%- assign product = site.data.product -%}
+{%- assign home = '/' | absolute_url -%}
+{%- assign logo = site.logo | absolute_url -%}
+{%- assign is_guide = false -%}
+{%- if page.url contains '/guides/' or page.url == '/install_amazfit/' or page.url == '/wheeldash_quickstart/' -%}{%- assign is_guide = true -%}{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ home | append: '#project' | jsonify }},
+      "name": "WheelDash",
+      "url": {{ home | jsonify }},
+      "logo": {{ logo | jsonify }},
+      "sameAs": [
+        "https://github.com/blkfribourg",
+        {{ product.urls.telegram | jsonify }},
+        {{ product.urls.kofi | jsonify }},
+        "https://www.facebook.com/profile.php?id=61558888251390"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ home | append: '#website' | jsonify }},
+      "url": {{ home | jsonify }},
+      "name": "WheelDash",
+      "description": {{ site.description | jsonify }},
+      "publisher": { "@id": {{ home | append: '#project' | jsonify }} },
+      "inLanguage": "en"
+    }
+    {%- if page.url == '/' %},
+    {
+      "@type": "SoftwareApplication",
+      "@id": {{ home | append: '#app' | jsonify }},
+      "name": "WheelDash",
+      "alternateName": ["WheelDash EUC app", "WheelDash for Garmin", "WheelDash for Amazfit"],
+      "description": {{ include.description | jsonify }},
+      "url": {{ home | jsonify }},
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Electric unicycle (EUC) dashboard",
+      "operatingSystem": "Garmin Connect IQ, Zepp OS (Amazfit)",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "image": {{ site.og_image | absolute_url | jsonify }},
+      "screenshot": [
+        {{ '/assets/images/features/watch-live-telemetry.webp' | absolute_url | jsonify }},
+        {{ '/assets/images/garmin/garmin-app-main.webp' | absolute_url | jsonify }},
+        {{ '/assets/images/features/watch-navigation.webp' | absolute_url | jsonify }}
+      ],
+      "featureList": [
+        "Connects the watch directly to the electric unicycle, no phone needed while riding",
+        "Live speed, PWM, battery, voltage, current and temperatures",
+        "Safety alarms with sound and vibration",
+        "Horn, lights and speed limiter from a watch button",
+        "ENGO smart glasses and Garmin Varia radar support",
+        "Ride recording to Garmin Connect or the WheelDash Ride Portal",
+        "Custom dashboards, wheel presets and on-watch navigation on Amazfit"
+      ],
+      "author": { "@id": {{ home | append: '#project' | jsonify }} },
+      "publisher": { "@id": {{ home | append: '#project' | jsonify }} }
+    }
+    {%- elsif page.date %},
+    {
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ include.description | jsonify }},
+      "url": {{ include.canonical_url | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ home | append: '#project' | jsonify }} },
+      "publisher": { "@id": {{ home | append: '#project' | jsonify }} },
+      "isPartOf": { "@id": {{ home | append: '#website' | jsonify }} }
+    }
+    {%- elsif page.title %},
+    {
+      "@type": {% if is_guide %}"TechArticle"{% else %}"WebPage"{% endif %},
+      "name": {{ page.title | jsonify }},
+      {% if is_guide %}"headline": {{ page.title | jsonify }},
+      {% endif %}"description": {{ include.description | jsonify }},
+      "url": {{ include.canonical_url | jsonify }},
+      {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+      {% endif %}"isPartOf": { "@id": {{ home | append: '#website' | jsonify }} },
+      "publisher": { "@id": {{ home | append: '#project' | jsonify }} }
+    }
+    {%- endif %}
+  ]
+}
+</script>

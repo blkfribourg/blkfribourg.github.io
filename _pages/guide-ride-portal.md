@@ -1,12 +1,13 @@
 ---
 title: "Ride Portal: upload, review and share rides"
 permalink: /guides/ride-portal/
-excerpt: "Upload Amazfit rides to the WheelDash Ride Portal, review them, and choose which ones to share with the community."
+excerpt: "Upload electric unicycle rides from your Amazfit watch to the WheelDash Ride Portal: maps, speed, battery and PWM charts, ride comparison, segments and leaderboards."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "EUC ride tracking and sharing – WheelDash Ride Portal"
 ---
 
 The [WheelDash Ride Portal]({{ site.data.product.urls.portal_login }}) is where Amazfit riders review their rides on a map with detailed statistics, and where the community shares public rides, segments and leaderboards. Anyone can [browse public rides]({{ site.data.product.urls.public_rides }}) without an account.

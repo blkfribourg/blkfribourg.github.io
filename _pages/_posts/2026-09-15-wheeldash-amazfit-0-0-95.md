@@ -34,7 +34,7 @@ Two new ENGO views, **Racing** and **Split Gauge**, provide more options for rid
 Alarms have been reworked into a banner over the current view instead of a separate page. You can use your own alarm names, enable or disable alarms, and test them on the glasses directly. The website editor preview and app settings now match what the glasses display.
 
 <figure class="align-center">
-  <img src="/assets/images/wheeldash-engo-racing-view.gif" alt="Animated WheelDash Racing view on ENGO smart glasses, showing live speed, motor temperature, PWM and tyre pressure as an alarm banner appears">
+  <img src="/assets/images/wheeldash-engo-racing-view.webp" alt="Animated WheelDash Racing view on ENGO smart glasses, showing live speed, motor temperature, PWM and tyre pressure as an alarm banner appears">
   <figcaption>The Racing view keeps the key ride data visible while alarms appear over it.</figcaption>
 </figure>
 

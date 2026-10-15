@@ -1,12 +1,13 @@
 ---
 title: "Why WheelDash"
 permalink: /why-wheeldash/
-excerpt: "Most EUC apps run on your phone and send data to a watch. WheelDash runs on the Garmin or Amazfit watch itself: what that changes, and what you get with it."
+excerpt: "WheelDash runs on your Garmin or Amazfit watch and connects to your electric unicycle itself: no phone while riding, any phone, ENGO and Varia included."
 last_modified_at: 2026-10-14
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc wd-why
+seo_title: "Why WheelDash: the EUC app that runs on your smartwatch"
 ---
 
 Most EUC apps are phone apps. The phone connects to the wheel, runs the alarms and records the ride; a watch, if you have one, shows what the phone sends it. WheelDash works the other way round: **the app runs on your watch.** The watch connects to the wheel, and the phone is not needed while you ride.

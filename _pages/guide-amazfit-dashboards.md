@@ -1,12 +1,13 @@
 ---
 title: "WheelDash for Amazfit: dashboards"
 permalink: /guides/amazfit-dashboards/
-excerpt: "Choose a ready-made WheelDash dashboard on Amazfit, or build your own in the Zepp app or the Ride Portal's layout editor."
+excerpt: "Choose a ready-made WheelDash dashboard on Amazfit, or build your own EUC dashboard from gauges, values and bars in the Zepp app or the Ride Portal layout editor."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "Custom EUC dashboard on Amazfit – WheelDash"
 ---
 
 ## Ready-made dashboards

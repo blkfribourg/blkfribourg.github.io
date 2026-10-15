@@ -3,7 +3,7 @@ title: "DIY Bluetooth Horn!"
 layout: single
 author: BlkFri
 header:
-  teaser: "/assets/images/DIY_BLEHorn.png"
+  teaser: "/assets/images/DIY_BLEHorn.webp"
 ---
 
 Disclaimer: I'm not an electronics expert, so my design may have some issues or flaws that I'm unaware of. However, it works fine for my specific use case.
@@ -23,7 +23,7 @@ Here's the parts list:
 - 1 ESP32 Dev Kit C v4
 
 <center>
-<img src="/assets/images/DIY_BLEHorn.png"/>
+<img src="/assets/images/DIY_BLEHorn.webp"/>
 </center>
 
 This is still a prototype, and I need to design a case for it. However, it was a fun DIY project!

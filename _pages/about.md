@@ -1,7 +1,7 @@
 ---
 permalink: /about_wheeldash/
 title: "About WheelDash"
-excerpt: "Who makes WheelDash, why it exists and how the project is run."
+excerpt: "Who makes WheelDash, the free EUC app for Garmin and Amazfit watches, why it exists and how the project is run."
 last_modified_at: 2026-10-08
 author_profile: false
 author: BlkFri

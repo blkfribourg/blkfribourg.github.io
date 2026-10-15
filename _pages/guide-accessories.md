@@ -1,12 +1,13 @@
 ---
 title: "ENGO glasses and Garmin Varia radar"
 permalink: /guides/accessories/
-excerpt: "Connect ENGO smart glasses and a Garmin Varia radar to WheelDash on Garmin and Amazfit."
+excerpt: "Connect ENGO smart glasses and a Garmin Varia radar to WheelDash on Garmin and Amazfit: ride data in your field of view and traffic alerts on your EUC."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "ENGO glasses and Garmin Varia radar for EUC riders – WheelDash"
 ---
 
 WheelDash connects directly to ENGO smart glasses, which show your ride data in your field of view, and to a Garmin Varia radar, which warns you of vehicles approaching from behind. All three implementations support both.

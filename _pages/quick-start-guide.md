@@ -1,12 +1,13 @@
 ---
 title: "WheelDash for Garmin: the Garmin App"
 permalink: /wheeldash_quickstart/
-excerpt: "Install the WheelDash Garmin App, connect your wheel for the first time and set up profiles, alarms and recording."
+excerpt: "Install the WheelDash EUC app on your Garmin watch, connect your electric unicycle and set up profiles, alarms, buttons, horn, lights and Garmin Connect recording."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "Garmin EUC app: set up the WheelDash Garmin App"
 ---
 
 The Garmin App is the standalone version of WheelDash: you open it from the watch's app list, and it connects to the wheel, shows the dashboard, runs the alarms and records the ride. If you would rather keep a Garmin activity with its maps and navigation, use the [Garmin Datafield](/guides/garmin-datafield/) instead.

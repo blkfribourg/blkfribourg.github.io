@@ -1,12 +1,13 @@
 ---
 title: "WheelDash for Garmin: the Garmin Datafield"
 permalink: /guides/garmin-datafield/
-excerpt: "Add the WheelDash Datafield to a Garmin activity, connect your wheel and choose its fields."
+excerpt: "Add the WheelDash data field to a Garmin activity: live electric unicycle data next to Garmin maps and navigation, recorded in the FIT file, with ENGO turn forwarding."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "Garmin EUC data field: WheelDash inside a Garmin activity"
 ---
 
 The Garmin Datafield puts WheelDash inside a Garmin activity. The activity keeps doing what Garmin does well, recording, maps and navigation, and the WheelDash screen shows your wheel's data next to them.

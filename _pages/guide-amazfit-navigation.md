@@ -1,12 +1,13 @@
 ---
 title: "WheelDash for Amazfit: navigation"
 permalink: /guides/amazfit-navigation/
-excerpt: "Upload a GPX route to the Ride Portal, send it to your Amazfit watch with its map, and follow it during the ride."
+excerpt: "Turn-by-turn navigation for electric unicycle riders on Amazfit watches: upload a GPX route, load it with its map onto the watch and follow it without your phone."
 last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: BlkFri
 classes: wd-doc
+seo_title: "EUC navigation on Amazfit – WheelDash"
 ---
 
 WheelDash for Amazfit has its own navigation, running in the app on the watch. You prepare a route before the ride; during the ride, the watch follows it with its own GPS, without the phone.
