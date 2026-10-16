@@ -55,7 +55,9 @@
     const first = runs[0][0];
     const lastRun = runs[runs.length - 1];
     const last = lastRun[lastRun.length - 1];
-    const dot = (p, cls) => '<path class="' + cls + '" d="M' + (Number(p[0]) | 0) + ' ' + (Number(p[1]) | 0) + 'h0"/>';
+    // Diamonds, as in the portal: a near-zero diagonal stroke with square caps is a square
+    // turned 45°. The start is an outline (steel with a dark hole), the finish solid crimson.
+    const mark = (p, cls) => '<path class="' + cls + '" d="M' + (Number(p[0]) | 0) + ' ' + (Number(p[1]) | 0) + 'l.01 .01"/>';
     return '<svg class="wd-route" viewBox="' + -PAD + ' ' + -PAD + ' ' + (w + 2 * PAD) + ' ' + (h + 2 * PAD) + '" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">'
       + '<g fill="none" stroke-linecap="round" stroke-linejoin="round">'
       + '<path class="wd-route__glow" d="' + all + '"/>'
@@ -63,8 +65,8 @@
       + '<g class="wd-route__body">' + body + '</g>'
       + '<path class="wd-route__core" d="' + all + '"/>'
       + '</g><g class="wd-route__markers">'
-      + dot(first, 'wd-route__pin') + dot(last, 'wd-route__pin')
-      + dot(first, 'wd-route__start') + dot(last, 'wd-route__end') + dot(last, 'wd-route__end-core')
+      + mark(first, 'wd-route__pin') + mark(last, 'wd-route__pin')
+      + mark(first, 'wd-route__start') + mark(first, 'wd-route__start-hole') + mark(last, 'wd-route__end')
       + '</g></svg>';
   }
 
