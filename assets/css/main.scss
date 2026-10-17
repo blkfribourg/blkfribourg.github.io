@@ -56,7 +56,7 @@ a { color: var(--wd-blue); }
 .greedy-nav a { color: var(--wd-muted); }
 .greedy-nav .visible-links a { display: inline-flex; min-height: 38px; margin: 0; padding: .5rem 1rem; align-items: center; border: 1px solid transparent; border-radius: var(--wd-radius-pill); font-size: 14px; font-weight: 500; line-height: 1; white-space: nowrap; transition: border-color .18s ease, background-color .18s ease, color .18s ease; }
 .greedy-nav .visible-links a::before { display: none; }
-.greedy-nav .visible-links li:nth-child(2) { margin-left: auto; }
+.greedy-nav .visible-links li:first-child { margin-left: auto; }
 .greedy-nav .visible-links a:hover { border-color: var(--wd-border-control); background: var(--wd-surface-raised); color: var(--wd-text); }
 .greedy-nav .visible-links a[aria-current="page"] { border-color: rgba(239,68,68,.4); background: rgba(239,68,68,.13); color: #f87171; }
 .greedy-nav .visible-links .masthead__menu-item--external a { color: var(--wd-blue); }
@@ -699,3 +699,22 @@ p.wd-updates__all { margin: 1.5rem 0 0; }
 @media (max-width: 900px) { .wd-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 600px) { .wd-gallery { gap: .6rem; } .wd-doc .page__content .wd-gallery__item img { height: 180px; } .wd-doc .page__content a.wd-gallery__item { padding: .6rem; } }
 .wd-doc .page__content p.wd-doc-shot img { width: 280px; max-width: 100%; margin: .6rem 0 .2rem; }
+
+/* Phones: the theme's root drops to 16px, so rem sizes tuned on desktop fell to 9–12px. Keep reading text near 14px and labels near 11px. */
+@media (max-width: 600px) {
+  .wd-feature p, .wd-platform-card p, .wd-platform-card li, .wd-values p, .wd-direct__points li, p.wd-hop__note,
+  .wd-update-card > p:not(.wd-update-card__date), .wd-dash-legend li, .wd-dashboards p.wd-dash-builder__more,
+  .wd-dashboards .wd-dash-garmin__copy p:not(.wd-dash-garmin__label), .wd-related-product p:not(.wd-doc-choice__label) { font-size: .875rem; }
+  .wd-text-link { font-size: .85rem; }
+  .wd-hero__facts li { font-size: .75rem; }
+  .wd-comparison table { font-size: .82rem; }
+  .wd-status { font-size: .75rem; }
+  .wd-comparison td small { font-size: .75rem; }
+  .wd-comparison-footer p, p.wd-fineprint { font-size: .75rem; }
+  .wd-devices dl { font-size: .85rem; }
+  .wd-devices dd { font-size: 1em; }
+  .wd-doc .notice, .wd-doc .notice--primary, .wd-doc .notice--info, .wd-doc .notice--warning, .wd-doc .notice--success, .wd-doc .notice--danger { font-size: .85rem !important; }
+  .wd-doc .toc__menu a { font-size: .8rem; }
+  .wd-doc-links span, .wd-resource-grid span, .wd-gallery__item span, .wd-dash-face span, .page__footer-copyright { font-size: .68rem; }
+  .page__footer-copyright a { display: inline-block; padding: .35rem 0; }
+}

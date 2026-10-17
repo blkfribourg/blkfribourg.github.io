@@ -156,8 +156,8 @@ platforms:
       languages: { state: platform, label: English }
   amazfit:
     name: Amazfit
-    short: Integrated WheelDash experience
-    explanation: "Use custom dashboards, on-watch recording and WheelDash navigation with route and map data transferred to the watch before the ride."
+    short: Standalone app, most features
+    explanation: "Open WheelDash from the watch's app list. The watch connects to the EUC, shows the dashboard you build, runs the alarms and records the ride, which you can upload to the Ride Portal afterwards."
     install_url: "/install_amazfit/"
     install_label: Install on Amazfit
     features:

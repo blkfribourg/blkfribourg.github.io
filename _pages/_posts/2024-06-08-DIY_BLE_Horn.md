@@ -23,7 +23,7 @@ Here's the parts list:
 - 1 ESP32 Dev Kit C v4
 
 <center>
-<img src="/assets/images/DIY_BLEHorn.webp"/>
+<img src="/assets/images/DIY_BLEHorn.webp" loading="lazy" alt="Prototype Bluetooth horn: battery pack, electronics in a clear plastic box, and a motorcycle horn">
 </center>
 
 This is still a prototype, and I need to design a case for it. However, it was a fun DIY project!
