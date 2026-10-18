@@ -27,9 +27,9 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
     </ul>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
-    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" fetchpriority="high" alt="The WheelDash EUC app on an Amazfit Active 2 and a Garmin fēnix 7 Pro: speed, battery and temperature">
-    <p class="wd-hero__model" style="--x:24.6%">Amazfit Active 2</p>
-    <p class="wd-hero__model" style="--x:71.4%">Garmin fēnix 7 Pro</p>
+    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" fetchpriority="high" alt="The WheelDash EUC app on a Garmin fēnix 7 Pro and an Amazfit Active 2: speed, battery and temperature">
+    <p class="wd-hero__model" style="--x:26.1%">Garmin fēnix 7 Pro</p>
+    <p class="wd-hero__model" style="--x:75.1%">Amazfit Active 2</p>
   </div>
 </section>
 
@@ -44,7 +44,7 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
 
 <section class="wd-section wd-direct" aria-labelledby="direct-title">
   <div class="wd-section__intro wd-section__intro--row">
-    <div><p class="wd-kicker">The key difference</p><h2 id="direct-title">Every hop adds delay.<br>We removed the hop.</h2></div>
+    <div><p class="wd-kicker">The key difference</p><h2 id="direct-title">Every hop can break.<br>We removed the hop.</h2></div>
     <p>Most EUC apps run on your phone and send their data on to the watch. WheelDash runs on the watch itself: no phone app the system can put to sleep, no second Bluetooth link to drop, no phone battery to watch.</p>
   </div>
   <div class="wd-hops">
@@ -176,12 +176,12 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
 </section>
 
 <section class="wd-section wd-platforms" id="platforms" aria-labelledby="platform-title">
-  <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Choose your platform</p><h2 id="platform-title">One ecosystem.<br>Three implementations.</h2></div><p>Garmin riders can choose a standalone app or a datafield inside a Garmin activity. Amazfit provides the most integrated WheelDash workflow.</p></div>
+  <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Choose your platform</p><h2 id="platform-title">One app.<br>Three versions.</h2></div><p>On Garmin, choose a full-screen app or a datafield inside a Garmin activity; both are free, so you can try both. On Amazfit, one app has the most features: custom dashboards, wheel presets, navigation and the Ride Portal.</p></div>
   <div class="wd-platform-cards wd-platform-cards--three">
   {% for platform_id in product.platform_order %}
   {% assign platform = product.platforms[platform_id] %}
     <article class="wd-platform-card{% if platform_id == 'amazfit' %} wd-platform-card--accent{% endif %}">
-      <p class="wd-platform-card__label">{{ platform.name }}{% if platform_id == 'amazfit' %}<span>Integrated experience</span>{% endif %}</p>
+      <p class="wd-platform-card__label">{{ platform.name }}</p>
       <h3>{{ platform.short }}</h3><p>{{ platform.explanation }}</p>
       {% if platform_id == 'garmin_app' %}<ul><li>Full-screen dashboard</li><li>Horn, lights and limiter on buttons</li><li>Garmin Connect recording</li></ul>{% endif %}
       {% if platform_id == 'garmin_datafield' %}<ul><li>Direct EUC connection</li><li>6 or 8 configurable fields</li><li>Garmin recording and navigation</li></ul>{% endif %}
@@ -246,7 +246,7 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
 
 <section class="wd-section wd-resources" id="community" aria-labelledby="resources-title">
   <div class="wd-section__intro wd-section__intro--row"><div><p class="wd-kicker">Guides and community</p><h2 id="resources-title">Start with the right path.</h2></div><p>Check compatibility, follow a setup guide, get help or join the rider community.</p></div>
-  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Setup and how-to guides</strong><em>→</em></a><a href="{{ product.urls.garmin_app }}"><span>Compatibility</span><strong>Current Garmin watch list</strong><em>↗</em></a><a href="/platforms/#compatibility"><span>Compatibility</span><strong>Amazfit watches and EUCs</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/why-wheeldash/"><span>Choosing an app</span><strong>Why WheelDash</strong><em>→</em></a></div>
+  <div class="wd-resource-grid"><a href="/docs/"><span>Guides</span><strong>Setup and how-to guides</strong><em>→</em></a><a href="/platforms/#garmin-watches"><span>Compatibility</span><strong>Supported Garmin watches</strong><em>→</em></a><a href="/platforms/#compatibility"><span>Compatibility</span><strong>Amazfit watches and EUCs</strong><em>→</em></a><a href="/wheeldash_faq/"><span>Help</span><strong>Frequently asked questions</strong><em>→</em></a><a href="{{ product.urls.telegram }}"><span>Community</span><strong>Join the Telegram group</strong><em>↗</em></a><a href="/why-wheeldash/"><span>Choosing an app</span><strong>Why WheelDash</strong><em>→</em></a></div>
 </section>
 
 <section class="wd-final-cta" aria-labelledby="cta-title"><p class="wd-kicker">Ready to install?</p><h2 id="cta-title">Choose how you ride.</h2><div class="wd-final-platforms">{% for platform_id in product.platform_order %}{% assign platform = product.platforms[platform_id] %}<a class="wd-button{% if platform_id == 'amazfit' %} wd-button--light{% else %} wd-button--outline{% endif %}" href="{{ platform.install_url }}">{{ platform.name }}</a>{% endfor %}</div></section>

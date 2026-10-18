@@ -6,7 +6,7 @@ author_profile: false
 classes: wd-doc
 ---
 
-WheelDash is independently developed and **everything is free**. It is not a business: the aim is not to make money, only for the project not to cost its developer more than it already has. The Garmin versions are free and open source, and will remain so. The Amazfit app is free; its source code will be released once active development is complete. Donating does not unlock features or give anyone preferential treatment.
+WheelDash is independently developed and free to use, with no ads and no subscription. It is not a business: the aim is not to make money, only for the project not to cost its developer more than it already has. The Garmin versions are free and open source, and will remain so. The Amazfit app is free; its source code will be released once active development is complete. Donating does not unlock features or give anyone preferential treatment.
 
 [Donate through Ko-fi]({{ site.data.product.urls.kofi }}){: .btn .btn--primary}
 

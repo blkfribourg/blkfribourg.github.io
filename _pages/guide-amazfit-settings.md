@@ -627,7 +627,7 @@ saved to and loaded from your account.
 
 Open WheelDash settings in the Zepp app. Tabs:
 
-### Global
+### Global {#global-settings}
 
 | Setting | Default | Notes |
 |---|---|---|

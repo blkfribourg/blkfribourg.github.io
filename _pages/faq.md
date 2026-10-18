@@ -3,7 +3,7 @@ title: "FAQ"
 permalink: /wheeldash_faq/
 author_profile: false
 author: BlkFri
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-18
 classes: wd-doc wd-faq
 seo_title: "WheelDash FAQ: EUC smartwatch app questions"
 excerpt: "Answers about WheelDash, the EUC app for Garmin and Amazfit: phone while riding, price, battery use, iPhone, supported watches and wheels, connection issues."
@@ -78,4 +78,8 @@ Navigation runs on WheelDash's own servers and is enabled on request for each ac
 
 ## My watch keeps disconnecting from my EUC while riding
 
-{{ site.data.product.garmin_latency_note }} WheelDash cannot remove latency introduced by the watch platform. If the issue persists, include your watch model and firmware version when [contacting support](/contact/).
+Usually the cause is a weak Bluetooth signal from the wheel. Signal strength varies between EUC models, and the watch cannot make it stronger.
+
+If the data lags rather than drops: {{ site.data.product.garmin_latency_note }}
+
+If disconnections continue, [contact support](/contact/) with your wheel model, your watch model and its firmware version.

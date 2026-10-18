@@ -1,9 +1,5 @@
 # main links
 main:
-  - title: "Donate"
-    url: /donate/
-    description: "Support WheelDash development"
-    highlight: true
   - title: "Features"
     url: /#features
   - title: "Why WheelDash"
