@@ -215,7 +215,7 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
     </div>
     <ul class="wd-live__rides" data-wd-rides hidden></ul>
   </div>
-  <script src="{{ '/assets/js/wd-showcase.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/wd-showcase.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
   <p class="wd-fineprint">Segment activity depends on suitable public rides covering the same places. Some areas may have little or no activity yet.</p>
 </section>
 
