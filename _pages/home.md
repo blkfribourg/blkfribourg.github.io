@@ -27,9 +27,9 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
     </ul>
   </div>
   <div class="wd-hero__visual wd-hero__watch">
-    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" fetchpriority="high" alt="The WheelDash EUC app on an Amazfit Active 2 and a Garmin fēnix 7 Pro: speed, battery and temperature">
-    <p class="wd-hero__model" style="--x:24.6%">Amazfit Active 2</p>
-    <p class="wd-hero__model" style="--x:71.4%">Garmin fēnix 7 Pro</p>
+    <img src="/assets/images/wheeldash-hero-watches.webp" width="1078" height="1280" fetchpriority="high" alt="The WheelDash EUC app on a Garmin fēnix 7 Pro and an Amazfit Active 2: speed, battery and temperature">
+    <p class="wd-hero__model" style="--x:26.1%">Garmin fēnix 7 Pro</p>
+    <p class="wd-hero__model" style="--x:75.1%">Amazfit Active 2</p>
   </div>
 </section>
 
