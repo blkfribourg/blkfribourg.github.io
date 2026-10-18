@@ -30,9 +30,6 @@ $monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --wd-red-hot: #ff6b5b;
   --wd-blue: #60a5fa;
   --wd-green: #34d399;
-  --wd-chart-speed: #3b82f6;
-  --wd-chart-battery: #10b981;
-  --wd-chart-temp: #f87171;
   --wd-amber: #fbbf24;
   --wd-radius: 16px;
   --wd-radius-control: 10px;
@@ -134,17 +131,23 @@ p.wd-hero__lead { max-width: 620px; margin: 2rem 0; color: #bcc4cf; font-size: c
 p.wd-hero__model { position: absolute; z-index: 2; bottom: -.4rem; left: var(--x); margin: 0; color: var(--wd-muted); font-family: var(--wd-font-mono); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; transform: translateX(-50%); }
 @media (min-width: 1025px) { .wd-hero { padding-left: clamp(1.5rem, calc((100vw - 1280px) / 2 + 1.5rem), calc(40px + 1.5rem)); } }
 .wd-trace { max-width: 1280px; margin: -1rem auto 2.5rem; padding: 0 1.5rem; }
-.wd-trace svg { display: block; width: 100%; height: 90px; overflow: visible; }
-.wd-trace__line { fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 2; vector-effect: non-scaling-stroke; }
-.wd-trace__line--speed { stroke: var(--wd-chart-speed); }
-.wd-trace__line--battery { stroke: var(--wd-chart-battery); stroke-opacity: .85; }
-.wd-trace__line--temp { stroke: var(--wd-chart-temp); stroke-opacity: .85; }
+/* Ride plot: the Ride Portal's ride view (plot.js / plot.css), drawn by tools/ride-plot.py. */
+.wd-ride { --wd-ride-gutter: 196px; border-bottom: 1px solid var(--wd-border); }
+.wd-ride__row { display: flex; min-width: 0; border-top: 1px solid var(--wd-border); }
+.wd-ride__gutter { display: flex; flex: 0 0 var(--wd-ride-gutter); flex-direction: column; justify-content: space-between; gap: .4rem; padding: .7rem 1rem .6rem 0; }
+p.wd-ride__name { display: flex; align-items: center; gap: .5rem; margin: 0; color: var(--wd-muted); font: 700 .62rem var(--wd-font-mono); letter-spacing: .14em; text-transform: uppercase; }
+.wd-ride__name i { width: 10px; height: 3px; border-radius: 2px; background: var(--c); }
+p.wd-ride__stats { display: flex; flex-wrap: nowrap; align-items: baseline; gap: .6rem; white-space: nowrap; margin: 0; color: #c5cedb; font: 700 .66rem var(--wd-font-mono); }
+.wd-ride__stats i { margin-right: .25rem; color: var(--wd-muted); font-style: normal; font-weight: 500; }
+.wd-ride__name .wd-ride__unit { color: #5d6878; font-weight: 500; letter-spacing: .06em; text-transform: none; }
+.wd-ride__plot { display: block; flex: 1 1 auto; min-width: 0; height: 64px; padding: 8px 0 0; overflow: visible; }
+.wd-ride__grid { fill: none; stroke: rgba(255,255,255,.05); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.wd-ride__line { fill: none; stroke: var(--c); stroke-linejoin: round; stroke-linecap: round; stroke-width: 1.75; vector-effect: non-scaling-stroke; }
+.wd-ride__axis { position: relative; height: 22px; margin-left: var(--wd-ride-gutter); color: var(--wd-muted); font: .6rem var(--wd-font-mono); }
+.wd-ride__axis span { position: absolute; top: 6px; left: var(--x); transform: translateX(-50%); }
+.wd-ride__axis span:first-child { transform: none; }
+.wd-ride__axis span:last-child { transform: translateX(-100%); }
 p.wd-trace__legend { display: flex; margin: .7rem 0 0; flex-wrap: wrap; align-items: center; gap: .4rem 1.1rem; color: var(--wd-muted); font-family: var(--wd-font-mono); font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
-.wd-trace__legend i { display: inline-flex; align-items: center; gap: .4rem; font-style: normal; }
-.wd-trace__legend i::before { width: 14px; height: 2px; border-radius: 1px; background: var(--c); content: ""; }
-.wd-trace__legend .is-speed { --c: var(--wd-chart-speed); }
-.wd-trace__legend .is-battery { --c: var(--wd-chart-battery); }
-.wd-trace__legend .is-temp { --c: var(--wd-chart-temp); }
 .wd-hero .wd-eyebrow { margin: 0 0 24px; font-size: 12px; letter-spacing: .2em; }
 .wd-hero .wd-eyebrow span { width: 8px; height: 8px; margin-right: 12px; box-shadow: none; }
 /* Side-by-side hero: sizes from the pen.dev "Home v5 hero" frame (1440 wide). */
@@ -161,7 +164,6 @@ p.wd-trace__legend { display: flex; margin: .7rem 0 0; flex-wrap: wrap; align-it
   .wd-hero__facts { margin-top: 26px; }
   p.wd-hero__model { bottom: -20px; font-size: 10px; letter-spacing: 1.4px; }
   .wd-trace { margin-top: 41px; }
-  .wd-trace svg { height: 90px; }
   p.wd-trace__legend { margin-top: 10px; gap: .4rem 18px; font-size: 10px; letter-spacing: 1.4px; }
 }
 .wd-dashboards { border-top: 1px solid var(--wd-border); }
@@ -219,9 +221,12 @@ ol.wd-dash-legend { display: grid; margin: 0; padding: 0; grid-template-columns:
 }
 @media (max-width: 600px) {
   .wd-hero__visual.wd-hero__watch { width: 100%; margin: 0 0 2.5rem; }
-  .wd-trace { padding: 0 1rem; overflow: hidden; }
-  .wd-trace svg { width: 260%; }
-  .wd-trace__legend > span { flex-basis: 100%; }
+  .wd-trace { padding: 0 1rem; }
+  .wd-ride__row { flex-direction: column; }
+  .wd-ride__gutter { flex: none; flex-direction: row; flex-wrap: wrap; align-items: baseline; padding: .6rem 0 0; }
+  p.wd-ride__stats { margin-left: auto; }
+  .wd-ride__plot { height: 52px; }
+  .wd-ride__axis { margin-left: 0; }
 }
 .wd-direct { padding-top: clamp(3rem,6vw,5rem); }
 .wd-hops { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }

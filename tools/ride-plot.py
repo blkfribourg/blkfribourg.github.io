@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+"""Draw the home page's ride plot (_includes/ride-plot.html) from one real ride.
+
+It mirrors the Ride Portal's ride view (public/visualize/plot.js in WheelDash_Amazfit_Server):
+one row per metric sharing a time axis, the portal's colours, a gradient under each line,
+gaps left open, and min / avg / max in the gutter. Only time series are used: no location.
+
+    python3 tools/ride-plot.py public_rides.ndjson session_1775997938918 --start 1560 --minutes 30
+"""
+import argparse, json, math
+
+ROWS = [  # id, title, key, unit, decimals, range, colour (as plot.js)
+    ("speed", "Speed", "speed", "km/h", 1, "zeroUp", "#ff6b5b"),
+    ("battery", "Battery", "battery", "%", 0, "percent", "#34d399"),
+    ("temperature", "Temperature", "temperature", "°C", 1, "pad", "#a78bfa"),
+]
+W, H = 1000, 100      # viewBox of each row
+BUCKET = 4            # seconds per drawn point
+GAP = 15              # seconds without data that break the line
+
+
+def load(path, session):
+    with open(path) as f:
+        for line in f:
+            r = json.loads(line)
+            if r["session_id"] == session:
+                return r
+    raise SystemExit(f"{session} not found")
+
+
+def y_range(kind, lo, hi):
+    if kind == "percent":
+        return 0, 100
+    if kind == "zeroUp":
+        return 0, max(10, hi * 1.1)
+    span = hi - lo or max(1, abs(hi) * 0.1)
+    return lo - span * 0.12, hi + span * 0.12
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("ndjson"); ap.add_argument("session")
+    ap.add_argument("--start", type=int, default=0, help="first sample (after dropping disconnects)")
+    ap.add_argument("--minutes", type=float, default=30)
+    ap.add_argument("--out", default="_includes/ride-plot.html")
+    a = ap.parse_args()
+
+    ride = load(a.ndjson, a.session)
+    factor = 1.609344 if ride.get("units") == "imperial" else 1.0
+    data = [x for x in ride["recording_data"] if not x.get("eucDisconnected")][a.start:]
+    t0 = data[0]["timestamp"]
+    span = a.minutes * 60
+    data = [x for x in data if (x["timestamp"] - t0) / 1000 <= span]
+
+    # bucket into BUCKET-second points; None where there is no sample (a gap)
+    n = int(span // BUCKET) + 1
+    buckets = [[] for _ in range(n)]
+    for x in data:
+        buckets[int((x["timestamp"] - t0) / 1000 // BUCKET)].append(x)
+    filled = [bool(b) for b in buckets]
+    # small holes (< GAP seconds) are bridged; longer ones stay open
+    for i in range(n):
+        if not filled[i]:
+            j = i
+            while j < n and not filled[j]:
+                j += 1
+            if (j - i) * BUCKET < GAP and i > 0 and j < n:
+                for k in range(i, j):
+                    buckets[k] = buckets[i - 1]
+
+    def series(key, scale=1.0):
+        out = []
+        for b in buckets:
+            vals = [v[key] * scale for v in b if v.get(key) is not None]
+            out.append(sum(vals) / len(vals) if vals else None)
+        return out
+
+    rows_html = []
+    for rid, title, key, unit, dec, kind, color in ROWS:
+        s = series(key, factor if key == "speed" else 1.0)
+        vals = [v for v in s if v is not None]
+        lo, hi, avg = min(vals), max(vals), sum(vals) / len(vals)
+        y0, y1 = y_range(kind, lo, hi)
+        X = lambda i: round(i / (n - 1) * W, 1)
+        Y = lambda v: round(H - (v - y0) / (y1 - y0) * H, 1)
+        line, area, run = [], [], []
+        def close(run):
+            if len(run) < 2:
+                return
+            line.append("M" + " L".join(f"{X(i)} {Y(v)}" for i, v in run))
+            area.append(f"M{X(run[0][0])} {H} L" + " L".join(f"{X(i)} {Y(v)}" for i, v in run) + f" L{X(run[-1][0])} {H}Z")
+        for i, v in enumerate(s):
+            if v is None:
+                close(run); run = []
+            else:
+                run.append((i, v))
+        close(run)
+        fmt = lambda v: f"{v:.{dec}f}"
+        rows_html.append(f'''  <div class="wd-ride__row" style="--c:{color}">
+    <div class="wd-ride__gutter">
+      <p class="wd-ride__name"><i></i>{title}<span class="wd-ride__unit">{unit}</span></p>
+      <p class="wd-ride__stats"><span><i>min</i>{fmt(lo)}</span><span><i>avg</i>{fmt(avg)}</span><span><i>max</i>{fmt(hi)}</span></p>
+    </div>
+    <svg class="wd-ride__plot" viewBox="0 0 {W} {H}" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="wd-ride-{rid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{color}" stop-opacity=".22"/><stop offset="1" stop-color="{color}" stop-opacity="0"/></linearGradient></defs>
+      <path class="wd-ride__grid" d="M0 25H{W}M0 50H{W}M0 75H{W}"/>
+      <path class="wd-ride__area" fill="url(#wd-ride-{rid})" d="{" ".join(area)}"/>
+      <path class="wd-ride__line" d="{" ".join(line)}"/>
+    </svg>
+  </div>''')
+
+    ticks = "".join(f'<span style="--x:{m / a.minutes * 100:.4g}%">{m}:00</span>' for m in range(0, int(a.minutes) + 1, 5))
+    html = f'''<!-- Generated by tools/ride-plot.py from public ride {a.session} (time series only). Do not edit by hand. -->
+<div class="wd-ride" role="img" aria-label="Speed, battery and temperature over {a.minutes:g} minutes of a real ride, drawn as in the Ride Portal">
+{chr(10).join(rows_html)}
+  <div class="wd-ride__axis" aria-hidden="true">{ticks}</div>
+</div>
+<p class="wd-trace__legend"><span>Real ride · {a.minutes:g} min · {len(data):,} samples</span><span>As shown in the Ride Portal</span></p>
+'''
+    open(a.out, "w").write(html)
+    print(f"wrote {a.out}: {len(data)} samples, {n} points")
+
+
+if __name__ == "__main__":
+    main()

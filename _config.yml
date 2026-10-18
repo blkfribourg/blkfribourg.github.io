@@ -135,6 +135,7 @@ include:
   - _pages
 exclude:
   - I18N.md
+  - tools
   - _pages/TestSettings.json
   - assets/images/features/CREDITS.md
   - "*.sublime-project"
