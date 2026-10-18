@@ -101,7 +101,7 @@
     const trace = el('div', 'wd-live__route');
     trace.innerHTML = routeSvg(session.route);
     const main = el('div', 'wd-live__main');
-    const title = el('a', 'wd-live__title', session.sessionName);
+    const title = el('a', 'wd-live__title', session.title || session.sessionName);
     title.href = portal + '/visualize/' + encodeURIComponent(session.sessionId);
     const meta = el('p', 'wd-live__meta');
     const rider = el('a', 'wd-live__rider', '@' + session.username);
