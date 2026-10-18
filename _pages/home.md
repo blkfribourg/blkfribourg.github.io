@@ -95,7 +95,7 @@ seo_title: "WheelDash – EUC app for Garmin and Amazfit smartwatches"
         <rect class="wd-dash-anno__box" x="155" y="113" width="194" height="166" rx="6"/>
         <g class="wd-dash-anno__badge"><circle cx="155" cy="113" r="13"/><text x="155" y="118">4</text></g>
         <rect class="wd-dash-anno__box" x="99" y="278" width="306" height="14" rx="6"/>
-        <g class="wd-dash-anno__badge"><circle cx="405" cy="278" r="13"/><text x="405" y="283">5</text></g>
+        <g class="wd-dash-anno__badge"><circle cx="428" cy="285" r="13"/><text x="428" y="290">5</text></g>
         <rect class="wd-dash-anno__box" x="105" y="291" width="144" height="82" rx="6"/>
         <g class="wd-dash-anno__badge"><circle cx="105" cy="291" r="13"/><text x="105" y="296">6</text></g>
         <rect class="wd-dash-anno__box" x="255" y="291" width="144" height="82" rx="6"/>
