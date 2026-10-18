@@ -10,7 +10,7 @@ classes: wd-doc vesc-product vesc-doc
 ---
 
 <center>
-<img src="/assets/images/VESC_Logo.png"/>
+<img class="vesc-doc__logo" src="/assets/images/VESC_Logo_Wbg.png" alt="VESC Project"/>
 </center>
 
 If you want to support this project, visit my <a href="https://ko-fi.com/wheeldash" target="_blank" rel="noopener noreferrer">ko-fi page</a>!

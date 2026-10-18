@@ -6,7 +6,7 @@ author: BlkFri
 classes: wd-doc wd-update
 excerpt: "A look at the Garmin, Amazfit and Ride Portal work that has kept WheelDash development busy."
 header:
-  teaser: "/assets/images/mikolaj-zeman-unsplash3.jpg"
+  teaser: "/assets/images/mikolaj-zeman-unsplash3.webp"
 ---
 
 I have been quiet here because most of my available WheelDash time has gone into building and riding. The project has changed considerably since the website last reflected it, so this is a good moment to show what WheelDash has become.
@@ -15,19 +15,19 @@ WheelDash is no longer only a watch display. It is a riding ecosystem with three
 
 ## Three ways to use WheelDash
 
-WheelDash now has three distinct implementations. They share live EUC telemetry, safety alerts, Bluetooth audio alerts, offline maps, ENGO support and Garmin Varia integration, but their workflows are different.
+WheelDash now has three distinct implementations. They share live EUC telemetry, safety alerts, ENGO support and Garmin Varia integration, but their workflows are different, especially for maps and navigation.
 
 ### Garmin App
 
-The Garmin App is a standalone WheelDash experience. It provides a focused EUC dashboard, offline maps, alerts, accessories and Garmin activity recording. It does not provide navigation.
+The Garmin App is a standalone WheelDash experience. It provides a focused EUC dashboard, alerts, accessories and Garmin activity recording. It does not provide maps or navigation.
 
 ### Garmin Datafield
 
-The Garmin Datafield runs inside a Garmin activity. It combines WheelDash telemetry and alerts with Garmin activity recording and Garmin-native navigation where the watch supports it.
+The Garmin Datafield runs inside a Garmin activity. It combines WheelDash telemetry and alerts with Garmin activity recording and the watch's own Garmin maps and navigation where the watch supports them. Like all Garmin datafields, it refreshes once per second.
 
 ### Amazfit
 
-Amazfit provides the most integrated WheelDash experience. It adds custom dashboards, WheelDash recording, navigation in supported regions, and uploads to the WheelDash Ride Portal.
+Amazfit provides the most integrated WheelDash experience. It adds custom dashboards, WheelDash recording, WheelDash's own on-watch maps and navigation in supported regions, and uploads to the WheelDash Ride Portal.
 
 The [platform comparison](/platforms/) explains the practical differences without hiding the limitations of each option.
 
@@ -54,7 +54,7 @@ The Amazfit application has received a large amount of work behind the scenes an
 The phone can remain in a pocket while riding, then handle route preparation, configuration and ride upload afterward.
 
 <center>
-<img src="/assets/images/Engo2.png" alt="ENGO smart glasses supported by WheelDash">
+<img src="/assets/images/Engo2.webp" alt="ENGO smart glasses supported by WheelDash">
 </center>
 
 ## The Ride Portal is becoming a community space
@@ -71,7 +71,7 @@ Visitors can:
 Segments become more useful as riders share suitable public activity over the same roads and paths. Some areas will naturally have more coverage than others while the community grows.
 
 <center>
-<img src="/assets/images/record-feature.png" alt="Map imagery representing WheelDash Ride Portal analysis">
+<img src="/assets/images/record-feature.webp" alt="Map imagery representing WheelDash Ride Portal analysis">
 </center>
 
 Private Amazfit rides remain private unless the rider intentionally publishes them. Garmin recordings continue to live in Garmin Connect and are not uploaded to the WheelDash Ride Portal.

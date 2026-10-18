@@ -6,7 +6,7 @@ author_profile: false
 classes: wd-doc
 ---
 
-WheelDash is independently developed and **everything is currently available free of charge**. The Garmin versions are free and open source, and they will remain so. The Amazfit version is also free during its beta phase. Its source code will be released once active development is complete. Donating does not unlock features or give anyone preferential treatment.
+WheelDash is independently developed and free to use, with no ads and no subscription. It is not a business: the aim is not to make money, only for the project not to cost its developer more than it already has. The Garmin versions are free and open source, and will remain so. The Amazfit app is free; its source code will be released once active development is complete. Donating does not unlock features or give anyone preferential treatment.
 
 [Donate through Ko-fi]({{ site.data.product.urls.kofi }}){: .btn .btn--primary}
 
@@ -22,7 +22,9 @@ Donations are voluntary. The project is not funded by advertising, and a contrib
 
 ## What may change in the future
 
-The Ride Portal and navigation servers have recurring costs. These costs are currently covered during the Amazfit beta phase, but the long-term model has not been decided. The Amazfit version may eventually become freemium to help pay for these services, but its basic functionality will remain free.
+Everything that runs on the watch, on Garmin and on Amazfit, stays free.
+
+The Ride Portal and navigation are different: they run on servers with a monthly bill. They are free today, paid for by donations and by the developer. If donations stop covering them, these two services may ask for a contribution. It would be set to cover their running costs, never to make a profit.
 
 ## Thank you
 

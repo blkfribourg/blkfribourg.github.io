@@ -1,5 +1,5 @@
 ---
-title: "Weeldash: datafield supports custom logo!"
+title: "WheelDash: datafield supports custom logo!"
 layout: single
 author: BlkFri
 header:

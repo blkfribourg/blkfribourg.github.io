@@ -1,11 +1,9 @@
 # main links
 main:
-  - title: "Donate"
-    url: /donate/
-    description: "Support WheelDash development"
-    highlight: true
   - title: "Features"
     url: /#features
+  - title: "Why WheelDash"
+    url: /why-wheeldash/
   - title: "Platforms"
     url: /platforms/
   - title: "Ride Portal"
@@ -14,7 +12,3 @@ main:
     url: /docs/
   - title: "Community"
     url: /#community
-  - title: "Updates"
-    url: /wheeldash_blog/
-  - title: "About"
-    url: /about_wheeldash/

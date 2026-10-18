@@ -1,63 +1,98 @@
 ---
 permalink: /install_amazfit/
-title: "Install WheelDash on an Amazfit watch"
-excerpt: "Install WheelDash, a standalone app for Amazfit (and Garmin) devices."
-last_modified_at: 2026-08-27
+title: "WheelDash for Amazfit: install and first ride"
+excerpt: "Install the WheelDash EUC app on your Amazfit watch from a QR code, add your electric unicycle and ride: dashboards, alarms, wheel presets and recording, in six languages."
+last_modified_at: 2026-10-08
 toc: true
 author_profile: false
 author: nijaba
 classes: wd-doc
+seo_title: "Amazfit EUC app: install WheelDash on Zepp OS"
 ---
 
-If you want to support this project, visit my <a href="https://ko-fi.com/wheeldash" target="_blank" rel="noopener noreferrer">ko-fi page</a>!
+WheelDash for Amazfit is a stable release, in six languages: English, French, German, Spanish, Russian and Simplified Chinese. It installs from a QR code rather than the Zepp store, which takes a couple of minutes the first time.
+
+## What you need
+
+- A compatible Amazfit watch. Check the [list of supported watches](/platforms/#amazfit-watches), including the experimental build for older models.
+- The Zepp app on your phone, paired with the watch.
+
+## Install
+
+WheelDash is installed from a QR code, through the Zepp app's developer mode.
+
+1. Open the [WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_release }}) and find the QR code for your watch model. Owners of older watches should pick the experimental package.
+2. In the Zepp app, go to **Profile > Settings > About**, then tap the Zepp icon 7 to 10 times, until a confirmation appears. This unlocks developer mode.
+
+   {% include step-shot.html file="/assets/images/install/zepp-developer-mode.webp" alt="Zepp app About screen confirming that developer mode is on" %}
+3. In the Zepp app, go to **Device > General > Developer Mode > Mini Program**, tap **+** and choose **Scan**.
+
+   {% include step-shot.html file="/assets/images/install/zepp-mini-program.webp" alt="Zepp app Mini Program page with the + button" %}
+4. Scan the QR code from step 1.
+
+   {% include step-shot.html file="/assets/images/install/zepp-scan.webp" alt="Zepp app scanning a WheelDash release QR code" %}
+5. Keep the watch nearby and wait for the installation to finish.
+
+## Settings
+
+WheelDash's settings are in the Zepp app: **Device > General > Developer Mode > Mini Program**, then **Settings** for WheelDash. They are grouped by topic: profiles, alerts, buttons, display, navigation, ENGO glasses and your WheelDash account.
+
+To upload rides or use navigation, create a WheelDash account in the **User** section: tap **Register**, then enter your email and a password. The same login works on the [Ride Portal]({{ site.data.product.urls.portal_login }}).
+
+## Add your wheel
+
+Wheels are added on the watch.
+
+1. Open WheelDash from the watch's app list.
+2. Choose **Add your first wheel** (later: **New profile**).
+3. Switch the wheel on and keep the watch close. Adding it is easier when no other wheel is on nearby.
+4. Select your wheel and create the profile.
+
+   {% include step-shot.html file="/assets/images/install/watch-add-wheel.webp" alt="Amazfit watch listing the wheels it found" %}
+
+Each wheel gets its own profile, with its own alarms and settings. To connect faster, set a **Startup Profile** in the settings: WheelDash then opens it after a short countdown.
+
+If your wheel is locked with a PIN, enter it as the profile's **Wheel PIN** in the Zepp app: WheelDash unlocks the wheel when it connects. The PIN is never included in cloud backups.
+
+Amazfit also offers an optional EUC World mode, which receives the wheel data through EUC World on your phone instead of connecting the watch to the wheel.
 {: .notice--info}
 
-## Prerequisites
+## Ride
 
-* A compatible Amazfit device with a current WheelDash package
-{% for device in site.data.product.amazfit_devices %}
-    - {{ device }}
-{% endfor %}
-* Zepp app installed on your phone
+Select a profile and WheelDash connects to the wheel. During the ride, you can switch between the dashboard, the statistics screen and the navigation screen.
 
-### Experimental support for older watches
+- **Dashboard:** choose Default, Racing, Large or your own custom layout. See [dashboards](/guides/amazfit-dashboards/).
+- **Alarms:** set them in the **Alerts** section, with their own sound and vibration patterns, and test them before riding. See [alarms](/guides/amazfit-alarms/).
+- **Buttons:** map watch buttons to actions such as start/stop recording, toggle the speed limit, cycle the light, switch pages or apply a [wheel preset](#wheel-presets). Mapping a button requires WheelDash to be running on the watch.
 
-An untested API 3.6 / ZeppOS 3.5 build is available for these older devices:
+You can leave your phone at home while riding.
 
-{% for device in site.data.product.amazfit_experimental_devices %}
-- {{ device }}
-{% endfor %}
+## Wheel presets
 
-This build has not been tested on real hardware, and some features may not work as intended. Check the [WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_experimental_release }}) for an experimental package if you want to test it and provide feedback.
-{: .notice--warning}
+New in WheelDash for Amazfit 0.0.97.
+{: .notice--info}
 
-## Installation
+A preset is a named set of wheel settings, such as tiltback speed, speed limiter, pedal mode or pedal hardness, that you switch from the watch instead of the manufacturer's app. Presets work with Begode and Extreme Bull, Leaperkim and NOSFET, KingSong, and the InMotion V9, V11Y, V12, V13, V14 and P6; the settings available depend on the wheel.
 
-1. Open the [WheelDash Amazfit releases]({{ site.data.product.urls.amazfit_release }}). Older-device testers should choose an experimental package where available.
-2. Scroll to find your watch model
-3. Open the zepp app and go to __Profile > Settings > About__, then repeatedly tap the Zepp app's icon (or version number) about 7-10 times until a confirmation pops up, which unlocks features like scanning QR codes for installing custom apps. 
-4. In the Zepp app, go to __Device > General > Developer Mode > Mini Program__ and click on + and select scan
-5. Scan the QRcode found at step __2__
-6. Wait a bit (leave the watch nearby) and you are done
+1. Connect the wheel once with its profile, so WheelDash knows which settings it has and their ranges.
+2. In the Zepp app, open the profile's settings and go to **Presets**. Build up to 4 presets: add the settings each one should change and set their values, or start from the wheel's current settings.
+3. Map a watch button to **Presets: pick and apply**, or to **Apply preset 1** to **4**.
 
-## Configuration
+A preset only applies when the wheel is stopped. The watch tells you when the wheel has confirmed it, or which settings it could not apply.
 
-1. If you just completed the install, you are already there. Otherwise, in the Zepp app, go to __Device > General > Developer Mode > Mini Program__
-2. Click on __settings__ for WheelDash
-3. If you want to upload your data to the wheeldash server:
-    1. Click on __User__, then on __Register__
-    1. Enter a valid email and a password, then click on Register.  This is the login and password you will need to enter on https://wd.nijalabs.com to view your data.
+## Record
 
-The rest of the configuration should be self explanatory. Adding a new wheel configuration is done from the watch.
+Turn on **Auto Recording** to record every ride, or map a button to **Start/Stop Recording**. Rides are saved on the watch.
 
-If you have a Garmin Varia radar or Engo HUD Glasses, you first need to add (pair) the device on the watch. The configuration happens in the Wheeldash Zepp app settings and apply to all the wheel profiles.  If the glasses or the radar are not found when a profile is started, Wheeldash will ask you if you want to skip them for this ride.
+To review a ride with maps and statistics, upload it to the Ride Portal. See [upload, review and share rides](/guides/ride-portal/).
 
-## Using the watch app
+## Going further
 
-1. Go to app launcher and find the Wheeldash icon to launch it
-    (_Note: you can assign a shortcut in Zepp.  Go to __Device > Device Setting__ and assign Wheeldash, which can be shown as Null, to on of the buttons_).
-3. To add a wheel: Click on the + button. (_Note: It is way easier to find your wheel the first time if no other wheel are turned on around you_)
-5. The bottom button will allow you to start/stop recording
-6. The top button will allow you to exit the app
-7. You can leave your phone at home while riding but you will need the phone nearby and Zepp running when you want to upload your ride
-8. At the end of the ride, you can decide to immediately updload your data as it is proposed when you do, but if your do not, you can always launch the watch app later and click on __Ride Manager__ as the data is saved on the watch
+- [Set quick alarms or build your own](/guides/amazfit-alarms/).
+- [Choose or build your dashboard](/guides/amazfit-dashboards/).
+- [Send a route to the watch and follow it](/guides/amazfit-navigation/).
+- [Connect ENGO glasses or a Garmin Varia radar](/guides/accessories/).
+- Every setting is explained in the [settings reference](/guides/amazfit-settings/).
+- Something not working? Check the [FAQ](/wheeldash_faq/) or [contact us](/contact/).
+
+WheelDash for Amazfit is free. If you want to support it, read about [donations](/donate/).

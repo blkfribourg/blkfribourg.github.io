@@ -18,9 +18,9 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale: "en-US"
 title: "WheelDash"
 title_separator: "-"
-subtitle: "EUC RIDING ECOSYSTEM"
+subtitle: # shown under the logo when set
 name: "Blkfri"
-description: "WheelDash is the complete smartwatch companion for electric unicycle riders, with live telemetry, alerts, navigation and ride analysis."
+description: "WheelDash is the free EUC app that runs on your Garmin or Amazfit watch: live wheel data, alarms, wheel controls, ENGO, Varia, navigation and ride recording, with no phone needed while riding."
 url: "https://blkfribourg.github.io"
 baseurl: #"/wheeldash_home"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -86,7 +86,8 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: "/assets/images/social/wheeldash-card.jpg" # Open Graph/Twitter default site image
+og_image_alt: "WheelDash, the EUC app that runs on your watch, on an Amazfit Active 2 and a Garmin fēnix 7 Pro"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -133,6 +134,9 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - I18N.md
+  - _pages/TestSettings.json
+  - assets/images/features/CREDITS.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -255,9 +259,11 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
+      show_date: true
       comments: # true
       share: true
       #related: true
+      classes: wd-doc wd-update
   # _pages
   - scope:
       path: "_pages"
@@ -265,3 +271,4 @@ defaults:
     values:
       layout: single
       author_profile: false
+      classes: wd-doc
