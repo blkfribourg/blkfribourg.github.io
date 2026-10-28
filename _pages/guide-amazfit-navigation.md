@@ -2,7 +2,7 @@
 title: "WheelDash for Amazfit: navigation"
 permalink: /guides/amazfit-navigation/
 excerpt: "Turn-by-turn navigation for electric unicycle riders on Amazfit watches: upload a GPX route, load it with its map onto the watch and follow it without your phone."
-last_modified_at: 2026-10-08
+last_modified_at: 2026-10-28
 toc: true
 author_profile: false
 author: BlkFri
@@ -15,7 +15,7 @@ WheelDash for Amazfit has its own navigation, running in the app on the watch. Y
 ## Before you start
 
 - Navigation is available in {{ site.data.product.navigation_regions | array_to_sentence_string }}.
-- It runs on WheelDash's own servers, so it is enabled on request for each account. [Contact us](/contact/) with the email of your WheelDash account to ask for access.
+- It is open to every WheelDash account. A route has to lie inside these regions: the Ride Portal cannot match a route to roads outside them.
 - You need a WheelDash account, logged in in the Zepp app. See [install and first ride](/install_amazfit/#settings).
 
 ## 1. Upload a route

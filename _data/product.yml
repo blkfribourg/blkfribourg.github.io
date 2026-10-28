@@ -1,10 +1,16 @@
 navigation_regions:
-  - France
-  - USA
+  - Europe
+  - the Canary Islands
+  - the USA
+  - Canada
+  - European Russia
+  - China
 
 supported_euc_brands:
-  - Begode / Gotway / Extreme Bull
-  - Leaperkim / NOSFET
+  - Begode / Gotway
+  - Extreme Bull
+  - Leaperkim
+  - NOSFET
   - KingSong
   - InMotion
 
@@ -117,7 +123,7 @@ platforms:
     install_url: "https://apps.garmin.com/apps/363ecacc-1b86-4863-a13c-49453303e900?tid=1"
     install_label: Install Garmin App
     features:
-      wheels: { state: available, label: "Begode, Leaperkim, KingSong, InMotion", note: "InMotion V9 to V14. NOSFET and V9 support is untested." }
+      wheels: { state: available, label: "Begode, Extreme Bull, Leaperkim, NOSFET, KingSong, InMotion (limited)", note: "InMotion only from the V11 (V11, V11Y, V12, V13, V14), and not every reading can be shown. NOSFET support is untested." }
       telemetry: { state: available, label: Available }
       safety_alerts: { state: available, label: Available }
       audio_alerts: { state: available, label: Watch tones + vibration, note: "Exact alert output depends on watch capabilities." }
@@ -139,7 +145,7 @@ platforms:
     install_url: "https://apps.garmin.com/en-US/developer/2f1a5cdb-e881-4674-b4e1-9e53fe61596b/apps"
     install_label: Find Garmin Datafield
     features:
-      wheels: { state: platform, label: "Begode, Leaperkim, KingSong", note: "No InMotion support." }
+      wheels: { state: platform, label: "Begode, Extreme Bull, Leaperkim, NOSFET, KingSong", note: "No InMotion support." }
       telemetry: { state: available, label: Direct BLE, note: "Current wheel choices are Begode/Gotway, Leaperkim/NOSFET and KingSong. Like all Garmin datafields, it refreshes once per second." }
       safety_alerts: { state: available, label: Visual warnings }
       audio_alerts: { state: available, label: Watch tones + vibration, note: "Exact alert output depends on watch capabilities." }
@@ -161,14 +167,14 @@ platforms:
     install_url: "/install_amazfit/"
     install_label: Install on Amazfit
     features:
-      wheels: { state: available, label: "Begode, Leaperkim, KingSong, InMotion", note: "Most InMotion models, from the V5 to the V14, P6 and E20." }
+      wheels: { state: available, label: "Begode, Extreme Bull, Leaperkim, NOSFET, KingSong, InMotion", note: "Most InMotion models, from the V5 to the V14, P6 and E20." }
       telemetry: { state: available, label: Available }
       safety_alerts: { state: available, label: Available }
       audio_alerts: { state: available, label: Watch sounds + vibration }
       engo: { state: available, label: Available }
       varia: { state: available, label: Available }
       offline_maps: { state: available, label: Preloaded on the watch, note: "Route and raster map data are transferred through the phone before the ride." }
-      navigation: { state: region, label: "France and USA, on request", note: "WheelDash's own navigation, running in the app on the watch. It runs on WheelDash's own servers, so it is enabled for each account on request." }
+      navigation: { state: region, label: "Europe, USA, Canada, European Russia and China", note: "WheelDash's own navigation, running in the app on the watch. Open to every WheelDash account." }
       recording: { state: available, label: On-watch recording }
       portal: { state: available, label: Upload through phone }
       dashboards: { state: available, label: Custom layouts }

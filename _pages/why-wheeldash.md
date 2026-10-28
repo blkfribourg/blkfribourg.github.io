@@ -33,7 +33,7 @@ What that changes on a ride:
 - **One link fewer.** Data goes straight from the wheel to your wrist, with no second Bluetooth connection to drop and no phone app for the system to close in the background.
 - **Any phone.** WheelDash works the same with an iPhone or an Android phone. The phone is only used before and after the ride: for settings, and on Amazfit to load routes and upload rides.
 
-On Amazfit watches, WheelDash is the EUC app that connects to the wheel itself. On Garmin, it is the standalone app for Begode, Extreme Bull, Leaperkim, NOSFET, KingSong and InMotion wheels.
+On Amazfit watches, WheelDash is the EUC app that connects to the wheel itself. On Garmin, it is the standalone app for Begode, Extreme Bull, Leaperkim, NOSFET and KingSong wheels, and for recent InMotion models with some limits.
 
 ## Glasses and radar, from the watch
 

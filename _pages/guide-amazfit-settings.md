@@ -464,8 +464,8 @@ watch GPS, and the next turn.
 
 ### Getting a route onto the watch
 
-1. Upload your GPX file on the [Ride Portal](/guides/ride-portal/). Navigation must be
-   enabled for your account.
+1. Upload your GPX file on the [Ride Portal](/guides/ride-portal/). Navigation is open
+   to every account.
 2. On the watch open **Data Transfer** and leave it open.
 3. In Zepp WheelDash settings go to the **Nav** tab. Tap **Refresh Route List**,
    then **Load to Watch** next to your route.
@@ -799,8 +799,9 @@ the wheel does not have all of its settings.
 **Speed limiter does not engage.** Check the profile's limit is lower than the
 normal tiltback speed.
 
-**Navigation is not enabled for this account.** Routes need an account with
-navigation enabled.
+**The route is rejected.** Navigation covers {{ site.data.product.navigation_regions | array_to_sentence_string }}. A route outside them, or
+without roads to match, cannot be prepared. If you still see a message that
+navigation is not enabled, update the app and sign in again.
 
 ## Safety
 

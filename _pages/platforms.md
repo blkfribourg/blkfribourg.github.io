@@ -1,7 +1,7 @@
 ---
 title: "Compare WheelDash platforms"
 permalink: /platforms/
-excerpt: "Compare the WheelDash Garmin App, Garmin Datafield and Amazfit app, with the supported watches and electric unicycles: Begode, Leaperkim, KingSong, InMotion."
+excerpt: "Compare the WheelDash Garmin App, Garmin Datafield and Amazfit app, with the supported watches and electric unicycles: Begode, Extreme Bull, Leaperkim, NOSFET, KingSong, InMotion."
 toc: true
 author_profile: false
 classes: wd-doc wd-platform-detail
@@ -41,7 +41,7 @@ Each platform handles maps differently:
 
 - **Garmin App:** no map and no navigation. It focuses on telemetry, alerts and recording.
 - **Garmin Datafield:** runs inside a Garmin activity, so you keep Garmin's own maps and navigation on watches that have them. WheelDash can forward compatible turn information to ENGO glasses. Like all Garmin datafields, it refreshes once per second.
-- **Amazfit:** WheelDash's own navigation, running in the app. You upload a GPX route to the Ride Portal, send it to the watch with its map tiles before the ride, and follow it on the watch. It is available in {{ site.data.product.navigation_regions | array_to_sentence_string }}, and is enabled on request for each Ride Portal account. See the [navigation guide](/guides/amazfit-navigation/).
+- **Amazfit:** WheelDash's own navigation, running in the app. You upload a GPX route to the Ride Portal, send it to the watch with its map tiles before the ride, and follow it on the watch. It is available in {{ site.data.product.navigation_regions | array_to_sentence_string }} and is open to every Ride Portal account. See the [navigation guide](/guides/amazfit-navigation/).
 
 ## What “phone-free” means
 
@@ -62,8 +62,8 @@ WheelDash currently supports EUCs from these manufacturers:
 Supported models and telemetry fields vary by implementation, wheel protocol and firmware:
 
 - The Garmin Datafield offers Begode/Gotway/Extreme Bull, Leaperkim/NOSFET and KingSong.
-- The Garmin App and Amazfit also support InMotion's V9, V11/V11Y, V12, V13 and V14 families.
-- Amazfit only: InMotion's P6, V6, X1 and E20, and the older V5, V8 and V10 families.
+- **InMotion on the Garmin App** is partial. It works with recent models only, from the V11 (V11, V11Y, V12, V13 and V14), and some readings are not available on Garmin. The Garmin Datafield does not support InMotion.
+- **InMotion on Amazfit** is the most complete: the V9, V11/V11Y, V12, V13 and V14 families, plus the P6, V6, X1 and E20, and the older V5, V8 and V10 families.
 
 Some InMotion models are experimental or have had only limited testing on real wheels.
 

@@ -11,7 +11,7 @@
           <th>{{ feature.name }}</th>
           {% for platform_id in product.platform_order %}
             {% assign item = product.platforms[platform_id].features[feature.id] %}
-            <td><span class="wd-status wd-status--{{ item.state }}">{{ item.label }}</span>{% if include.full and item.note %}<small>{{ item.note }}</small>{% endif %}</td>
+            <td data-platform="{{ product.platforms[platform_id].name }}"><span class="wd-status wd-status--{{ item.state }}">{{ item.label }}</span>{% if include.full and item.note %}<small>{{ item.note }}</small>{% endif %}</td>
           {% endfor %}
         </tr>
         {% endif %}

@@ -3,7 +3,7 @@ title: "FAQ"
 permalink: /wheeldash_faq/
 author_profile: false
 author: BlkFri
-last_modified_at: 2026-10-18
+last_modified_at: 2026-10-28
 classes: wd-doc wd-faq
 seo_title: "WheelDash FAQ: EUC smartwatch app questions"
 excerpt: "Answers about WheelDash, the EUC app for Garmin and Amazfit: phone while riding, price, battery use, iPhone, supported watches and wheels, connection issues."
@@ -72,9 +72,9 @@ Battery percentage is calculated from the pack voltage, and every app uses its o
 
 The [guides](/docs/) cover installation, first use, dashboards, navigation, accessories and the Ride Portal. On Amazfit, the [settings reference](/guides/amazfit-settings/) explains every setting. The original [Garmin manual (PDF, 2023)](/assets/pdf/WheelDash_Manual_v0.1.pdf) is still available, but some settings have changed since.
 
-## Amazfit navigation says it is not enabled for my account
+## The Ride Portal refuses my navigation route
 
-Navigation runs on WheelDash's own servers and is enabled on request for each account. It is available in {{ site.data.product.navigation_regions | array_to_sentence_string }}. [Contact us](/contact/) with the email of your WheelDash account to ask for access.
+Navigation is open to every WheelDash account, in {{ site.data.product.navigation_regions | array_to_sentence_string }}. A route outside those regions, or one without roads to match, is rejected. If your route is inside them and still fails, [contact us](/contact/) with the GPX file.
 
 ## My watch keeps disconnecting from my EUC while riding
 
